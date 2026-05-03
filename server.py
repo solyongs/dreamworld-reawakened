@@ -3,6 +3,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 import logging
 from urllib.parse import urlparse, parse_qs
 import time
+import json
 
 class S(BaseHTTPRequestHandler):
     def do_GET(self):
@@ -42,9 +43,13 @@ class S(BaseHTTPRequestHandler):
                 self.end_headers()
                 self.wfile.write(b'{}')
             elif(apiName == "pdw.dreamland.top"):
+                response = {
+                    "dreamland_area_id": random.randint (3, 9),
+                    "object_list" : [],
+                }
                 self.send_response(200)
                 self.end_headers()
-                self.wfile.write(b'{"dreamland_area_id":3, "object_list":[]}')
+                self.wfile.write(json.dumps(response).encode())
             elif(apiName == "pdw.dreamland.tree_top"):
                 self.send_response(200)
                 self.end_headers()
@@ -90,10 +95,12 @@ class S(BaseHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(b"{}")
         elif(apiName == 'pdw.home.pdw_start'):
-            print('{"started_at":'+str(int(time.time()))+'}')
+            response = {
+                "started_at": int(time.time()),
+            }
             self.send_response(200)
             self.end_headers()
-            self.wfile.write(('{"started_at":'+str(int(time.time()))+'}').encode())
+            self.wfile.write(json.dumps(response).encode())
         else:
             self.send_response(404)
             self.end_headers()
