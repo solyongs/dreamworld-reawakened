@@ -1,0 +1,6455 @@
+{
+    "1": {
+        "pokemon": "Bulbasaur",
+        "type1": "Grass",
+        "type2": "Poison",
+        "filename": "bchgeajj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Chlorophyll"
+    },
+    "2": {
+        "pokemon": "Ivysaur",
+        "type1": "Grass",
+        "type2": "Poison",
+        "filename": "bcgjifgd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Chlorophyll"
+    },
+    "3": {
+        "pokemon": "Venusaur",
+        "type1": "Grass",
+        "type2": "Poison",
+        "filename": "bcgddach",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Chlorophyll"
+    },
+    "4": {
+        "pokemon": "Charmander",
+        "type1": "Fire",
+        "type2": null,
+        "filename": "bdajbhhj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Solar Power"
+    },
+    "5": {
+        "pokemon": "Charmeleon",
+        "type1": "Fire",
+        "type2": null,
+        "filename": "bdacgced",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Solar Power"
+    },
+    "6": {
+        "pokemon": "Charizard",
+        "type1": "Fire",
+        "type2": "Flying",
+        "filename": "bcjgahah",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Solar Power"
+    },
+    "7": {
+        "pokemon": "Squirtle",
+        "type1": "Water",
+        "type2": null,
+        "filename": "bcijfbhb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Rain Dish"
+    },
+    "8": {
+        "pokemon": "Wartortle",
+        "type1": "Water",
+        "type2": null,
+        "filename": "bddfdjcd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Rain Dish"
+    },
+    "9": {
+        "pokemon": "Blastoise",
+        "type1": "Water",
+        "type2": null,
+        "filename": "bdciidih",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Rain Dish"
+    },
+    "10": {
+        "pokemon": "Caterpie",
+        "type1": "Bug",
+        "type2": null,
+        "filename": "bdcccifb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Run Away"
+    },
+    "11": {
+        "pokemon": "Metapod",
+        "type1": "Bug",
+        "type2": null,
+        "filename": "bdbfhdbf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "12": {
+        "pokemon": "Butterfree",
+        "type1": "Bug",
+        "type2": "Flying",
+        "filename": "bdgbgagh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Tinted Lens"
+    },
+    "13": {
+        "pokemon": "Weedle",
+        "type1": "Bug",
+        "type2": "Poison",
+        "filename": "bdffafdb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Run Away"
+    },
+    "14": {
+        "pokemon": "Kakuna",
+        "type1": "Bug",
+        "type2": "Poison",
+        "filename": "bdeiejjf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "15": {
+        "pokemon": "Beedrill",
+        "type1": "Bug",
+        "type2": "Poison",
+        "filename": "bdebjefj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sniper"
+    },
+    "16": {
+        "pokemon": "Pidgey",
+        "type1": "Normal",
+        "type2": "Flying",
+        "filename": "bdihicbb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Big Pecks"
+    },
+    "17": {
+        "pokemon": "Pidgeotto",
+        "type1": "Normal",
+        "type2": "Flying",
+        "filename": "bdibcghf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Big Pecks"
+    },
+    "18": {
+        "pokemon": "Pidgeot",
+        "type1": "Normal",
+        "type2": "Flying",
+        "filename": "bdhehbdj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Big Pecks"
+    },
+    "19": {
+        "pokemon": "Rattata",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "bdgibgad",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Hustle"
+    },
+    "20": {
+        "pokemon": "Raticate",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "bebeadff",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Hustle"
+    },
+    "21": {
+        "pokemon": "Spearow",
+        "type1": "Normal",
+        "type2": "Flying",
+        "filename": "beaheibj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sniper"
+    },
+    "22": {
+        "pokemon": "Fearow",
+        "type1": "Normal",
+        "type2": "Flying",
+        "filename": "beaajcid",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sniper"
+    },
+    "23": {
+        "pokemon": "Ekans",
+        "type1": "Poison",
+        "type2": null,
+        "filename": "bdjedheh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Unnerve"
+    },
+    "24": {
+        "pokemon": "Arbok",
+        "type1": "Poison",
+        "type2": null,
+        "filename": "beeacejj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Unnerve"
+    },
+    "25": {
+        "pokemon": "Pikachu",
+        "type1": "Electric",
+        "type2": null,
+        "filename": "beddgjgd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Lightning Rod"
+    },
+    "26": {
+        "pokemon": "Raichu",
+        "type1": "Electric",
+        "type2": null,
+        "filename": "bechbech",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Lightning Rod"
+    },
+    "27": {
+        "pokemon": "Sandshrew",
+        "type1": "Ground",
+        "type2": null,
+        "filename": "becafijb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sand Rush"
+    },
+    "28": {
+        "pokemon": "Sandslash",
+        "type1": "Ground",
+        "type2": null,
+        "filename": "beggeged",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sand Rush"
+    },
+    "29": {
+        "pokemon": "Nidoran\u2640",
+        "type1": "Poison",
+        "type2": null,
+        "filename": "befjjbah",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Hustle"
+    },
+    "30": {
+        "pokemon": "Nidorina",
+        "type1": "Poison",
+        "type2": null,
+        "filename": "befddfhb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Hustle"
+    },
+    "31": {
+        "pokemon": "Nidoqueen",
+        "type1": "Poison",
+        "type2": "Ground",
+        "filename": "beegiadf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sheer Force"
+    },
+    "32": {
+        "pokemon": "Nidoran\u2642",
+        "type1": "Poison",
+        "type2": null,
+        "filename": "bejcghih",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Hustle"
+    },
+    "33": {
+        "pokemon": "Nidorino",
+        "type1": "Poison",
+        "type2": null,
+        "filename": "beigbcfb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Hustle"
+    },
+    "34": {
+        "pokemon": "Nidoking",
+        "type1": "Poison",
+        "type2": "Ground",
+        "filename": "behjfhbf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sheer Force"
+    },
+    "35": {
+        "pokemon": "Clefairy",
+        "type1": "Fairy",
+        "type2": null,
+        "filename": "behdabhj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Friend Guard"
+    },
+    "36": {
+        "pokemon": "Clefable",
+        "type1": "Fairy",
+        "type2": null,
+        "filename": "bfbiijdb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Unaware"
+    },
+    "37": {
+        "pokemon": "Vulpix",
+        "type1": "Fire",
+        "type2": null,
+        "filename": "bfbcddjf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Drought"
+    },
+    "38": {
+        "pokemon": "Ninetales",
+        "type1": "Fire",
+        "type2": null,
+        "filename": "bfafhifj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Drought"
+    },
+    "39": {
+        "pokemon": "Jigglypuff",
+        "type1": "Normal",
+        "type2": "Fairy",
+        "filename": "bejjcdcd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Friend Guard"
+    },
+    "40": {
+        "pokemon": "Wigglytuff",
+        "type1": "Normal",
+        "type2": "Fairy",
+        "filename": "bfefbahf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Frisk"
+    },
+    "41": {
+        "pokemon": "Zubat",
+        "type1": "Poison",
+        "type2": "Flying",
+        "filename": "bfdiffdj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Infiltrator"
+    },
+    "42": {
+        "pokemon": "Golbat",
+        "type1": "Poison",
+        "type2": "Flying",
+        "filename": "bfdcaaad",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Infiltrator"
+    },
+    "43": {
+        "pokemon": "Oddish",
+        "type1": "Grass",
+        "type2": "Poison",
+        "filename": "bfcfeegh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Run Away"
+    },
+    "44": {
+        "pokemon": "Gloom",
+        "type1": "Grass",
+        "type2": "Poison",
+        "filename": "bfhbdcbj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Stench"
+    },
+    "45": {
+        "pokemon": "Vileplume",
+        "type1": "Grass",
+        "type2": "Poison",
+        "filename": "bfgehgid",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Effect Spore"
+    },
+    "46": {
+        "pokemon": "Paras",
+        "type1": "Bug",
+        "type2": "Grass",
+        "filename": "bfficbeh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Damp"
+    },
+    "47": {
+        "pokemon": "Parasect",
+        "type1": "Bug",
+        "type2": "Grass",
+        "filename": "bffbggbb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Damp"
+    },
+    "48": {
+        "pokemon": "Venonat",
+        "type1": "Bug",
+        "type2": "Poison",
+        "filename": "bfjhfdgd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Run Away"
+    },
+    "49": {
+        "pokemon": "Venomoth",
+        "type1": "Bug",
+        "type2": "Poison",
+        "filename": "bfjajich",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Wonder Skin"
+    },
+    "50": {
+        "pokemon": "Diglett",
+        "type1": "Ground",
+        "type2": null,
+        "filename": "bfieecjb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sand Force"
+    },
+    "51": {
+        "pokemon": "Dugtrio",
+        "type1": "Ground",
+        "type2": null,
+        "filename": "bfhhihff",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sand Force"
+    },
+    "52": {
+        "pokemon": "Meowth",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "bgcdhfah",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Unnerve"
+    },
+    "53": {
+        "pokemon": "Persian",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "bgbhbjhb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Unnerve"
+    },
+    "54": {
+        "pokemon": "Psyduck",
+        "type1": "Water",
+        "type2": null,
+        "filename": "bgbagedf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Swift Swim"
+    },
+    "55": {
+        "pokemon": "Golduck",
+        "type1": "Water",
+        "type2": null,
+        "filename": "bgaeaijj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Swift Swim"
+    },
+    "56": {
+        "pokemon": "Mankey",
+        "type1": "Fighting",
+        "type2": null,
+        "filename": "bgejjgfb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Defiant"
+    },
+    "57": {
+        "pokemon": "Primeape",
+        "type1": "Fighting",
+        "type2": null,
+        "filename": "bgedebbf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Defiant"
+    },
+    "58": {
+        "pokemon": "Growlithe",
+        "type1": "Fire",
+        "type2": null,
+        "filename": "bgdgifhj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Justified"
+    },
+    "59": {
+        "pokemon": "Arcanine",
+        "type1": "Fire",
+        "type2": null,
+        "filename": "bgdadaed",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Justified"
+    },
+    "60": {
+        "pokemon": "Poliwag",
+        "type1": "Water",
+        "type2": null,
+        "filename": "bghgbhjf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Swift Swim"
+    },
+    "61": {
+        "pokemon": "Poliwhirl",
+        "type1": "Water",
+        "type2": null,
+        "filename": "bggjgcfj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Swift Swim"
+    },
+    "62": {
+        "pokemon": "Poliwrath",
+        "type1": "Water",
+        "type2": "Fighting",
+        "filename": "bggdahcd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Swift Swim"
+    },
+    "63": {
+        "pokemon": "Abra",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "bgfgfbih",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Magic Guard"
+    },
+    "64": {
+        "pokemon": "Kadabra",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "igdfddb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Magic Guard"
+    },
+    "65": {
+        "pokemon": "Alakazam",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "ifgjhjf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Magic Guard"
+    },
+    "66": {
+        "pokemon": "Machop",
+        "type1": "Fighting",
+        "type2": null,
+        "filename": "ifaecfj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Steadfast"
+    },
+    "67": {
+        "pokemon": "Machoke",
+        "type1": "Fighting",
+        "type2": null,
+        "filename": "iedihcd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Steadfast"
+    },
+    "68": {
+        "pokemon": "Machamp",
+        "type1": "Fighting",
+        "type2": null,
+        "filename": "iijhehf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Steadfast"
+    },
+    "69": {
+        "pokemon": "Bellsprout",
+        "type1": "Grass",
+        "type2": "Poison",
+        "filename": "iidbjdj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Gluttony"
+    },
+    "70": {
+        "pokemon": "Weepinbell",
+        "type1": "Grass",
+        "type2": "Poison",
+        "filename": "ihggead",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Gluttony"
+    },
+    "71": {
+        "pokemon": "Victreebel",
+        "type1": "Grass",
+        "type2": "Poison",
+        "filename": "ihaaigh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Gluttony"
+    },
+    "72": {
+        "pokemon": "Tentacool",
+        "type1": "Water",
+        "type2": "Poison",
+        "filename": "jbfjgbj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Rain Dish"
+    },
+    "73": {
+        "pokemon": "Tentacruel",
+        "type1": "Water",
+        "type2": "Poison",
+        "filename": "jajeaid",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Rain Dish"
+    },
+    "74": {
+        "pokemon": "Geodude",
+        "type1": "Rock",
+        "type2": "Ground",
+        "filename": "jacifeh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sand Veil"
+    },
+    "75": {
+        "pokemon": "Graveler",
+        "type1": "Rock",
+        "type2": "Ground",
+        "filename": "ijgdabb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sand Veil"
+    },
+    "76": {
+        "pokemon": "Golem",
+        "type1": "Rock",
+        "type2": "Ground",
+        "filename": "jecbhgd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sand Veil"
+    },
+    "77": {
+        "pokemon": "Ponyta",
+        "type1": "Fire",
+        "type2": null,
+        "filename": "jdfgcch",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Flame Body"
+    },
+    "78": {
+        "pokemon": "Rapidash",
+        "type1": "Fire",
+        "type2": null,
+        "filename": "jcjagjb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Flame Body"
+    },
+    "79": {
+        "pokemon": "Slowpoke",
+        "type1": "Water",
+        "type2": "Psychic",
+        "filename": "jccfbff",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Regenerator"
+    },
+    "80": {
+        "pokemon": "Slowbro",
+        "type1": "Water",
+        "type2": "Psychic",
+        "filename": "jgidjah",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Regenerator"
+    },
+    "81": {
+        "pokemon": "Magnemite",
+        "type1": "Electric",
+        "type2": "Steel",
+        "filename": "jgbidhb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Analytic"
+    },
+    "82": {
+        "pokemon": "Magneton",
+        "type1": "Electric",
+        "type2": "Steel",
+        "filename": "jffcidf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Analytic"
+    },
+    "83": {
+        "pokemon": "Farfetch'd",
+        "type1": "Normal",
+        "type2": "Flying",
+        "filename": "jeihcjj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Defiant"
+    },
+    "84": {
+        "pokemon": "Doduo",
+        "type1": "Normal",
+        "type2": "Flying",
+        "filename": "jjegafb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Tangled Feet"
+    },
+    "85": {
+        "pokemon": "Dodrio",
+        "type1": "Normal",
+        "type2": "Flying",
+        "filename": "jiiafbf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Tangled Feet"
+    },
+    "86": {
+        "pokemon": "Seel",
+        "type1": "Water",
+        "type2": null,
+        "filename": "jibejhj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Ice Body"
+    },
+    "87": {
+        "pokemon": "Dewgong",
+        "type1": "Water",
+        "type2": "Ice",
+        "filename": "jhejeed",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Ice Body"
+    },
+    "88": {
+        "pokemon": "Grimer",
+        "type1": "Poison",
+        "type2": null,
+        "filename": "bacaibjf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Poison Touch"
+    },
+    "89": {
+        "pokemon": "Muk",
+        "type1": "Poison",
+        "type2": null,
+        "filename": "babecgfj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Poison Touch"
+    },
+    "90": {
+        "pokemon": "Shellder",
+        "type1": "Water",
+        "type2": null,
+        "filename": "baahhbcd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Overcoat"
+    },
+    "91": {
+        "pokemon": "Cloyster",
+        "type1": "Water",
+        "type2": "Ice",
+        "filename": "baabbfih",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Overcoat"
+    },
+    "92": {
+        "pokemon": "Gastly",
+        "type1": "Ghost",
+        "type2": "Poison",
+        "filename": "baehaddj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "93": {
+        "pokemon": "Haunter",
+        "type1": "Ghost",
+        "type2": "Poison",
+        "filename": "baeaeiad",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "94": {
+        "pokemon": "Gengar",
+        "type1": "Ghost",
+        "type2": "Poison",
+        "filename": "baddjcgh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "95": {
+        "pokemon": "Onix",
+        "type1": "Rock",
+        "type2": "Ground",
+        "filename": "bachdhdb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Weak Armor"
+    },
+    "96": {
+        "pokemon": "Drowzee",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "bahdceid",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Inner Focus"
+    },
+    "97": {
+        "pokemon": "Hypno",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "bagggjeh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Inner Focus"
+    },
+    "98": {
+        "pokemon": "Krabby",
+        "type1": "Water",
+        "type2": null,
+        "filename": "bagabebb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sheer Force"
+    },
+    "99": {
+        "pokemon": "Kingler",
+        "type1": "Water",
+        "type2": null,
+        "filename": "bafdfihf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sheer Force"
+    },
+    "100": {
+        "pokemon": "Voltorb",
+        "type1": "Electric",
+        "type2": null,
+        "filename": "bajjegch",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Aftermath"
+    },
+    "101": {
+        "pokemon": "Electrode",
+        "type1": "Electric",
+        "type2": null,
+        "filename": "bajcjajb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Aftermath"
+    },
+    "102": {
+        "pokemon": "Exeggcute",
+        "type1": "Grass",
+        "type2": "Psychic",
+        "filename": "baigdfff",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Harvest"
+    },
+    "103": {
+        "pokemon": "Exeggutor",
+        "type1": "Grass",
+        "type2": "Psychic",
+        "filename": "bahjiabj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Harvest"
+    },
+    "104": {
+        "pokemon": "Cubone",
+        "type1": "Ground",
+        "type2": null,
+        "filename": "bbcfghhb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Battle Armor"
+    },
+    "105": {
+        "pokemon": "Marowak",
+        "type1": "Ground",
+        "type2": null,
+        "filename": "bbbjbcdf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Battle Armor"
+    },
+    "106": {
+        "pokemon": "Hitmonlee",
+        "type1": "Fighting",
+        "type2": null,
+        "filename": "bbbcfgjj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Unburden"
+    },
+    "107": {
+        "pokemon": "Hitmonchan",
+        "type1": "Fighting",
+        "type2": null,
+        "filename": "bbagabgd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Inner Focus"
+    },
+    "108": {
+        "pokemon": "Lickitung",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "bbfbijbf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Cloud Nine"
+    },
+    "109": {
+        "pokemon": "Koffing",
+        "type1": "Poison",
+        "type2": null,
+        "filename": "bbefddhj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "110": {
+        "pokemon": "Weezing",
+        "type1": "Poison",
+        "type2": null,
+        "filename": "bbdihied",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "111": {
+        "pokemon": "Rhyhorn",
+        "type1": "Ground",
+        "type2": "Rock",
+        "filename": "bbdccdah",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Reckless"
+    },
+    "112": {
+        "pokemon": "Rhydon",
+        "type1": "Ground",
+        "type2": "Rock",
+        "filename": "bbhibafj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Reckless"
+    },
+    "113": {
+        "pokemon": "Chansey",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "bbhbffcd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Healer"
+    },
+    "114": {
+        "pokemon": "Tangela",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "bbgejjih",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Regenerator"
+    },
+    "115": {
+        "pokemon": "Kangaskhan",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "bbfieefb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Inner Focus"
+    },
+    "116": {
+        "pokemon": "Horsea",
+        "type1": "Water",
+        "type2": null,
+        "filename": "bcaedcad",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Damp"
+    },
+    "117": {
+        "pokemon": "Seadra",
+        "type1": "Water",
+        "type2": null,
+        "filename": "bbjhhggh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Damp"
+    },
+    "118": {
+        "pokemon": "Goldeen",
+        "type1": "Water",
+        "type2": null,
+        "filename": "bbjbcbdb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Lightning Rod"
+    },
+    "119": {
+        "pokemon": "Seaking",
+        "type1": "Water",
+        "type2": null,
+        "filename": "bbiegfjf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Lightning Rod"
+    },
+    "120": {
+        "pokemon": "Staryu",
+        "type1": "Water",
+        "type2": null,
+        "filename": "bcdafdeh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Analytic"
+    },
+    "121": {
+        "pokemon": "Starmie",
+        "type1": "Water",
+        "type2": "Psychic",
+        "filename": "bccdjibb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Analytic"
+    },
+    "122": {
+        "pokemon": "Mr. Mime",
+        "type1": "Psychic",
+        "type2": "Fairy",
+        "filename": "bcbhechf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Technician"
+    },
+    "123": {
+        "pokemon": "Scyther",
+        "type1": "Bug",
+        "type2": "Flying",
+        "filename": "bcbaihdj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Steadfast"
+    },
+    "124": {
+        "pokemon": "Jynx",
+        "type1": "Ice",
+        "type2": "Psychic",
+        "filename": "bcfghejb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Dry Skin"
+    },
+    "125": {
+        "pokemon": "Electabuzz",
+        "type1": "Electric",
+        "type2": null,
+        "filename": "bcfabjff",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Vital Spirit"
+    },
+    "126": {
+        "pokemon": "Magmar",
+        "type1": "Fire",
+        "type2": null,
+        "filename": "bcedgebj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Vital Spirit"
+    },
+    "127": {
+        "pokemon": "Pinsir",
+        "type1": "Bug",
+        "type2": null,
+        "filename": "bcdhaiid",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Moxie"
+    },
+    "128": {
+        "pokemon": "Tauros",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "eeebach",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sheer Force"
+    },
+    "129": {
+        "pokemon": "Magikarp",
+        "type1": "Water",
+        "type2": null,
+        "filename": "edhfejb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Rattled"
+    },
+    "130": {
+        "pokemon": "Gyarados",
+        "type1": "Water",
+        "type2": "Flying",
+        "filename": "edajjff",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Moxie"
+    },
+    "131": {
+        "pokemon": "Lapras",
+        "type1": "Water",
+        "type2": "Ice",
+        "filename": "eceeebj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Hydration"
+    },
+    "132": {
+        "pokemon": "Ditto",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "ehadbhb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Imposter"
+    },
+    "133": {
+        "pokemon": "Eevee",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "egdhgdf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Anticipation"
+    },
+    "134": {
+        "pokemon": "Vaporeon",
+        "type1": "Water",
+        "type2": null,
+        "filename": "efhcajj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Hydration"
+    },
+    "135": {
+        "pokemon": "Jolteon",
+        "type1": "Electric",
+        "type2": null,
+        "filename": "efagfgd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Quick Feet"
+    },
+    "136": {
+        "pokemon": "Flareon",
+        "type1": "Fire",
+        "type2": null,
+        "filename": "ejgfdbf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Guts"
+    },
+    "137": {
+        "pokemon": "Porygon",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "eijjhhj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Analytic"
+    },
+    "138": {
+        "pokemon": "Omanyte",
+        "type1": "Rock",
+        "type2": "Water",
+        "filename": "eideced",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Weak Armor"
+    },
+    "139": {
+        "pokemon": "Omastar",
+        "type1": "Rock",
+        "type2": "Water",
+        "filename": "ehgihah",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Weak Armor"
+    },
+    "140": {
+        "pokemon": "Kabuto",
+        "type1": "Rock",
+        "type2": "Water",
+        "filename": "fcchefj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Weak Armor"
+    },
+    "141": {
+        "pokemon": "Kabutops",
+        "type1": "Rock",
+        "type2": "Water",
+        "filename": "fbgbjcd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Weak Armor"
+    },
+    "142": {
+        "pokemon": "Aerodactyl",
+        "type1": "Rock",
+        "type2": "Flying",
+        "filename": "fajgdih",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Unnerve"
+    },
+    "143": {
+        "pokemon": "Snorlax",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "fadaifb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Gluttony"
+    },
+    "144": {
+        "pokemon": "Articuno",
+        "type1": "Ice",
+        "type2": "Flying",
+        "filename": "feijgad",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "145": {
+        "pokemon": "Zapdos",
+        "type1": "Electric",
+        "type2": "Flying",
+        "filename": "feceagh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "146": {
+        "pokemon": "Moltres",
+        "type1": "Fire",
+        "type2": "Flying",
+        "filename": "fdfifdb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "147": {
+        "pokemon": "Dratini",
+        "type1": "Dragon",
+        "type2": null,
+        "filename": "fcjcjjf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Marvel Scale"
+    },
+    "148": {
+        "pokemon": "Dragonair",
+        "type1": "Dragon",
+        "type2": null,
+        "filename": "fhfbheh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Marvel Scale"
+    },
+    "149": {
+        "pokemon": "Dragonite",
+        "type1": "Dragon",
+        "type2": "Flying",
+        "filename": "fgigcbb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Multiscale"
+    },
+    "150": {
+        "pokemon": "Mewtwo",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "fgcaghf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Unnerve"
+    },
+    "151": {
+        "pokemon": "Mew",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "ffffbdj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "152": {
+        "pokemon": "Chikorita",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "gabdijb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "153": {
+        "pokemon": "Bayleef",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "fjeidff",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "154": {
+        "pokemon": "Meganium",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "fiicibj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "155": {
+        "pokemon": "Cyndaquil",
+        "type1": "Fire",
+        "type2": null,
+        "filename": "fibhcid",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "156": {
+        "pokemon": "Quilava",
+        "type1": "Fire",
+        "type2": null,
+        "filename": "gchgadf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "157": {
+        "pokemon": "Typhlosion",
+        "type1": "Fire",
+        "type2": null,
+        "filename": "gcbaejj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "158": {
+        "pokemon": "Totodile",
+        "type1": "Water",
+        "type2": null,
+        "filename": "gbeejgd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "159": {
+        "pokemon": "Croconaw",
+        "type1": "Water",
+        "type2": null,
+        "filename": "gahjech",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "160": {
+        "pokemon": "Feraligatr",
+        "type1": "Water",
+        "type2": null,
+        "filename": "gfdibhj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "161": {
+        "pokemon": "Sentret",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "gehcged",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Frisk"
+    },
+    "162": {
+        "pokemon": "Furret",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "geahbah",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Frisk"
+    },
+    "163": {
+        "pokemon": "Hoothoot",
+        "type1": "Normal",
+        "type2": "Flying",
+        "filename": "gdebfhb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Tinted Lens"
+    },
+    "164": {
+        "pokemon": "Noctowl",
+        "type1": "Normal",
+        "type2": "Flying",
+        "filename": "giaadcd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Tinted Lens"
+    },
+    "165": {
+        "pokemon": "Ledyba",
+        "type1": "Bug",
+        "type2": "Flying",
+        "filename": "ghdehih",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Rattled"
+    },
+    "166": {
+        "pokemon": "Ledian",
+        "type1": "Bug",
+        "type2": "Flying",
+        "filename": "gggjcfb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Iron Fist"
+    },
+    "167": {
+        "pokemon": "Spinarak",
+        "type1": "Bug",
+        "type2": "Poison",
+        "filename": "ggadhbf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sniper"
+    },
+    "168": {
+        "pokemon": "Ariados",
+        "type1": "Bug",
+        "type2": "Poison",
+        "filename": "hagcegh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sniper"
+    },
+    "169": {
+        "pokemon": "Crobat",
+        "type1": "Poison",
+        "type2": "Flying",
+        "filename": "gjjgjdb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Infiltrator"
+    },
+    "170": {
+        "pokemon": "Chinchou",
+        "type1": "Water",
+        "type2": "Electric",
+        "filename": "gjdbdjf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Water Absorb"
+    },
+    "171": {
+        "pokemon": "Lanturn",
+        "type1": "Water",
+        "type2": "Electric",
+        "filename": "gigfifj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Water Absorb"
+    },
+    "172": {
+        "pokemon": "Pichu",
+        "type1": "Electric",
+        "type2": null,
+        "filename": "hdcegbb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Lightning Rod"
+    },
+    "173": {
+        "pokemon": "Cleffa",
+        "type1": "Fairy",
+        "type2": null,
+        "filename": "hcfjahf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Friend Guard"
+    },
+    "174": {
+        "pokemon": "Igglybuff",
+        "type1": "Normal",
+        "type2": "Fairy",
+        "filename": "hbjdfdj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Friend Guard"
+    },
+    "175": {
+        "pokemon": "Togepi",
+        "type1": "Fairy",
+        "type2": null,
+        "filename": "hbciaad",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Super Luck"
+    },
+    "176": {
+        "pokemon": "Togetic",
+        "type1": "Fairy",
+        "type2": "Flying",
+        "filename": "hfighff",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Super Luck"
+    },
+    "177": {
+        "pokemon": "Natu",
+        "type1": "Psychic",
+        "type2": "Flying",
+        "filename": "hfcbcbj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Magic Bounce"
+    },
+    "178": {
+        "pokemon": "Xatu",
+        "type1": "Psychic",
+        "type2": "Flying",
+        "filename": "heffgid",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Magic Bounce"
+    },
+    "179": {
+        "pokemon": "Mareep",
+        "type1": "Electric",
+        "type2": null,
+        "filename": "hdjabeh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Plus"
+    },
+    "180": {
+        "pokemon": "Flaaffy",
+        "type1": "Electric",
+        "type2": null,
+        "filename": "hieiijj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Plus"
+    },
+    "181": {
+        "pokemon": "Ampharos",
+        "type1": "Electric",
+        "type2": null,
+        "filename": "hhiddgd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Plus"
+    },
+    "182": {
+        "pokemon": "Bellossom",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "hhbhich",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Healer"
+    },
+    "183": {
+        "pokemon": "Marill",
+        "type1": "Water",
+        "type2": "Fairy",
+        "filename": "hgfccjb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sap Sipper"
+    },
+    "184": {
+        "pokemon": "Azumarill",
+        "type1": "Water",
+        "type2": "Fairy",
+        "filename": "ibbbaed",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sap Sipper"
+    },
+    "185": {
+        "pokemon": "Sudowoodo",
+        "type1": "Rock",
+        "type2": null,
+        "filename": "iaeffah",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Rattled"
+    },
+    "186": {
+        "pokemon": "Politoed",
+        "type1": "Water",
+        "type2": null,
+        "filename": "hjhjjhb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Drizzle"
+    },
+    "187": {
+        "pokemon": "Hoppip",
+        "type1": "Grass",
+        "type2": "Flying",
+        "filename": "hjbeedf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Infiltrator"
+    },
+    "188": {
+        "pokemon": "Skiploom",
+        "type1": "Grass",
+        "type2": "Flying",
+        "filename": "idhdbih",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Infiltrator"
+    },
+    "189": {
+        "pokemon": "Jumpluff",
+        "type1": "Grass",
+        "type2": "Flying",
+        "filename": "idahgfb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Infiltrator"
+    },
+    "190": {
+        "pokemon": "Aipom",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "icecbbf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Skill Link"
+    },
+    "191": {
+        "pokemon": "Sunkern",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "ibhgfhj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Early Bird"
+    },
+    "192": {
+        "pokemon": "Sunflora",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "ceghcd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Early Bird"
+    },
+    "193": {
+        "pokemon": "Yanma",
+        "type1": "Bug",
+        "type2": "Flying",
+        "filename": "bibbih",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Frisk"
+    },
+    "194": {
+        "pokemon": "Wooper",
+        "type1": "Water",
+        "type2": "Ground",
+        "filename": "bbfgfb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Unaware"
+    },
+    "195": {
+        "pokemon": "Quagsire",
+        "type1": "Water",
+        "type2": "Ground",
+        "filename": "fabbf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Unaware"
+    },
+    "196": {
+        "pokemon": "Espeon",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "faiigh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Magic Bounce"
+    },
+    "197": {
+        "pokemon": "Umbreon",
+        "type1": "Dark",
+        "type2": null,
+        "filename": "eedddb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Inner Focus"
+    },
+    "198": {
+        "pokemon": "Murkrow",
+        "type1": "Dark",
+        "type2": "Flying",
+        "filename": "dhhhjf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Prankster"
+    },
+    "199": {
+        "pokemon": "Slowking",
+        "type1": "Water",
+        "type2": "Psychic",
+        "filename": "dbccfj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Regenerator"
+    },
+    "200": {
+        "pokemon": "Misdreavus",
+        "type1": "Ghost",
+        "type2": null,
+        "filename": "hhbabb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "201-a": {
+        "pokemon": "Unown",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "hafehf",
+        "form": "a",
+        "form_no": "0",
+        "hidden_ability": ""
+    },
+    "201-b": {
+        "pokemon": "Unown",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "hafcbj",
+        "form": "b",
+        "form_no": "1",
+        "hidden_ability": ""
+    },
+    "201-c": {
+        "pokemon": "Unown",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "haejgd",
+        "form": "c",
+        "form_no": "2",
+        "hidden_ability": ""
+    },
+    "201-d": {
+        "pokemon": "Unown",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "haehah",
+        "form": "d",
+        "form_no": "3",
+        "hidden_ability": ""
+    },
+    "201-e": {
+        "pokemon": "Unown",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "hagejj",
+        "form": "e",
+        "form_no": "4",
+        "hidden_ability": ""
+    },
+    "201-f": {
+        "pokemon": "Unown",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "hagced",
+        "form": "f",
+        "form_no": "5",
+        "hidden_ability": ""
+    },
+    "201-g": {
+        "pokemon": "Unown",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "hafjih",
+        "form": "g",
+        "form_no": "6",
+        "hidden_ability": ""
+    },
+    "201-h": {
+        "pokemon": "Unown",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "hafhdb",
+        "form": "h",
+        "form_no": "7",
+        "hidden_ability": ""
+    },
+    "201-i": {
+        "pokemon": "Unown",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "hahfcd",
+        "form": "i",
+        "form_no": "8",
+        "hidden_ability": ""
+    },
+    "201-j": {
+        "pokemon": "Unown",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "hahcgh",
+        "form": "j",
+        "form_no": "9",
+        "hidden_ability": ""
+    },
+    "201-k": {
+        "pokemon": "Unown",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "hahabb",
+        "form": "k",
+        "form_no": "10",
+        "hidden_ability": ""
+    },
+    "201-l": {
+        "pokemon": "Unown",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "haghff",
+        "form": "l",
+        "form_no": "11",
+        "hidden_ability": ""
+    },
+    "201-m": {
+        "pokemon": "Unown",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "haifeh",
+        "form": "m",
+        "form_no": "12",
+        "hidden_ability": ""
+    },
+    "201-n": {
+        "pokemon": "Unown",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "haicjb",
+        "form": "n",
+        "form_no": "13",
+        "hidden_ability": ""
+    },
+    "201-o": {
+        "pokemon": "Unown",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "haiadf",
+        "form": "o",
+        "form_no": "14",
+        "hidden_ability": ""
+    },
+    "201-p": {
+        "pokemon": "Unown",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "hahhhj",
+        "form": "p",
+        "form_no": "15",
+        "hidden_ability": ""
+    },
+    "201-q": {
+        "pokemon": "Unown",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "hajfhb",
+        "form": "q",
+        "form_no": "16",
+        "hidden_ability": ""
+    },
+    "201-r": {
+        "pokemon": "Unown",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "hajdbf",
+        "form": "r",
+        "form_no": "17",
+        "hidden_ability": ""
+    },
+    "201-s": {
+        "pokemon": "Unown",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "hajafj",
+        "form": "s",
+        "form_no": "18",
+        "hidden_ability": ""
+    },
+    "201-t": {
+        "pokemon": "Unown",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "haiiad",
+        "form": "t",
+        "form_no": "19",
+        "hidden_ability": ""
+    },
+    "201-u": {
+        "pokemon": "Unown",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "hbafjf",
+        "form": "u",
+        "form_no": "20",
+        "hidden_ability": ""
+    },
+    "201-v": {
+        "pokemon": "Unown",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "hbaddj",
+        "form": "v",
+        "form_no": "21",
+        "hidden_ability": ""
+    },
+    "201-w": {
+        "pokemon": "Unown",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "hbaaid",
+        "form": "w",
+        "form_no": "22",
+        "hidden_ability": ""
+    },
+    "201-x": {
+        "pokemon": "Unown",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "hajich",
+        "form": "x",
+        "form_no": "23",
+        "hidden_ability": ""
+    },
+    "201-y": {
+        "pokemon": "Unown",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "hbbgbj",
+        "form": "y",
+        "form_no": "24",
+        "hidden_ability": ""
+    },
+    "201-z": {
+        "pokemon": "Unown",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "hbbdgd",
+        "form": "z",
+        "form_no": "25",
+        "hidden_ability": ""
+    },
+    "201-exclamation": {
+        "pokemon": "Unown",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "hbbbah",
+        "form": "exclamation",
+        "form_no": "26",
+        "hidden_ability": ""
+    },
+    "201-question": {
+        "pokemon": "Unown",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "hbaifb",
+        "form": "question",
+        "form_no": "27",
+        "hidden_ability": ""
+    },
+    "202": {
+        "pokemon": "Wobbuffet",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "gdjjdj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Telepathy"
+    },
+    "203": {
+        "pokemon": "Girafarig",
+        "type1": "Normal",
+        "type2": "Psychic",
+        "filename": "fheead",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sap Sipper"
+    },
+    "204": {
+        "pokemon": "Pineco",
+        "type1": "Bug",
+        "type2": null,
+        "filename": "baddbff",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Overcoat"
+    },
+    "205": {
+        "pokemon": "Forretress",
+        "type1": "Bug",
+        "type2": "Steel",
+        "filename": "jghgbj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Overcoat"
+    },
+    "206": {
+        "pokemon": "Dunsparce",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "jacaid",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Rattled"
+    },
+    "207": {
+        "pokemon": "Gligar",
+        "type1": "Ground",
+        "type2": "Flying",
+        "filename": "idgfeh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Immunity"
+    },
+    "208": {
+        "pokemon": "Steelix",
+        "type1": "Steel",
+        "type2": "Ground",
+        "filename": "bcjfcjj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sheer Force"
+    },
+    "209": {
+        "pokemon": "Snubbull",
+        "type1": "Fairy",
+        "type2": null,
+        "filename": "bccjhgd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Rattled"
+    },
+    "210": {
+        "pokemon": "Granbull",
+        "type1": "Fairy",
+        "type2": null,
+        "filename": "bbgecch",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Rattled"
+    },
+    "211": {
+        "pokemon": "Qwilfish",
+        "type1": "Water",
+        "type2": "Poison",
+        "filename": "bajigjb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Intimidate"
+    },
+    "212": {
+        "pokemon": "Scizor",
+        "type1": "Bug",
+        "type2": "Steel",
+        "filename": "bffheed",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Light Metal"
+    },
+    "213": {
+        "pokemon": "Shuckle",
+        "type1": "Bug",
+        "type2": "Rock",
+        "filename": "bejbjah",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Contrary"
+    },
+    "214": {
+        "pokemon": "Heracross",
+        "type1": "Bug",
+        "type2": "Fighting",
+        "filename": "becgdhb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Moxie"
+    },
+    "215": {
+        "pokemon": "Sneasel",
+        "type1": "Dark",
+        "type2": "Ice",
+        "filename": "bdgaidf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Pickpocket"
+    },
+    "216": {
+        "pokemon": "Teddiursa",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "bibjfih",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Honey Gather"
+    },
+    "217": {
+        "pokemon": "Ursaring",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "bhfeafb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Unnerve"
+    },
+    "218": {
+        "pokemon": "Slugma",
+        "type1": "Fire",
+        "type2": null,
+        "filename": "bgiifbf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Weak Armor"
+    },
+    "219": {
+        "pokemon": "Magcargo",
+        "type1": "Fire",
+        "type2": "Rock",
+        "filename": "bgccjhj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Weak Armor"
+    },
+    "220": {
+        "pokemon": "Swinub",
+        "type1": "Ice",
+        "type2": "Ground",
+        "filename": "caibhdb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Thick Fat"
+    },
+    "221": {
+        "pokemon": "Piloswine",
+        "type1": "Ice",
+        "type2": "Ground",
+        "filename": "cabgbjf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Thick Fat"
+    },
+    "222": {
+        "pokemon": "Corsola",
+        "type1": "Water",
+        "type2": "Rock",
+        "filename": "bjfagfj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Regenerator"
+    },
+    "223": {
+        "pokemon": "Remoraid",
+        "type1": "Water",
+        "type2": null,
+        "filename": "biifbcd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Moody"
+    },
+    "224": {
+        "pokemon": "Octillery",
+        "type1": "Water",
+        "type2": null,
+        "filename": "cdedihf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Moody"
+    },
+    "225": {
+        "pokemon": "Delibird",
+        "type1": "Ice",
+        "type2": "Flying",
+        "filename": "cchiddj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Insomnia"
+    },
+    "226": {
+        "pokemon": "Mantine",
+        "type1": "Water",
+        "type2": "Flying",
+        "filename": "ccbciad",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Water Veil"
+    },
+    "227": {
+        "pokemon": "Skarmory",
+        "type1": "Steel",
+        "type2": "Flying",
+        "filename": "cbehcgh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Weak Armor"
+    },
+    "228": {
+        "pokemon": "Houndour",
+        "type1": "Dark",
+        "type2": "Fire",
+        "filename": "cgagabj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Unnerve"
+    },
+    "229": {
+        "pokemon": "Houndoom",
+        "type1": "Dark",
+        "type2": "Fire",
+        "filename": "cfeaeid",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Unnerve"
+    },
+    "230": {
+        "pokemon": "Kingdra",
+        "type1": "Water",
+        "type2": "Dragon",
+        "filename": "cehejeh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Damp"
+    },
+    "231": {
+        "pokemon": "Phanpy",
+        "type1": "Ground",
+        "type2": null,
+        "filename": "ceajebb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sand Veil"
+    },
+    "232": {
+        "pokemon": "Donphan",
+        "type1": "Ground",
+        "type2": null,
+        "filename": "cigibgd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sand Veil"
+    },
+    "233": {
+        "pokemon": "Porygon2",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "ciacgch",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Analytic"
+    },
+    "234": {
+        "pokemon": "Stantler",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "chdhajb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sap Sipper"
+    },
+    "235": {
+        "pokemon": "Smeargle",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "cghbfff",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Moody"
+    },
+    "236": {
+        "pokemon": "Tyrogue",
+        "type1": "Fighting",
+        "type2": null,
+        "filename": "dbdadah",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Vital Spirit"
+    },
+    "237": {
+        "pokemon": "Hitmontop",
+        "type1": "Fighting",
+        "type2": null,
+        "filename": "dagehhb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Steadfast"
+    },
+    "238": {
+        "pokemon": "Smoochum",
+        "type1": "Ice",
+        "type2": "Psychic",
+        "filename": "cjjjcdf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Hydration"
+    },
+    "239": {
+        "pokemon": "Elekid",
+        "type1": "Electric",
+        "type2": null,
+        "filename": "cjddgjj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Vital Spirit"
+    },
+    "240": {
+        "pokemon": "Magby",
+        "type1": "Fire",
+        "type2": null,
+        "filename": "ddjcefb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Vital Spirit"
+    },
+    "241": {
+        "pokemon": "Miltank",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "ddcgjbf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sap Sipper"
+    },
+    "242": {
+        "pokemon": "Blissey",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "dcgbdhj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Healer"
+    },
+    "243": {
+        "pokemon": "Raikou",
+        "type1": "Electric",
+        "type2": null,
+        "filename": "dbjfied",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "244": {
+        "pokemon": "Entei",
+        "type1": "Fire",
+        "type2": null,
+        "filename": "dgfefjf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "245": {
+        "pokemon": "Suicune",
+        "type1": "Water",
+        "type2": null,
+        "filename": "dfijafj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "246": {
+        "pokemon": "Larvitar",
+        "type1": "Rock",
+        "type2": "Ground",
+        "filename": "dfcdfcd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sand Veil"
+    },
+    "247": {
+        "pokemon": "Pupitar",
+        "type1": "Rock",
+        "type2": "Ground",
+        "filename": "defhjih",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "248": {
+        "pokemon": "Tyranitar",
+        "type1": "Rock",
+        "type2": "Dark",
+        "filename": "djbghdj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Unnerve"
+    },
+    "249": {
+        "pokemon": "Lugia",
+        "type1": "Psychic",
+        "type2": "Flying",
+        "filename": "difbcad",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Multiscale"
+    },
+    "250": {
+        "pokemon": "Ho-Oh",
+        "type1": "Fire",
+        "type2": "Flying",
+        "filename": "dhifggh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Regenerator "
+    },
+    "251": {
+        "pokemon": "Celebi",
+        "type1": "Psychic",
+        "type2": "Grass",
+        "filename": "dhcabdb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "252": {
+        "pokemon": "Treecko",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "ebhiiid",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Unburden"
+    },
+    "253": {
+        "pokemon": "Grovyle",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "ebbddeh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Unburden"
+    },
+    "254": {
+        "pokemon": "Sceptile",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "eaehibb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Unburden"
+    },
+    "255": {
+        "pokemon": "Torchic",
+        "type1": "Fire",
+        "type2": null,
+        "filename": "djicchf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Speed Boost"
+    },
+    "256": {
+        "pokemon": "Combusken",
+        "type1": "Fire",
+        "type2": "Fighting",
+        "filename": "cjgagifb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Speed Boost"
+    },
+    "257": {
+        "pokemon": "Blaziken",
+        "type1": "Fire",
+        "type2": "Fighting",
+        "filename": "cjfebdbf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Speed Boost"
+    },
+    "258": {
+        "pokemon": "Mudkip",
+        "type1": "Water",
+        "type2": null,
+        "filename": "cjehfhhj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Damp"
+    },
+    "259": {
+        "pokemon": "Marshtomp",
+        "type1": "Water",
+        "type2": "Ground",
+        "filename": "cjebaced",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Damp"
+    },
+    "260": {
+        "pokemon": "Swampert",
+        "type1": "Water",
+        "type2": "Ground",
+        "filename": "cjigijjf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Damp"
+    },
+    "261": {
+        "pokemon": "Poochyena",
+        "type1": "Dark",
+        "type2": null,
+        "filename": "cjiadefj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Rattled"
+    },
+    "262": {
+        "pokemon": "Mightyena",
+        "type1": "Dark",
+        "type2": null,
+        "filename": "cjhdhjcd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Moxie"
+    },
+    "263": {
+        "pokemon": "Zigzagoon",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "cjghcdih",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Quick Feet"
+    },
+    "264": {
+        "pokemon": "Linoone",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "dabdbbdj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Quick Feet"
+    },
+    "265": {
+        "pokemon": "Wurmple",
+        "type1": "Bug",
+        "type2": null,
+        "filename": "daagfgad",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Run Away"
+    },
+    "266": {
+        "pokemon": "Silcoon",
+        "type1": "Bug",
+        "type2": null,
+        "filename": "daaaaagh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "267": {
+        "pokemon": "Beautifly",
+        "type1": "Bug",
+        "type2": "Flying",
+        "filename": "cjjdefdb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Rivalry"
+    },
+    "268": {
+        "pokemon": "Cascoon",
+        "type1": "Bug",
+        "type2": null,
+        "filename": "dadjdcid",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "269": {
+        "pokemon": "Dustox",
+        "type1": "Bug",
+        "type2": "Poison",
+        "filename": "dadchheh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Compound Eyes"
+    },
+    "270": {
+        "pokemon": "Lotad",
+        "type1": "Water",
+        "type2": "Grass",
+        "filename": "dacgccbb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Own Tempo"
+    },
+    "271": {
+        "pokemon": "Lombre",
+        "type1": "Water",
+        "type2": "Grass",
+        "filename": "dabjgghf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Own Tempo"
+    },
+    "272": {
+        "pokemon": "Ludicolo",
+        "type1": "Water",
+        "type2": "Grass",
+        "filename": "dagffech",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Own Tempo"
+    },
+    "273": {
+        "pokemon": "Seedot",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "dafijijb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Pickpocket"
+    },
+    "274": {
+        "pokemon": "Nuzleaf",
+        "type1": "Grass",
+        "type2": "Dark",
+        "filename": "dafcedff",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Pickpocket"
+    },
+    "275": {
+        "pokemon": "Shiftry",
+        "type1": "Grass",
+        "type2": "Dark",
+        "filename": "daefiibj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Pickpocket"
+    },
+    "276": {
+        "pokemon": "Taillow",
+        "type1": "Normal",
+        "type2": "Flying",
+        "filename": "dajbhfhb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Scrappy"
+    },
+    "277": {
+        "pokemon": "Swellow",
+        "type1": "Normal",
+        "type2": "Flying",
+        "filename": "daifcadf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Scrappy"
+    },
+    "278": {
+        "pokemon": "Wingull",
+        "type1": "Water",
+        "type2": "Flying",
+        "filename": "dahigejj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Rain Dish"
+    },
+    "279": {
+        "pokemon": "Pelipper",
+        "type1": "Water",
+        "type2": "Flying",
+        "filename": "dahcajgd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Rain Dish"
+    },
+    "280": {
+        "pokemon": "Ralts",
+        "type1": "Psychic",
+        "type2": "Fairy",
+        "filename": "dbbhjhbf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Telepathy"
+    },
+    "281": {
+        "pokemon": "Kirlia",
+        "type1": "Psychic",
+        "type2": "Fairy",
+        "filename": "dbbbebhj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Telepathy"
+    },
+    "282": {
+        "pokemon": "Gardevoir",
+        "type1": "Psychic",
+        "type2": "Fairy",
+        "filename": "dbaeiged",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Telepathy"
+    },
+    "283": {
+        "pokemon": "Surskit",
+        "type1": "Bug",
+        "type2": "Water",
+        "filename": "dajidbah",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Rain Dish"
+    },
+    "284": {
+        "pokemon": "Masquerain",
+        "type1": "Bug",
+        "type2": "Flying",
+        "filename": "dbeebifj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Unnerve"
+    },
+    "285": {
+        "pokemon": "Shroomish",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "dbdhgdcd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Quick Feet"
+    },
+    "286": {
+        "pokemon": "Breloom",
+        "type1": "Grass",
+        "type2": "Fighting",
+        "filename": "dbdbahih",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Technician"
+    },
+    "287": {
+        "pokemon": "Slakoth",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "dbcefcfb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "288": {
+        "pokemon": "Vigoroth",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "dbhaeaad",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "289": {
+        "pokemon": "Slaking",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "dbgdiegh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "290": {
+        "pokemon": "Nincada",
+        "type1": "Bug",
+        "type2": "Ground",
+        "filename": "dbfhcjdb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Run Away"
+    },
+    "291": {
+        "pokemon": "Ninjask",
+        "type1": "Bug",
+        "type2": "Flying",
+        "filename": "dbfahdjf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Infiltrator"
+    },
+    "292": {
+        "pokemon": "Shedinja",
+        "type1": "Bug",
+        "type2": "Ghost",
+        "filename": "dbjggbeh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "293": {
+        "pokemon": "Whismur",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "dbjaagbb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Rattled"
+    },
+    "294": {
+        "pokemon": "Loudred",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "dbidfahf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Scrappy"
+    },
+    "295": {
+        "pokemon": "Exploud",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "dbhgjfdj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Scrappy"
+    },
+    "296": {
+        "pokemon": "Makuhita",
+        "type1": "Fighting",
+        "type2": null,
+        "filename": "dcccicjb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sheer Force"
+    },
+    "297": {
+        "pokemon": "Hariyama",
+        "type1": "Fighting",
+        "type2": null,
+        "filename": "dcbgchff",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sheer Force"
+    },
+    "298": {
+        "pokemon": "Azurill",
+        "type1": "Normal",
+        "type2": "Fairy",
+        "filename": "dcajhcbj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sap Sipper"
+    },
+    "299": {
+        "pokemon": "Nosepass",
+        "type1": "Rock",
+        "type2": null,
+        "filename": "dcadbgid",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sand Force"
+    },
+    "300": {
+        "pokemon": "Skitty",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "dcejaedf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Wonder Skin"
+    },
+    "301": {
+        "pokemon": "Delcatty",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "dceceijj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Wonder Skin"
+    },
+    "302": {
+        "pokemon": "Sableye",
+        "type1": "Dark",
+        "type2": "Ghost",
+        "filename": "dcdfjdgd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Prankster"
+    },
+    "303": {
+        "pokemon": "Mawile",
+        "type1": "Steel",
+        "type2": "Fairy",
+        "filename": "dccjdich",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sheer Force"
+    },
+    "304": {
+        "pokemon": "Aron",
+        "type1": "Steel",
+        "type2": "Rock",
+        "filename": "dchfcfhj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Heavy Metal"
+    },
+    "305": {
+        "pokemon": "Lairon",
+        "type1": "Steel",
+        "type2": "Rock",
+        "filename": "dcgihaed",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Heavy Metal"
+    },
+    "306": {
+        "pokemon": "Aggron",
+        "type1": "Steel",
+        "type2": "Rock",
+        "filename": "dcgcbfah",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Heavy Metal"
+    },
+    "307": {
+        "pokemon": "Meditite",
+        "type1": "Fighting",
+        "type2": "Psychic",
+        "filename": "dcfffjhb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Telepathy"
+    },
+    "308": {
+        "pokemon": "Medicham",
+        "type1": "Fighting",
+        "type2": "Psychic",
+        "filename": "ddabehcd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Telepathy"
+    },
+    "309": {
+        "pokemon": "Electrike",
+        "type1": "Electric",
+        "type2": null,
+        "filename": "dcjejbih",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Minus"
+    },
+    "310": {
+        "pokemon": "Manectric",
+        "type1": "Electric",
+        "type2": null,
+        "filename": "dciidgfb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Minus"
+    },
+    "311": {
+        "pokemon": "Plusle",
+        "type1": "Electric",
+        "type2": null,
+        "filename": "dcibibbf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "312": {
+        "pokemon": "Minun",
+        "type1": "Electric",
+        "type2": null,
+        "filename": "ddchgigh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "313": {
+        "pokemon": "Volbeat",
+        "type1": "Bug",
+        "type2": null,
+        "filename": "ddcbbddb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Prankster"
+    },
+    "314": {
+        "pokemon": "Illumise",
+        "type1": "Bug",
+        "type2": null,
+        "filename": "ddbefhjf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Prankster"
+    },
+    "315": {
+        "pokemon": "Roselia",
+        "type1": "Grass",
+        "type2": "Poison",
+        "filename": "ddaiacfj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Leaf Guard"
+    },
+    "316": {
+        "pokemon": "Gulpin",
+        "type1": "Poison",
+        "type2": null,
+        "filename": "ddfdjabb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Gluttony"
+    },
+    "317": {
+        "pokemon": "Swalot",
+        "type1": "Poison",
+        "type2": null,
+        "filename": "ddehdehf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Gluttony"
+    },
+    "318": {
+        "pokemon": "Carvanha",
+        "type1": "Water",
+        "type2": "Dark",
+        "filename": "ddeahjdj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Speed Boost"
+    },
+    "319": {
+        "pokemon": "Sharpedo",
+        "type1": "Water",
+        "type2": "Dark",
+        "filename": "dddecead",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Speed Boost"
+    },
+    "320": {
+        "pokemon": "Wailmer",
+        "type1": "Water",
+        "type2": null,
+        "filename": "cfebcfeh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Pressure"
+    },
+    "321": {
+        "pokemon": "Wailord",
+        "type1": "Water",
+        "type2": null,
+        "filename": "cfdehabb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Pressure"
+    },
+    "322": {
+        "pokemon": "Numel",
+        "type1": "Fire",
+        "type2": "Ground",
+        "filename": "cfcibehf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Own Tempo"
+    },
+    "323": {
+        "pokemon": "Camerupt",
+        "type1": "Fire",
+        "type2": "Ground",
+        "filename": "cfcbfjdj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Anger Point"
+    },
+    "324": {
+        "pokemon": "Torkoal",
+        "type1": "Fire",
+        "type2": null,
+        "filename": "cfghegjb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Shell Armor"
+    },
+    "325": {
+        "pokemon": "Spoink",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "cfgajbff",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Gluttony"
+    },
+    "326": {
+        "pokemon": "Grumpig",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "cffedgbj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Gluttony"
+    },
+    "327": {
+        "pokemon": "Spinda",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "cfehiaid",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Contrary"
+    },
+    "328": {
+        "pokemon": "Trapinch",
+        "type1": "Ground",
+        "type2": null,
+        "filename": "cfjdgidf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sheer Force"
+    },
+    "329": {
+        "pokemon": "Vibrava",
+        "type1": "Ground",
+        "type2": "Dragon",
+        "filename": "cfihbcjj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "330": {
+        "pokemon": "Flygon",
+        "type1": "Ground",
+        "type2": "Dragon",
+        "filename": "cfiafhgd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "331": {
+        "pokemon": "Cacnea",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "cfheacch",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Water Absorb"
+    },
+    "332": {
+        "pokemon": "Cacturne",
+        "type1": "Grass",
+        "type2": "Dark",
+        "filename": "cgbjijhj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Water Absorb"
+    },
+    "333": {
+        "pokemon": "Swablu",
+        "type1": "Normal",
+        "type2": "Flying",
+        "filename": "cgbddeed",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Cloud Nine"
+    },
+    "334": {
+        "pokemon": "Altaria",
+        "type1": "Dragon",
+        "type2": "Flying",
+        "filename": "cgaghjah",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Cloud Nine"
+    },
+    "335": {
+        "pokemon": "Zangoose",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "cgaacdhb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Toxic Boost"
+    },
+    "336": {
+        "pokemon": "Seviper",
+        "type1": "Poison",
+        "type2": null,
+        "filename": "cgegbbcd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Infiltrator"
+    },
+    "337": {
+        "pokemon": "Lunatone",
+        "type1": "Rock",
+        "type2": "Psychic",
+        "filename": "cgdjffih",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "338": {
+        "pokemon": "Solrock",
+        "type1": "Rock",
+        "type2": "Psychic",
+        "filename": "cgddaafb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "339": {
+        "pokemon": "Barboach",
+        "type1": "Water",
+        "type2": "Ground",
+        "filename": "cgcgefbf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Hydration"
+    },
+    "340": {
+        "pokemon": "Whiscash",
+        "type1": "Water",
+        "type2": "Ground",
+        "filename": "cghcdcgh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Hydration"
+    },
+    "341": {
+        "pokemon": "Corphish",
+        "type1": "Water",
+        "type2": null,
+        "filename": "cggfhhdb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Adaptability"
+    },
+    "342": {
+        "pokemon": "Crawdaunt",
+        "type1": "Water",
+        "type2": "Dark",
+        "filename": "cgfjcbjf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Adaptability"
+    },
+    "343": {
+        "pokemon": "Baltoy",
+        "type1": "Ground",
+        "type2": "Psychic",
+        "filename": "cgfcggfj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "344": {
+        "pokemon": "Claydol",
+        "type1": "Ground",
+        "type2": "Psychic",
+        "filename": "cgjifebb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "345": {
+        "pokemon": "Lileep",
+        "type1": "Rock",
+        "type2": "Grass",
+        "filename": "cgjbjihf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Storm Drain"
+    },
+    "346": {
+        "pokemon": "Cradily",
+        "type1": "Rock",
+        "type2": "Grass",
+        "filename": "cgifeddj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Storm Drain"
+    },
+    "347": {
+        "pokemon": "Anorith",
+        "type1": "Rock",
+        "type2": "Bug",
+        "filename": "cghiiiad",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Swift Swim"
+    },
+    "348": {
+        "pokemon": "Armaldo",
+        "type1": "Rock",
+        "type2": "Bug",
+        "filename": "chcehfff",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Swift Swim"
+    },
+    "349": {
+        "pokemon": "Feebas",
+        "type1": "Water",
+        "type2": null,
+        "filename": "chbicabj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Adaptability"
+    },
+    "350": {
+        "pokemon": "Milotic",
+        "type1": "Water",
+        "type2": null,
+        "filename": "chbbgeid",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Cute Charm"
+    },
+    "351-normal": {
+        "pokemon": "Castform",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "chafajeh",
+        "form": "normal",
+        "form_no": "0",
+        "hidden_ability": ""
+    },
+    "351-sunny": {
+        "pokemon": "Castform",
+        "type1": "Fire",
+        "type2": null,
+        "filename": "chafagjb",
+        "form": "sunny",
+        "form_no": "1",
+        "hidden_ability": ""
+    },
+    "351-rainy": {
+        "pokemon": "Castform",
+        "type1": "Water",
+        "type2": null,
+        "filename": "chafaedf",
+        "form": "rainy",
+        "form_no": "2",
+        "hidden_ability": ""
+    },
+    "351-snow": {
+        "pokemon": "Castform",
+        "type1": "Ice",
+        "type2": null,
+        "filename": "chafabhj",
+        "form": "snow",
+        "form_no": "3",
+        "hidden_ability": "cloud"
+    },
+    "352": {
+        "pokemon": "Kecleon",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "chfajgjj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "353": {
+        "pokemon": "Shuppet",
+        "type1": "Ghost",
+        "type2": null,
+        "filename": "cheeebgd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Cursed Body"
+    },
+    "354": {
+        "pokemon": "Banette",
+        "type1": "Ghost",
+        "type2": null,
+        "filename": "chdhigch",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Cursed Body"
+    },
+    "355": {
+        "pokemon": "Duskull",
+        "type1": "Ghost",
+        "type2": null,
+        "filename": "chdbdajb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "356": {
+        "pokemon": "Dusclops",
+        "type1": "Ghost",
+        "type2": null,
+        "filename": "chhhbied",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "357": {
+        "pokemon": "Tropius",
+        "type1": "Grass",
+        "type2": "Flying",
+        "filename": "chhagdah",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Harvest"
+    },
+    "358": {
+        "pokemon": "Chimecho",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "chgeahhb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "359": {
+        "pokemon": "Absol",
+        "type1": "Dark",
+        "type2": null,
+        "filename": "chfhfcdf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Justified"
+    },
+    "360": {
+        "pokemon": "Wynaut",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "ciaddjih",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Telepathy"
+    },
+    "361": {
+        "pokemon": "Snorunt",
+        "type1": "Ice",
+        "type2": null,
+        "filename": "chjgiefb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Moody"
+    },
+    "362": {
+        "pokemon": "Glalie",
+        "type1": "Ice",
+        "type2": null,
+        "filename": "chjacjbf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Moody"
+    },
+    "363": {
+        "pokemon": "Spheal",
+        "type1": "Ice",
+        "type2": "Water",
+        "filename": "chidhdhj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Oblivious"
+    },
+    "364": {
+        "pokemon": "Sealeo",
+        "type1": "Ice",
+        "type2": "Water",
+        "filename": "cicjgbdb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Oblivious"
+    },
+    "365": {
+        "pokemon": "Walrein",
+        "type1": "Ice",
+        "type2": "Water",
+        "filename": "cicdafjf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Oblivious"
+    },
+    "366": {
+        "pokemon": "Clamperl",
+        "type1": "Water",
+        "type2": null,
+        "filename": "cibgfafj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Rattled"
+    },
+    "367": {
+        "pokemon": "Huntail",
+        "type1": "Water",
+        "type2": null,
+        "filename": "ciajjfcd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Water Veil"
+    },
+    "368": {
+        "pokemon": "Gorebyss",
+        "type1": "Water",
+        "type2": null,
+        "filename": "ciffichf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Hydration"
+    },
+    "369": {
+        "pokemon": "Relicanth",
+        "type1": "Water",
+        "type2": "Rock",
+        "filename": "ciejchdj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sturdy"
+    },
+    "370": {
+        "pokemon": "Luvdisc",
+        "type1": "Water",
+        "type2": null,
+        "filename": "ciechcad",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Hydration"
+    },
+    "371": {
+        "pokemon": "Bagon",
+        "type1": "Dragon",
+        "type2": null,
+        "filename": "cidgbggh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sheer Force"
+    },
+    "372": {
+        "pokemon": "Shelgon",
+        "type1": "Dragon",
+        "type2": null,
+        "filename": "ciicaebj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Overcoat"
+    },
+    "373": {
+        "pokemon": "Salamence",
+        "type1": "Dragon",
+        "type2": "Flying",
+        "filename": "cihfeiid",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Moxie"
+    },
+    "374": {
+        "pokemon": "Beldum",
+        "type1": "Steel",
+        "type2": "Psychic",
+        "filename": "cigijdeh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Light Metal"
+    },
+    "375": {
+        "pokemon": "Metang",
+        "type1": "Steel",
+        "type2": "Psychic",
+        "filename": "cigcdibb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Light Metal"
+    },
+    "376": {
+        "pokemon": "Metagross",
+        "type1": "Steel",
+        "type2": "Psychic",
+        "filename": "cjaicfgd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Light Metal "
+    },
+    "377": {
+        "pokemon": "Regirock",
+        "type1": "Rock",
+        "type2": null,
+        "filename": "cjabhach",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "378": {
+        "pokemon": "Regice",
+        "type1": "Ice",
+        "type2": null,
+        "filename": "cijfbejb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "379": {
+        "pokemon": "Registeel",
+        "type1": "Steel",
+        "type2": null,
+        "filename": "ciiifjff",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "380": {
+        "pokemon": "Latias",
+        "type1": "Dragon",
+        "type2": "Psychic",
+        "filename": "cjdeehah",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "381": {
+        "pokemon": "Latios",
+        "type1": "Dragon",
+        "type2": "Psychic",
+        "filename": "cjchjbhb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "382": {
+        "pokemon": "Kyogre",
+        "type1": "Water",
+        "type2": null,
+        "filename": "cjcbdgdf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "383": {
+        "pokemon": "Groudon",
+        "type1": "Ground",
+        "type2": null,
+        "filename": "cjbeiajj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "384": {
+        "pokemon": "Rayquaza",
+        "type1": "Dragon",
+        "type2": "Flying",
+        "filename": "cbcbiced",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "385": {
+        "pokemon": "Jirachi",
+        "type1": "Steel",
+        "type2": "Psychic",
+        "filename": "cbbfchah",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "386-normal": {
+        "pokemon": "Deoxys",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "cbaihbhb",
+        "form": "normal",
+        "form_no": "0",
+        "hidden_ability": ""
+    },
+    "386-attack": {
+        "pokemon": "Deoxys",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "cbaigjbf",
+        "form": "attack",
+        "form_no": "1",
+        "hidden_ability": ""
+    },
+    "386-defense": {
+        "pokemon": "Deoxys",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "cbaiggfj",
+        "form": "defense",
+        "form_no": "2",
+        "hidden_ability": ""
+    },
+    "386-speed": {
+        "pokemon": "Deoxys",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "cbaigead",
+        "form": "speed",
+        "form_no": "3",
+        "hidden_ability": ""
+    },
+    "387": {
+        "pokemon": "Turtwig",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "cbacbgdf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Shell Armor"
+    },
+    "388": {
+        "pokemon": "Grotle",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "cbeiadih",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Shell Armor"
+    },
+    "389": {
+        "pokemon": "Torterra",
+        "type1": "Grass",
+        "type2": "Ground",
+        "filename": "cbebeifb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Shell Armor"
+    },
+    "390": {
+        "pokemon": "Chimchar",
+        "type1": "Fire",
+        "type2": null,
+        "filename": "cbdejdbf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Iron Fist"
+    },
+    "391": {
+        "pokemon": "Monferno",
+        "type1": "Fire",
+        "type2": "Fighting",
+        "filename": "cbcidhhj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Iron Fist"
+    },
+    "392": {
+        "pokemon": "Infernape",
+        "type1": "Fire",
+        "type2": "Fighting",
+        "filename": "cbhecfdb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Iron Fist"
+    },
+    "393": {
+        "pokemon": "Piplup",
+        "type1": "Water",
+        "type2": null,
+        "filename": "cbghgjjf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Defiant"
+    },
+    "394": {
+        "pokemon": "Prinplup",
+        "type1": "Water",
+        "type2": null,
+        "filename": "cbgbbefj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Defiant"
+    },
+    "395": {
+        "pokemon": "Empoleon",
+        "type1": "Water",
+        "type2": "Steel",
+        "filename": "cbfefjcd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Defiant"
+    },
+    "396": {
+        "pokemon": "Starly",
+        "type1": "Normal",
+        "type2": "Flying",
+        "filename": "ccaaeghf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "397": {
+        "pokemon": "Staravia",
+        "type1": "Normal",
+        "type2": "Flying",
+        "filename": "cbjdjbdj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Reckless"
+    },
+    "398": {
+        "pokemon": "Staraptor",
+        "type1": "Normal",
+        "type2": "Flying",
+        "filename": "cbihdgad",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Reckless"
+    },
+    "399": {
+        "pokemon": "Bidoof",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "cbiaiagh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Moody"
+    },
+    "400": {
+        "pokemon": "Bibarel",
+        "type1": "Normal",
+        "type2": "Water",
+        "filename": "cccggibj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Moody"
+    },
+    "401": {
+        "pokemon": "Kricketot",
+        "type1": "Bug",
+        "type2": null,
+        "filename": "cccabcid",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Run Away"
+    },
+    "402": {
+        "pokemon": "Kricketune",
+        "type1": "Bug",
+        "type2": null,
+        "filename": "ccbdfheh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Technician"
+    },
+    "403": {
+        "pokemon": "Shinx",
+        "type1": "Electric",
+        "type2": null,
+        "filename": "ccahacbb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Guts"
+    },
+    "404": {
+        "pokemon": "Luxio",
+        "type1": "Electric",
+        "type2": null,
+        "filename": "ccfcijgd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Guts"
+    },
+    "405": {
+        "pokemon": "Luxray",
+        "type1": "Electric",
+        "type2": null,
+        "filename": "ccegdech",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Guts"
+    },
+    "406": {
+        "pokemon": "Budew",
+        "type1": "Grass",
+        "type2": "Poison",
+        "filename": "ccdjhijb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Leaf Guard"
+    },
+    "407": {
+        "pokemon": "Roserade",
+        "type1": "Grass",
+        "type2": "Poison",
+        "filename": "ccddcdff",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Technician"
+    },
+    "408": {
+        "pokemon": "Cranidos",
+        "type1": "Rock",
+        "type2": null,
+        "filename": "cchjbbah",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sheer Force"
+    },
+    "409": {
+        "pokemon": "Rampardos",
+        "type1": "Rock",
+        "type2": null,
+        "filename": "cchcffhb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sheer Force"
+    },
+    "410": {
+        "pokemon": "Shieldon",
+        "type1": "Rock",
+        "type2": "Steel",
+        "filename": "ccggaadf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Soundproof"
+    },
+    "411": {
+        "pokemon": "Bastiodon",
+        "type1": "Rock",
+        "type2": "Steel",
+        "filename": "ccfjeejj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Soundproof"
+    },
+    "412-plant": {
+        "pokemon": "Burmy",
+        "type1": "Bug",
+        "type2": null,
+        "filename": "cdafdcfb",
+        "form": "plant",
+        "form_no": "0",
+        "hidden_ability": "Overcoat"
+    },
+    "412-sandy": {
+        "pokemon": "Burmy",
+        "type1": "Bug",
+        "type2": null,
+        "filename": "cdafcjjf",
+        "form": "sandy",
+        "form_no": "1",
+        "hidden_ability": ""
+    },
+    "412-trash": {
+        "pokemon": "Burmy",
+        "type1": "Bug",
+        "type2": null,
+        "filename": "cdafchdj",
+        "form": "trash",
+        "form_no": "2",
+        "hidden_ability": ""
+    },
+    "413-plant": {
+        "pokemon": "Wormadam",
+        "type1": "Bug",
+        "type2": "Grass",
+        "filename": "ccjihhbf",
+        "form": "plant",
+        "form_no": "0",
+        "hidden_ability": "Overcoat"
+    },
+    "413-sandy": {
+        "pokemon": "Wormadam",
+        "type1": "Bug",
+        "type2": "Ground",
+        "filename": "ccjihefj",
+        "form": "sandy",
+        "form_no": "1",
+        "hidden_ability": ""
+    },
+    "413-trash": {
+        "pokemon": "Wormadam",
+        "type1": "Bug",
+        "type2": "Steel",
+        "filename": "ccjihcad",
+        "form": "trash",
+        "form_no": "2",
+        "hidden_ability": ""
+    },
+    "414": {
+        "pokemon": "Mothim",
+        "type1": "Bug",
+        "type2": "Flying",
+        "filename": "ccjccbhj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Tinted Lens"
+    },
+    "415": {
+        "pokemon": "Combee",
+        "type1": "Bug",
+        "type2": "Flying",
+        "filename": "ccifgged",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Hustle"
+    },
+    "416": {
+        "pokemon": "Vespiquen",
+        "type1": "Bug",
+        "type2": "Flying",
+        "filename": "cddbfdjf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Unnerve"
+    },
+    "417": {
+        "pokemon": "Pachirisu",
+        "type1": "Electric",
+        "type2": null,
+        "filename": "cdcejifj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Volt Absorb"
+    },
+    "418": {
+        "pokemon": "Buizel",
+        "type1": "Water",
+        "type2": null,
+        "filename": "cdbiedcd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Water Veil"
+    },
+    "419": {
+        "pokemon": "Floatzel",
+        "type1": "Water",
+        "type2": null,
+        "filename": "cdbbihih",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Water Veil"
+    },
+    "420": {
+        "pokemon": "Cherubi",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "cdfhhfdj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "421-sunshine": {
+        "pokemon": "Cherrim",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "cdfbcaad",
+        "form": "sunshine",
+        "form_no": "0",
+        "hidden_ability": ""
+    },
+    "421-overcast": {
+        "pokemon": "Cherrim",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "cdfbbheh",
+        "form": "overcast",
+        "form_no": "1",
+        "hidden_ability": ""
+    },
+    "422-west": {
+        "pokemon": "Shellos",
+        "type1": "Water",
+        "type2": null,
+        "filename": "cdeegegh",
+        "form": "west",
+        "form_no": "0",
+        "hidden_ability": "Sand Force"
+    },
+    "422-east": {
+        "pokemon": "Shellos",
+        "type1": "Water",
+        "type2": null,
+        "filename": "cdeegcbb",
+        "form": "east",
+        "form_no": "1",
+        "hidden_ability": "Sand Force"
+    },
+    "423-west": {
+        "pokemon": "Gastrodon",
+        "type1": "Water",
+        "type2": "Ground",
+        "filename": "cddiajdb",
+        "form": "west",
+        "form_no": "0",
+        "hidden_ability": "Sand Force"
+    },
+    "423-east": {
+        "pokemon": "Gastrodon",
+        "type1": "Water",
+        "type2": "Ground",
+        "filename": "cddiaghf",
+        "form": "east",
+        "form_no": "1",
+        "hidden_ability": "Sand Force"
+    },
+    "424": {
+        "pokemon": "Ambipom",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "cdidjgid",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Skill Link"
+    },
+    "425": {
+        "pokemon": "Drifloon",
+        "type1": "Ghost",
+        "type2": "Flying",
+        "filename": "cdhhebeh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Flare Boost"
+    },
+    "426": {
+        "pokemon": "Drifblim",
+        "type1": "Ghost",
+        "type2": "Flying",
+        "filename": "cdhaigbb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Flare Boost"
+    },
+    "427": {
+        "pokemon": "Buneary",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "cdgedahf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Limber"
+    },
+    "428": {
+        "pokemon": "Lopunny",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "cebabich",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Limber"
+    },
+    "429": {
+        "pokemon": "Mismagius",
+        "type1": "Ghost",
+        "type2": null,
+        "filename": "ceadgcjb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "430": {
+        "pokemon": "Honchkrow",
+        "type1": "Dark",
+        "type2": "Flying",
+        "filename": "cdjhahff",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Moxie"
+    },
+    "431": {
+        "pokemon": "Glameow",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "cdjafcbj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Keen Eye"
+    },
+    "432": {
+        "pokemon": "Purugly",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "cedgdjhb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Defiant"
+    },
+    "433": {
+        "pokemon": "Chingling",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "cecjiedf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "434": {
+        "pokemon": "Stunky",
+        "type1": "Poison",
+        "type2": "Dark",
+        "filename": "cecdcijj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Keen Eye"
+    },
+    "435": {
+        "pokemon": "Skuntank",
+        "type1": "Poison",
+        "type2": "Dark",
+        "filename": "cebghdgd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Keen Eye"
+    },
+    "436": {
+        "pokemon": "Bronzor",
+        "type1": "Steel",
+        "type2": "Psychic",
+        "filename": "cegcgbbf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Heavy Metal"
+    },
+    "437": {
+        "pokemon": "Bronzong",
+        "type1": "Steel",
+        "type2": "Psychic",
+        "filename": "cefgafhj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Heavy Metal"
+    },
+    "438": {
+        "pokemon": "Bonsly",
+        "type1": "Rock",
+        "type2": null,
+        "filename": "ceejfaed",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Rattled"
+    },
+    "439": {
+        "pokemon": "Mime Jr.",
+        "type1": "Psychic",
+        "type2": "Fairy",
+        "filename": "ceecjfah",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Technician"
+    },
+    "440": {
+        "pokemon": "Happiny",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "ceiiicfj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Friend Guard"
+    },
+    "441": {
+        "pokemon": "Chatot",
+        "type1": "Normal",
+        "type2": "Flying",
+        "filename": "ceicchcd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Big Pecks"
+    },
+    "442": {
+        "pokemon": "Spiritomb",
+        "type1": "Ghost",
+        "type2": "Dark",
+        "filename": "cehfhbih",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Infiltrator"
+    },
+    "443": {
+        "pokemon": "Gible",
+        "type1": "Dragon",
+        "type2": "Ground",
+        "filename": "cegjbgfb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Rough Skin"
+    },
+    "444": {
+        "pokemon": "Gabite",
+        "type1": "Dragon",
+        "type2": "Ground",
+        "filename": "cfbfaead",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Rough Skin"
+    },
+    "445": {
+        "pokemon": "Garchomp",
+        "type1": "Dragon",
+        "type2": "Ground",
+        "filename": "cfaieigh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Rough Skin"
+    },
+    "446": {
+        "pokemon": "Munchlax",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "cfabjddb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Gluttony"
+    },
+    "447": {
+        "pokemon": "Riolu",
+        "type1": "Fighting",
+        "type2": null,
+        "filename": "cejfdhjf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Prankster"
+    },
+    "448": {
+        "pokemon": "Lucario",
+        "type1": "Fighting",
+        "type2": "Steel",
+        "filename": "bhacdjdj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Justified"
+    },
+    "449": {
+        "pokemon": "Hippopotas",
+        "type1": "Ground",
+        "type2": null,
+        "filename": "bgjfiead",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sand Force"
+    },
+    "450": {
+        "pokemon": "Hippowdon",
+        "type1": "Ground",
+        "type2": null,
+        "filename": "bgijcigh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sand Force"
+    },
+    "451": {
+        "pokemon": "Skorupi",
+        "type1": "Poison",
+        "type2": "Bug",
+        "filename": "bgichddb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Keen Eye"
+    },
+    "452": {
+        "pokemon": "Drapion",
+        "type1": "Poison",
+        "type2": "Dark",
+        "filename": "bhcigaid",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Keen Eye"
+    },
+    "453": {
+        "pokemon": "Croagunk",
+        "type1": "Poison",
+        "type2": "Fighting",
+        "filename": "bhccafeh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Poison Touch"
+    },
+    "454": {
+        "pokemon": "Toxicroak",
+        "type1": "Poison",
+        "type2": "Fighting",
+        "filename": "bhbffabb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Poison Touch"
+    },
+    "455": {
+        "pokemon": "Carnivine",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "bhaijehf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "456": {
+        "pokemon": "Finneon",
+        "type1": "Water",
+        "type2": null,
+        "filename": "bhfeicch",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Water Veil"
+    },
+    "457": {
+        "pokemon": "Lumineon",
+        "type1": "Water",
+        "type2": null,
+        "filename": "bheicgjb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Water Veil"
+    },
+    "458": {
+        "pokemon": "Mantyke",
+        "type1": "Water",
+        "type2": "Flying",
+        "filename": "bhebhbff",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Water Veil"
+    },
+    "459": {
+        "pokemon": "Snover",
+        "type1": "Grass",
+        "type2": "Ice",
+        "filename": "bhdfbgbj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Soundproof"
+    },
+    "460": {
+        "pokemon": "Abomasnow",
+        "type1": "Grass",
+        "type2": "Ice",
+        "filename": "bhibadhb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Soundproof"
+    },
+    "461": {
+        "pokemon": "Weavile",
+        "type1": "Dark",
+        "type2": "Ice",
+        "filename": "bhheeidf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Pickpocket"
+    },
+    "462": {
+        "pokemon": "Magnezone",
+        "type1": "Electric",
+        "type2": "Steel",
+        "filename": "bhghjcjj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Analytic"
+    },
+    "463": {
+        "pokemon": "Lickilicky",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "bhgbdhgd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Cloud Nine"
+    },
+    "464": {
+        "pokemon": "Rhyperior",
+        "type1": "Ground",
+        "type2": "Rock",
+        "filename": "biahcfbf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Reckless"
+    },
+    "465": {
+        "pokemon": "Tangrowth",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "biaagjhj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Regenerator"
+    },
+    "466": {
+        "pokemon": "Electivire",
+        "type1": "Electric",
+        "type2": null,
+        "filename": "bhjebeed",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Vital Spirit"
+    },
+    "467": {
+        "pokemon": "Magmortar",
+        "type1": "Fire",
+        "type2": null,
+        "filename": "bhihfjah",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Vital Spirit"
+    },
+    "468": {
+        "pokemon": "Togekiss",
+        "type1": "Fairy",
+        "type2": "Flying",
+        "filename": "biddegfj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Super Luck"
+    },
+    "469": {
+        "pokemon": "Yanmega",
+        "type1": "Bug",
+        "type2": "Flying",
+        "filename": "bicgjbcd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Frisk"
+    },
+    "470": {
+        "pokemon": "Leafeon",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "bicadfih",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Chlorophyll"
+    },
+    "471": {
+        "pokemon": "Glaceon",
+        "type1": "Ice",
+        "type2": null,
+        "filename": "bibdiafb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Ice Body"
+    },
+    "472": {
+        "pokemon": "Gliscor",
+        "type1": "Ground",
+        "type2": "Flying",
+        "filename": "bifjgiad",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Poison Heal"
+    },
+    "473": {
+        "pokemon": "Mamoswine",
+        "type1": "Ice",
+        "type2": "Ground",
+        "filename": "bifdbcgh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Thick Fat"
+    },
+    "474": {
+        "pokemon": "Porygon-Z",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "biegfhdb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Analytic "
+    },
+    "475": {
+        "pokemon": "Gallade",
+        "type1": "Psychic",
+        "type2": "Fighting",
+        "filename": "bieaabjf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Justified"
+    },
+    "476": {
+        "pokemon": "Probopass",
+        "type1": "Rock",
+        "type2": "Steel",
+        "filename": "biifijeh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sand Force"
+    },
+    "477": {
+        "pokemon": "Dusknoir",
+        "type1": "Ghost",
+        "type2": null,
+        "filename": "bihjdebb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "478": {
+        "pokemon": "Froslass",
+        "type1": "Ice",
+        "type2": "Ghost",
+        "filename": "bihchihf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Cursed Body"
+    },
+    "479": {
+        "pokemon": "Rotom",
+        "type1": "Electric",
+        "type2": "Ghost",
+        "filename": "biggcddj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "479-heat": {
+        "pokemon": "Rotom",
+        "type1": "Electric",
+        "type2": "Fire",
+        "filename": "biggcaid",
+        "form": "heat",
+        "form_no": "0",
+        "hidden_ability": ""
+    },
+    "479-wash": {
+        "pokemon": "Rotom",
+        "type1": "Electric",
+        "type2": "Water",
+        "filename": "biggbich",
+        "form": "wash",
+        "form_no": "1",
+        "hidden_ability": ""
+    },
+    "479-frost": {
+        "pokemon": "Rotom",
+        "type1": "Electric",
+        "type2": "Ice",
+        "filename": "biggbfhb",
+        "form": "frost",
+        "form_no": "2",
+        "hidden_ability": ""
+    },
+    "479-fan": {
+        "pokemon": "Rotom",
+        "type1": "Electric",
+        "type2": "Flying",
+        "filename": "biggddgd",
+        "form": "fan",
+        "form_no": "3",
+        "hidden_ability": ""
+    },
+    "479-mow": {
+        "pokemon": "Rotom",
+        "type1": "Electric",
+        "type2": "Grass",
+        "filename": "biggdbah",
+        "form": "mow",
+        "form_no": "4",
+        "hidden_ability": ""
+    },
+    "480": {
+        "pokemon": "Uxie",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "bjbcbajb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "481": {
+        "pokemon": "Mesprit",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "bjafffff",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "482": {
+        "pokemon": "Azelf",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "bijjaabj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "483": {
+        "pokemon": "Dialga",
+        "type1": "Steel",
+        "type2": "Dragon",
+        "filename": "bijceeid",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Telepathy"
+    },
+    "484": {
+        "pokemon": "Palkia",
+        "type1": "Water",
+        "type2": "Dragon",
+        "filename": "bjdidcdf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Telepathy"
+    },
+    "485": {
+        "pokemon": "Heatran",
+        "type1": "Fire",
+        "type2": "Steel",
+        "filename": "bjdbhgjj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "486": {
+        "pokemon": "Regigigas",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "bjcfcbgd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "487-altered": {
+        "pokemon": "Giratina",
+        "type1": "Ghost",
+        "type2": "Dragon",
+        "filename": "bjbiggch",
+        "form": "altered",
+        "form_no": "0",
+        "hidden_ability": "Telepathy "
+    },
+    "487-origin": {
+        "pokemon": "Giratina",
+        "type1": "Ghost",
+        "type2": "Dragon",
+        "filename": "bjbigdhb",
+        "form": "origin",
+        "form_no": "1",
+        "hidden_ability": "Telepathy "
+    },
+    "488": {
+        "pokemon": "Cresselia",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "bjgefdhj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "489": {
+        "pokemon": "Phione",
+        "type1": "Water",
+        "type2": null,
+        "filename": "bjfhjied",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "490": {
+        "pokemon": "Manaphy",
+        "type1": "Water",
+        "type2": null,
+        "filename": "bjfbedah",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "491": {
+        "pokemon": "Darkrai",
+        "type1": "Dark",
+        "type2": null,
+        "filename": "bjeeihhb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "492-land": {
+        "pokemon": "Shaymin",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "bjjahfcd",
+        "form": "land",
+        "form_no": "0",
+        "hidden_ability": ""
+    },
+    "492-sky": {
+        "pokemon": "Shaymin",
+        "type1": "Grass",
+        "type2": "Flying",
+        "filename": "bjjahcgh",
+        "form": "sky",
+        "form_no": "1",
+        "hidden_ability": ""
+    },
+    "493-normal": {
+        "pokemon": "Arceus",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "bjiebjih",
+        "form": "normal",
+        "form_no": "0",
+        "hidden_ability": ""
+    },
+    "493-fighting": {
+        "pokemon": "Arceus",
+        "type1": "Fighting",
+        "type2": null,
+        "filename": "bjiebhdb",
+        "form": "fighting",
+        "form_no": "1",
+        "hidden_ability": ""
+    },
+    "493-flying": {
+        "pokemon": "Arceus",
+        "type1": "Flying",
+        "type2": null,
+        "filename": "bjiebehf",
+        "form": "flying",
+        "form_no": "2",
+        "hidden_ability": ""
+    },
+    "493-poison": {
+        "pokemon": "Arceus",
+        "type1": "Poison",
+        "type2": null,
+        "filename": "bjiebcbj",
+        "form": "poison",
+        "form_no": "3",
+        "hidden_ability": ""
+    },
+    "493-ground": {
+        "pokemon": "Arceus",
+        "type1": "Ground",
+        "type2": null,
+        "filename": "bjiedabb",
+        "form": "ground",
+        "form_no": "4",
+        "hidden_ability": ""
+    },
+    "493-rock": {
+        "pokemon": "Arceus",
+        "type1": "Rock",
+        "type2": null,
+        "filename": "bjiechff",
+        "form": "rock",
+        "form_no": "5",
+        "hidden_ability": ""
+    },
+    "493-bug": {
+        "pokemon": "Arceus",
+        "type1": "Bug",
+        "type2": null,
+        "filename": "bjiecejj",
+        "form": "bug",
+        "form_no": "6",
+        "hidden_ability": ""
+    },
+    "493-ghost": {
+        "pokemon": "Arceus",
+        "type1": "Ghost",
+        "type2": null,
+        "filename": "bjiecced",
+        "form": "ghost",
+        "form_no": "7",
+        "hidden_ability": ""
+    },
+    "493-steel": {
+        "pokemon": "Arceus",
+        "type1": "Steel",
+        "type2": null,
+        "filename": "bjieeadf",
+        "form": "steel",
+        "form_no": "8",
+        "hidden_ability": ""
+    },
+    "493-fire": {
+        "pokemon": "Arceus",
+        "type1": "Fire",
+        "type2": null,
+        "filename": "bjiedhhj",
+        "form": "fire",
+        "form_no": "9",
+        "hidden_ability": ""
+    },
+    "493-water": {
+        "pokemon": "Arceus",
+        "type1": "Water",
+        "type2": null,
+        "filename": "bjiedfcd",
+        "form": "water",
+        "form_no": "10",
+        "hidden_ability": ""
+    },
+    "493-grass": {
+        "pokemon": "Arceus",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "bjiedcgh",
+        "form": "grass",
+        "form_no": "11",
+        "hidden_ability": ""
+    },
+    "493-electric": {
+        "pokemon": "Arceus",
+        "type1": "Electric",
+        "type2": null,
+        "filename": "bjiefafj",
+        "form": "electric",
+        "form_no": "12",
+        "hidden_ability": ""
+    },
+    "493-psychic": {
+        "pokemon": "Arceus",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "bjieeiad",
+        "form": "psychic",
+        "form_no": "13",
+        "hidden_ability": ""
+    },
+    "493-ice": {
+        "pokemon": "Arceus",
+        "type1": "Ice",
+        "type2": null,
+        "filename": "bjieefeh",
+        "form": "ice",
+        "form_no": "14",
+        "hidden_ability": ""
+    },
+    "493-dragon": {
+        "pokemon": "Arceus",
+        "type1": "Dragon",
+        "type2": null,
+        "filename": "bjieecjb",
+        "form": "dragon",
+        "form_no": "15",
+        "hidden_ability": ""
+    },
+    "493-dark": {
+        "pokemon": "Arceus",
+        "type1": "Dark",
+        "type2": null,
+        "filename": "bjiegaid",
+        "form": "dark",
+        "form_no": "16",
+        "hidden_ability": ""
+    },
+    "494": {
+        "pokemon": "Victini",
+        "type1": "Psychic",
+        "type2": "Fire",
+        "filename": "bjhhgefb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "495": {
+        "pokemon": "Snivy",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "bjhbajbf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "496": {
+        "pokemon": "Servine",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "cabgjggh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "497": {
+        "pokemon": "Serperior",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "cabaebdb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "498": {
+        "pokemon": "Tepig",
+        "type1": "Fire",
+        "type2": null,
+        "filename": "caadifjf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "499": {
+        "pokemon": "Pignite",
+        "type1": "Fire",
+        "type2": "Fighting",
+        "filename": "bjjhdafj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "500": {
+        "pokemon": "Emboar",
+        "type1": "Fire",
+        "type2": "Fighting",
+        "filename": "caedbibb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "501": {
+        "pokemon": "Oshawott",
+        "type1": "Water",
+        "type2": null,
+        "filename": "cadggchf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "502": {
+        "pokemon": "Dewott",
+        "type1": "Water",
+        "type2": null,
+        "filename": "cadaahdj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "503": {
+        "pokemon": "Samurott",
+        "type1": "Water",
+        "type2": null,
+        "filename": "cacdfcad",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "504": {
+        "pokemon": "Patrat",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "cagjdjff",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Analytic"
+    },
+    "505": {
+        "pokemon": "Watchog",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "cagciebj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Analytic"
+    },
+    "506": {
+        "pokemon": "Lillipup",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "cafgciid",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Run Away"
+    },
+    "507": {
+        "pokemon": "Herdier",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "caejhdeh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Scrappy"
+    },
+    "508": {
+        "pokemon": "Stoutland",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "cajfgajj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Scrappy"
+    },
+    "509": {
+        "pokemon": "Purrloin",
+        "type1": "Dark",
+        "type2": null,
+        "filename": "caijafgd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Prankster"
+    },
+    "510": {
+        "pokemon": "Liepard",
+        "type1": "Dark",
+        "type2": null,
+        "filename": "caicfach",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Prankster"
+    },
+    "511": {
+        "pokemon": "Pansage",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "cahfjejb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Overgrow"
+    },
+    "512": {
+        "pokemon": "Simisage",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "egdieagh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Overgrow"
+    },
+    "513": {
+        "pokemon": "Pansear",
+        "type1": "Fire",
+        "type2": null,
+        "filename": "egdbifdb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Blaze"
+    },
+    "514": {
+        "pokemon": "Simisear",
+        "type1": "Fire",
+        "type2": null,
+        "filename": "egcfcjjf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Blaze"
+    },
+    "515": {
+        "pokemon": "Panpour",
+        "type1": "Water",
+        "type2": null,
+        "filename": "egbihefj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Torrent"
+    },
+    "516": {
+        "pokemon": "Simipour",
+        "type1": "Water",
+        "type2": null,
+        "filename": "eggegcbb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Torrent"
+    },
+    "517": {
+        "pokemon": "Munna",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "egfiaghf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Telepathy"
+    },
+    "518": {
+        "pokemon": "Musharna",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "egfbfbdj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Telepathy"
+    },
+    "519": {
+        "pokemon": "Pidove",
+        "type1": "Normal",
+        "type2": "Flying",
+        "filename": "egeejgad",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Rivalry"
+    },
+    "520": {
+        "pokemon": "Tranquill",
+        "type1": "Normal",
+        "type2": "Flying",
+        "filename": "egjaidff",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Rivalry"
+    },
+    "521": {
+        "pokemon": "Unfezant",
+        "type1": "Normal",
+        "type2": "Flying",
+        "filename": "egiecibj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Rivalry"
+    },
+    "522": {
+        "pokemon": "Blitzle",
+        "type1": "Electric",
+        "type2": null,
+        "filename": "eghhhcid",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sap Sipper"
+    },
+    "523": {
+        "pokemon": "Zebstrika",
+        "type1": "Electric",
+        "type2": null,
+        "filename": "eghbbheh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sap Sipper"
+    },
+    "524": {
+        "pokemon": "Roggenrola",
+        "type1": "Rock",
+        "type2": null,
+        "filename": "ehbhaejj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sand Force"
+    },
+    "525": {
+        "pokemon": "Boldore",
+        "type1": "Rock",
+        "type2": null,
+        "filename": "ehbaejgd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sand Force"
+    },
+    "526": {
+        "pokemon": "Gigalith",
+        "type1": "Rock",
+        "type2": null,
+        "filename": "ehadjech",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sand Force"
+    },
+    "527": {
+        "pokemon": "Woobat",
+        "type1": "Psychic",
+        "type2": "Flying",
+        "filename": "egjhdijb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Simple"
+    },
+    "528": {
+        "pokemon": "Swoobat",
+        "type1": "Psychic",
+        "type2": "Flying",
+        "filename": "ehedcged",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Simple"
+    },
+    "529": {
+        "pokemon": "Drilbur",
+        "type1": "Ground",
+        "type2": null,
+        "filename": "ehdghbah",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Mold Breaker"
+    },
+    "530": {
+        "pokemon": "Excadrill",
+        "type1": "Ground",
+        "type2": "Steel",
+        "filename": "ehdabfhb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Mold Breaker"
+    },
+    "531": {
+        "pokemon": "Audino",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "ehcdgadf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Klutz"
+    },
+    "532": {
+        "pokemon": "Timburr",
+        "type1": "Fighting",
+        "type2": null,
+        "filename": "ehgjehih",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Iron Fist"
+    },
+    "533": {
+        "pokemon": "Gurdurr",
+        "type1": "Fighting",
+        "type2": null,
+        "filename": "ehgcjcfb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Iron Fist"
+    },
+    "534": {
+        "pokemon": "Conkeldurr",
+        "type1": "Fighting",
+        "type2": null,
+        "filename": "ehfgdhbf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Iron Fist"
+    },
+    "535": {
+        "pokemon": "Tympole",
+        "type1": "Water",
+        "type2": null,
+        "filename": "ehejibhj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Water Absorb"
+    },
+    "536": {
+        "pokemon": "Palpitoad",
+        "type1": "Water",
+        "type2": "Ground",
+        "filename": "ehjfgjdb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Water Absorb"
+    },
+    "537": {
+        "pokemon": "Seismitoad",
+        "type1": "Water",
+        "type2": "Ground",
+        "filename": "ehijbdjf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Water Absorb"
+    },
+    "538": {
+        "pokemon": "Throh",
+        "type1": "Fighting",
+        "type2": null,
+        "filename": "ehicfifj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Mold Breaker"
+    },
+    "539": {
+        "pokemon": "Sawk",
+        "type1": "Fighting",
+        "type2": null,
+        "filename": "ehhgadcd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Mold Breaker"
+    },
+    "540": {
+        "pokemon": "Sewaddle",
+        "type1": "Bug",
+        "type2": "Grass",
+        "filename": "eicbjahf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Overcoat"
+    },
+    "541": {
+        "pokemon": "Swadloon",
+        "type1": "Bug",
+        "type2": "Grass",
+        "filename": "eibfdfdj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Overcoat"
+    },
+    "542": {
+        "pokemon": "Leavanny",
+        "type1": "Bug",
+        "type2": "Grass",
+        "filename": "eiaiiaad",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Overcoat"
+    },
+    "543": {
+        "pokemon": "Venipede",
+        "type1": "Bug",
+        "type2": "Poison",
+        "filename": "eiaccegh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Quick Feet"
+    },
+    "544": {
+        "pokemon": "Whirlipede",
+        "type1": "Bug",
+        "type2": "Poison",
+        "filename": "eieibcbj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Quick Feet"
+    },
+    "545": {
+        "pokemon": "Scolipede",
+        "type1": "Bug",
+        "type2": "Poison",
+        "filename": "eiebfgid",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Quick Feet"
+    },
+    "546": {
+        "pokemon": "Cottonee",
+        "type1": "Grass",
+        "type2": "Fairy",
+        "filename": "eidfabeh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Chlorophyll"
+    },
+    "547": {
+        "pokemon": "Whimsicott",
+        "type1": "Grass",
+        "type2": "Fairy",
+        "filename": "eiciegbb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Chlorophyll"
+    },
+    "548": {
+        "pokemon": "Petilil",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "eiheddgd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Leaf Guard"
+    },
+    "549": {
+        "pokemon": "Lilligant",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "eighhich",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Leaf Guard"
+    },
+    "550-red": {
+        "pokemon": "Basculin",
+        "type1": "Water",
+        "type2": null,
+        "filename": "eigbccjb",
+        "form": "red",
+        "form_no": "0",
+        "hidden_ability": "red-striped"
+    },
+    "550-blue": {
+        "pokemon": "Basculin",
+        "type1": "Water",
+        "type2": null,
+        "filename": "eigbcadf",
+        "form": "blue",
+        "form_no": "1",
+        "hidden_ability": "blue-striped"
+    },
+    "551": {
+        "pokemon": "Sandile",
+        "type1": "Ground",
+        "type2": "Dark",
+        "filename": "eifeghff",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Anger Point"
+    },
+    "552": {
+        "pokemon": "Krokorok",
+        "type1": "Ground",
+        "type2": "Dark",
+        "filename": "ejaaffah",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Anger Point"
+    },
+    "553": {
+        "pokemon": "Krookodile",
+        "type1": "Ground",
+        "type2": "Dark",
+        "filename": "eijdjjhb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Anger Point"
+    },
+    "554": {
+        "pokemon": "Darumaka",
+        "type1": "Fire",
+        "type2": null,
+        "filename": "eiiheedf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Inner Focus"
+    },
+    "555-standard": {
+        "pokemon": "Darmanitan",
+        "type1": "Fire",
+        "type2": null,
+        "filename": "eiiaiijj",
+        "form": "standard",
+        "form_no": "0",
+        "hidden_ability": "Zen Mode"
+    },
+    "555-zen": {
+        "pokemon": "Darmanitan",
+        "type1": "Fire",
+        "type2": "Psychic",
+        "filename": "eiiaiged",
+        "form": "zen",
+        "form_no": "1",
+        "hidden_ability": ""
+    },
+    "556": {
+        "pokemon": "Maractus",
+        "type1": "Grass",
+        "type2": null,
+        "filename": "ejcghgfb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Storm Drain"
+    },
+    "557": {
+        "pokemon": "Dwebble",
+        "type1": "Bug",
+        "type2": "Rock",
+        "filename": "ejcacbbf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Weak Armor"
+    },
+    "558": {
+        "pokemon": "Crustle",
+        "type1": "Bug",
+        "type2": "Rock",
+        "filename": "ejbdgfhj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Weak Armor"
+    },
+    "559": {
+        "pokemon": "Scraggy",
+        "type1": "Dark",
+        "type2": "Fighting",
+        "filename": "ejahbaed",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Intimidate"
+    },
+    "560": {
+        "pokemon": "Scrafty",
+        "type1": "Dark",
+        "type2": "Fighting",
+        "filename": "ejfcjhjf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Intimidate"
+    },
+    "561": {
+        "pokemon": "Sigilyph",
+        "type1": "Psychic",
+        "type2": "Flying",
+        "filename": "ejegecfj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Tinted Lens"
+    },
+    "562": {
+        "pokemon": "Yamask",
+        "type1": "Ghost",
+        "type2": null,
+        "filename": "ejdjihcd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "563": {
+        "pokemon": "Cofagrigus",
+        "type1": "Ghost",
+        "type2": null,
+        "filename": "ejdddbih",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "564": {
+        "pokemon": "Tirtouga",
+        "type1": "Water",
+        "type2": "Rock",
+        "filename": "ejhjbjdj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Swift Swim"
+    },
+    "565": {
+        "pokemon": "Carracosta",
+        "type1": "Water",
+        "type2": "Rock",
+        "filename": "ejhcgead",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Swift Swim"
+    },
+    "566": {
+        "pokemon": "Archen",
+        "type1": "Rock",
+        "type2": "Flying",
+        "filename": "ejggaigh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "567": {
+        "pokemon": "Archeops",
+        "type1": "Rock",
+        "type2": "Flying",
+        "filename": "ejfjfddb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "568": {
+        "pokemon": "Trubbish",
+        "type1": "Poison",
+        "type2": null,
+        "filename": "faafeaid",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Aftermath"
+    },
+    "569": {
+        "pokemon": "Garbodor",
+        "type1": "Poison",
+        "type2": null,
+        "filename": "ejjiifeh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Aftermath"
+    },
+    "570": {
+        "pokemon": "Zorua",
+        "type1": "Dark",
+        "type2": null,
+        "filename": "ejjcdabb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "571": {
+        "pokemon": "Zoroark",
+        "type1": "Dark",
+        "type2": null,
+        "filename": "ejifhehf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "572": {
+        "pokemon": "Minccino",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "fadbgcch",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Skill Link"
+    },
+    "573": {
+        "pokemon": "Cinccino",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "facfagjb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Skill Link"
+    },
+    "574": {
+        "pokemon": "Gothita",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "fabifbff",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "575": {
+        "pokemon": "Gothorita",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "fabbjgbj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Shadow Tag"
+    },
+    "576": {
+        "pokemon": "Gothitelle",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "ecbijhgd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Shadow Tag"
+    },
+    "577": {
+        "pokemon": "Solosis",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "ecbcecch",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Regenerator"
+    },
+    "578": {
+        "pokemon": "Duosion",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "ecafigjb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Regenerator"
+    },
+    "579": {
+        "pokemon": "Reuniclus",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "ebjjdbff",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Regenerator"
+    },
+    "580": {
+        "pokemon": "Ducklett",
+        "type1": "Water",
+        "type2": "Flying",
+        "filename": "ecefbjah",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Hydration"
+    },
+    "581": {
+        "pokemon": "Swanna",
+        "type1": "Water",
+        "type2": "Flying",
+        "filename": "ecdigdhb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Hydration"
+    },
+    "582": {
+        "pokemon": "Vanillite",
+        "type1": "Ice",
+        "type2": null,
+        "filename": "ecdcaidf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Weak Armor"
+    },
+    "583": {
+        "pokemon": "Vanillish",
+        "type1": "Ice",
+        "type2": null,
+        "filename": "eccffcjj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Weak Armor"
+    },
+    "584": {
+        "pokemon": "Vanilluxe",
+        "type1": "Ice",
+        "type2": null,
+        "filename": "echbeafb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Weak Armor"
+    },
+    "585-spring": {
+        "pokemon": "Deerling",
+        "type1": "Normal",
+        "type2": "Grass",
+        "filename": "ecgeifbf",
+        "form": "spring",
+        "form_no": "0",
+        "hidden_ability": "Serene Grace"
+    },
+    "585-summer": {
+        "pokemon": "Deerling",
+        "type1": "Normal",
+        "type2": "Grass",
+        "filename": "ecgeicfj",
+        "form": "summer",
+        "form_no": "1",
+        "hidden_ability": ""
+    },
+    "585-autumn": {
+        "pokemon": "Deerling",
+        "type1": "Normal",
+        "type2": "Grass",
+        "filename": "ecgeiaad",
+        "form": "autumn",
+        "form_no": "2",
+        "hidden_ability": ""
+    },
+    "585-winter": {
+        "pokemon": "Deerling",
+        "type1": "Normal",
+        "type2": "Grass",
+        "filename": "ecgehheh",
+        "form": "winter",
+        "form_no": "3",
+        "hidden_ability": ""
+    },
+    "586-spring": {
+        "pokemon": "Sawsbuck",
+        "type1": "Normal",
+        "type2": "Grass",
+        "filename": "ecficjhj",
+        "form": "spring",
+        "form_no": "0",
+        "hidden_ability": "Serene Grace"
+    },
+    "586-summer": {
+        "pokemon": "Sawsbuck",
+        "type1": "Normal",
+        "type2": "Grass",
+        "filename": "ecfichcd",
+        "form": "summer",
+        "form_no": "1",
+        "hidden_ability": ""
+    },
+    "586-autumn": {
+        "pokemon": "Sawsbuck",
+        "type1": "Normal",
+        "type2": "Grass",
+        "filename": "ecficegh",
+        "form": "autumn",
+        "form_no": "2",
+        "hidden_ability": ""
+    },
+    "586-winter": {
+        "pokemon": "Sawsbuck",
+        "type1": "Normal",
+        "type2": "Grass",
+        "filename": "ecficcbb",
+        "form": "winter",
+        "form_no": "3",
+        "hidden_ability": ""
+    },
+    "587": {
+        "pokemon": "Emolga",
+        "type1": "Electric",
+        "type2": "Flying",
+        "filename": "ecfbheed",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Motor Drive"
+    },
+    "588": {
+        "pokemon": "Karrablast",
+        "type1": "Bug",
+        "type2": null,
+        "filename": "ecjhgbjf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "No Guard"
+    },
+    "589": {
+        "pokemon": "Escavalier",
+        "type1": "Bug",
+        "type2": "Steel",
+        "filename": "ecjbagfj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Overcoat"
+    },
+    "590": {
+        "pokemon": "Foongus",
+        "type1": "Grass",
+        "type2": "Poison",
+        "filename": "eciefbcd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Regenerator"
+    },
+    "591": {
+        "pokemon": "Amoonguss",
+        "type1": "Grass",
+        "type2": "Poison",
+        "filename": "echhjfih",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Regenerator"
+    },
+    "592": {
+        "pokemon": "Frillish",
+        "type1": "Water",
+        "type2": "Ghost",
+        "filename": "edcdiddj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Damp"
+    },
+    "593": {
+        "pokemon": "Jellicent",
+        "type1": "Water",
+        "type2": "Ghost",
+        "filename": "edbhciad",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Damp"
+    },
+    "594": {
+        "pokemon": "Alomomola",
+        "type1": "Water",
+        "type2": null,
+        "filename": "edbahcgh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "595": {
+        "pokemon": "Joltik",
+        "type1": "Bug",
+        "type2": "Electric",
+        "filename": "edaebhdb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Regenerator"
+    },
+    "596": {
+        "pokemon": "Galvantula",
+        "type1": "Bug",
+        "type2": "Electric",
+        "filename": "edfaaeid",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Swarm"
+    },
+    "597": {
+        "pokemon": "Ferroseed",
+        "type1": "Grass",
+        "type2": "Steel",
+        "filename": "ededejeh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Swarm"
+    },
+    "598": {
+        "pokemon": "Ferrothorn",
+        "type1": "Grass",
+        "type2": "Steel",
+        "filename": "eddgjebb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "599": {
+        "pokemon": "Klink",
+        "type1": "Steel",
+        "type2": null,
+        "filename": "eddadihf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "600": {
+        "pokemon": "Klang",
+        "type1": "Steel",
+        "type2": null,
+        "filename": "edhgcgch",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "601": {
+        "pokemon": "Klinklang",
+        "type1": "Steel",
+        "type2": null,
+        "filename": "edgjhajb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Clear Body"
+    },
+    "602": {
+        "pokemon": "Tynamo",
+        "type1": "Electric",
+        "type2": null,
+        "filename": "edgdbfff",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Clear Body"
+    },
+    "603": {
+        "pokemon": "Eelektrik",
+        "type1": "Electric",
+        "type2": null,
+        "filename": "edfggabj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "604": {
+        "pokemon": "Eelektross",
+        "type1": "Electric",
+        "type2": null,
+        "filename": "eeacehhb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "605": {
+        "pokemon": "Elgyem",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "edjfjcdf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "606": {
+        "pokemon": "Beheeyem",
+        "type1": "Psychic",
+        "type2": null,
+        "filename": "edijdgjj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Analytic"
+    },
+    "607": {
+        "pokemon": "Litwick",
+        "type1": "Ghost",
+        "type2": "Fire",
+        "filename": "edicibgd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Analytic"
+    },
+    "608": {
+        "pokemon": "Lampent",
+        "type1": "Ghost",
+        "type2": "Fire",
+        "filename": "eecigjbf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "609": {
+        "pokemon": "Chandelure",
+        "type1": "Ghost",
+        "type2": "Fire",
+        "filename": "eeccbdhj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "610": {
+        "pokemon": "Axew",
+        "type1": "Dragon",
+        "type2": null,
+        "filename": "eebffied",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "611": {
+        "pokemon": "Fraxure",
+        "type1": "Dragon",
+        "type2": null,
+        "filename": "eeajadah",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Unnerve"
+    },
+    "612": {
+        "pokemon": "Haxorus",
+        "type1": "Dragon",
+        "type2": null,
+        "filename": "eefejafj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Unnerve"
+    },
+    "613": {
+        "pokemon": "Cubchoo",
+        "type1": "Ice",
+        "type2": null,
+        "filename": "eeeidfcd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Unnerve"
+    },
+    "614": {
+        "pokemon": "Beartic",
+        "type1": "Ice",
+        "type2": null,
+        "filename": "eeebhjih",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Rattled"
+    },
+    "615": {
+        "pokemon": "Cryogonal",
+        "type1": "Ice",
+        "type2": null,
+        "filename": "eedfcefb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Swift Swim"
+    },
+    "616": {
+        "pokemon": "Shelmet",
+        "type1": "Bug",
+        "type2": null,
+        "filename": "eeibbcad",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "617": {
+        "pokemon": "Accelgor",
+        "type1": "Bug",
+        "type2": null,
+        "filename": "eehefggh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Overcoat"
+    },
+    "618": {
+        "pokemon": "Stunfisk",
+        "type1": "Ground",
+        "type2": "Electric",
+        "filename": "eegiabdb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Unburden"
+    },
+    "619": {
+        "pokemon": "Mienfoo",
+        "type1": "Fighting",
+        "type2": null,
+        "filename": "eegbefjf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sand Veil"
+    },
+    "620": {
+        "pokemon": "Mienshao",
+        "type1": "Fighting",
+        "type2": null,
+        "filename": "efahddeh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Reckless"
+    },
+    "621": {
+        "pokemon": "Druddigon",
+        "type1": "Dragon",
+        "type2": null,
+        "filename": "efaahibb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Reckless"
+    },
+    "622": {
+        "pokemon": "Golett",
+        "type1": "Ground",
+        "type2": "Ghost",
+        "filename": "eejecchf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Mold Breaker"
+    },
+    "623": {
+        "pokemon": "Golurk",
+        "type1": "Ground",
+        "type2": "Ghost",
+        "filename": "eeihghdj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "No Guard"
+    },
+    "624": {
+        "pokemon": "Pawniard",
+        "type1": "Dark",
+        "type2": "Steel",
+        "filename": "efddfejb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "No Guard"
+    },
+    "625": {
+        "pokemon": "Bisharp",
+        "type1": "Dark",
+        "type2": "Steel",
+        "filename": "efcgjjff",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Pressure"
+    },
+    "626": {
+        "pokemon": "Bouffalant",
+        "type1": "Normal",
+        "type2": null,
+        "filename": "efcaeebj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Pressure"
+    },
+    "627": {
+        "pokemon": "Rufflet",
+        "type1": "Normal",
+        "type2": "Flying",
+        "filename": "efbdiiid",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Soundproof"
+    },
+    "628": {
+        "pokemon": "Braviary",
+        "type1": "Normal",
+        "type2": "Flying",
+        "filename": "effjhgdf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "629": {
+        "pokemon": "Vullaby",
+        "type1": "Dark",
+        "type2": "Flying",
+        "filename": "effdcajj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Defiant"
+    },
+    "630": {
+        "pokemon": "Mandibuzz",
+        "type1": "Dark",
+        "type2": "Flying",
+        "filename": "efeggfgd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Weak Armor"
+    },
+    "631": {
+        "pokemon": "Heatmor",
+        "type1": "Fire",
+        "type2": null,
+        "filename": "efeabach",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Weak Armor"
+    },
+    "632": {
+        "pokemon": "Durant",
+        "type1": "Bug",
+        "type2": "Steel",
+        "filename": "efifjhhj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "White Smoke"
+    },
+    "633": {
+        "pokemon": "Deino",
+        "type1": "Dark",
+        "type2": "Dragon",
+        "filename": "efhjeced",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Truant"
+    },
+    "634": {
+        "pokemon": "Zweilous",
+        "type1": "Dark",
+        "type2": "Dragon",
+        "filename": "efhcihah",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "635": {
+        "pokemon": "Hydreigon",
+        "type1": "Dark",
+        "type2": "Dragon",
+        "filename": "efggdbhb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "636": {
+        "pokemon": "Larvesta",
+        "type1": "Bug",
+        "type2": "Fire",
+        "filename": "egbcbjcd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "637": {
+        "pokemon": "Volcarona",
+        "type1": "Bug",
+        "type2": "Fire",
+        "filename": "egafgdih",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "638": {
+        "pokemon": "Cobalion",
+        "type1": "Steel",
+        "type2": "Fighting",
+        "filename": "efjjaifb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "639": {
+        "pokemon": "Terrakion",
+        "type1": "Rock",
+        "type2": "Fighting",
+        "filename": "efjcfdbf",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "640": {
+        "pokemon": "Virizion",
+        "type1": "Grass",
+        "type2": "Fighting",
+        "filename": "dhjjfefj",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "641": {
+        "pokemon": "Tornadus",
+        "type1": "Flying",
+        "type2": null,
+        "filename": "dhjcjjcd",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "642": {
+        "pokemon": "Thundurus",
+        "type1": "Electric",
+        "type2": "Flying",
+        "filename": "dhigedih",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Defiant"
+    },
+    "643": {
+        "pokemon": "Reshiram",
+        "type1": "Dragon",
+        "type2": "Fire",
+        "filename": "dhhjiifb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Defiant"
+    },
+    "644": {
+        "pokemon": "Zekrom",
+        "type1": "Dragon",
+        "type2": "Electric",
+        "filename": "dicfhgad",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "645": {
+        "pokemon": "Landorus",
+        "type1": "Ground",
+        "type2": "Flying",
+        "filename": "dibjcagh",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": ""
+    },
+    "646": {
+        "pokemon": "Kyurem",
+        "type1": "Dragon",
+        "type2": "Ice",
+        "filename": "dibcgfdb",
+        "form": "",
+        "form_no": "",
+        "hidden_ability": "Sheer Force"
+    }
+}

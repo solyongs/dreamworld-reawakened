@@ -78,5 +78,16 @@
     <string id="h_ha_1">h_ha_1</string>
     <string id="h_ha_2">Dream Bridge</string>
 
+    <!-- Pokemon Info-->
+    <string id="h_ee_1">Pokémon Nickname</string>
+    <string id="h_ee_2">PGL Nickname</string>
+    <string id="h_ee_3">Pokémon</string>
+    <string id="h_ee_4">O.T.</string>
+    <string id="h_ee_5">Lv.</string>
+    <string id="h_ee_6">Type</string>
+    <string id="h_ee_7">Gender</string>
+    <string id="h_ee_8">Nature</string>
+    <string id="h_ee_9">Poké Ball Used</string>
+
    
 </data>
