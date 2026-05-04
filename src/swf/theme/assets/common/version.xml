@@ -38,7 +38,7 @@
 			</strings>
 			<format>
 				<ja>1.0</ja>
-				<en>1.0</en>
+				<en>1.0</en> 
 				<fr>1.0</fr>
 				<it>1.0</it>
 				<de>1.0</de>
@@ -257,6 +257,42 @@
 			<fr ver="1.0">game/game8.swf</fr>
 			<it ver="1.0">game/game8.swf</it>
 		</game8>
+		<game9>
+			<ja ver="1.0">game/game9.swf</ja>
+			<ko ver="1.0">game/game9.swf</ko>
+			<de ver="1.0">game/game9.swf</de>
+			<en ver="1.0">game/game9.swf</en>
+			<es ver="1.0">game/game9.swf</es>
+			<fr ver="1.0">game/game9.swf</fr>
+			<it ver="1.0">game/game9.swf</it>
+		</game9>
+		<game10>
+			<ja ver="1.0">game/game10.swf</ja>
+			<ko ver="1.0">game/game10.swf</ko>
+			<de ver="1.0">game/game10.swf</de>
+			<en ver="1.0">game/game10.swf</en>
+			<es ver="1.0">game/game10.swf</es>
+			<fr ver="1.0">game/game10.swf</fr>
+			<it ver="1.0">game/game10.swf</it>
+		</game10>
+		<game11>
+			<ja ver="1.0">game/game11.swf</ja>
+			<ko ver="1.0">game/game11.swf</ko>
+			<de ver="1.0">game/game11.swf</de>
+			<en ver="1.0">game/game11.swf</en>
+			<es ver="1.0">game/game11.swf</es>
+			<fr ver="1.0">game/game11.swf</fr>
+			<it ver="1.0">game/game11.swf</it>
+		</game11>
+		<game12>
+			<ja ver="1.0">game/game12.swf</ja>
+			<ko ver="1.0">game/game12.swf</ko>
+			<de ver="1.0">game/game12.swf</de>
+			<en ver="1.0">game/game12.swf</en>
+			<es ver="1.0">game/game12.swf</es>
+			<fr ver="1.0">game/game12.swf</fr>
+			<it ver="1.0">game/game12.swf</it>
+		</game12>
 		<template_xml>1.0</template_xml>
 		<se>1.0</se>
 		<pdw_yumeshima_se>1.0</pdw_yumeshima_se>
