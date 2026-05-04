@@ -134,7 +134,7 @@ def handle_my_island(_query):
             "pokemon_nickname":  None,
             "oyaname":           "PlayerName",
             "level":             randint(1, 100),
-            "sex":               randint(1, 2),
+            "sex":               randint(0, 1),
             "personality":       choice(pokemon_natures),
             "place":             "PlayerName's Island",
             "ball_name":         "Poke Ball"
