@@ -2,7 +2,7 @@
 <data locale="en">
 
     <!--Your Home-->
-    <string id="h_ca_1">PlayerName's home</string> <!--Title when entering area-->
+    <string id="h_ca_1">[arg0]'s home</string> <!--Title when entering area-->
     <string id="h_ca_7">Enter room.</string> <!--Door hover-->
     <string id="h_ca_8">Footprint Mat</string> <!--Mat hover-->
     <string id="fr_aa_6">Check Dream Pal map.</string>
@@ -21,10 +21,10 @@
     <string id="m_af_8">Action</string>
 
     <!--Garden-->
-    <string id="k_ad_1">PlayerName's garden</string> 
+    <string id="k_ad_1">[arg0]'s garden</string> 
 
     <!--Share Shelf-->
-    <string id="s_aa_1">PlayerName's Share Shelf</string>
+    <string id="s_aa_1">[arg0]'s Share Shelf</string>
 
     <!--Dream Bridge -->
     <string id="h_cb_1">Return to your home.</string> <!--Used for the buttons in the top left-->
@@ -90,7 +90,7 @@
     <string id="h_ea_8">Check Friend Board</string>
     <string id="h_ea_9">Go outside</string>
     <string id="h_ea_10">Next wall</string>
-    <string id="h_ea_11">PlayerName's room</string>
+    <string id="h_ea_11">[arg0]'s room</string>
 
     <!-- Pokemon Info-->
     <string id="h_ee_1">Pokémon Nickname</string>
