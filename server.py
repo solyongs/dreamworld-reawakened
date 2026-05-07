@@ -1,173 +1,136 @@
 #!/usr/bin/env python3
 from http.server import BaseHTTPRequestHandler, HTTPServer
+from urllib.parse import urlsplit, parse_qs
+from html import escape
+
 import logging
-from urllib.parse import urlparse, parse_qs
-import time
-import json
-import random
-import os.path
+from pathlib import Path
+
+from api_handlers import (
+    STATIC_GET_RESPONSES,
+    STATIC_POST_RESPONSES,
+    DYNAMIC_GET_RESPONSES,
+    DYNAMIC_POST_RESPONSES,
+)
+
+# ---------------
+# Request handler
+# ---------------
+
+ROOT_DIR = Path(__file__).resolve().parent
 
 class S(BaseHTTPRequestHandler):
-    def do_GET(self):
-        print(self.headers["User-Agent"])
-        logging.info("GET %s\n", str(self.path))
-        path = urlparse(self.path).path
-        if(path == "/api/"):
-            queryString = urlparse(self.path).query
-            query = parse_qs(queryString, strict_parsing=True)
-            apiName = query["p"][0]
-            print(apiName)
-            if(apiName == "pgl.news.information_list"):
-                self.send_response(200)
-                self.end_headers()
-                self.wfile.write(b'{"list":[], "total_count":0}')
-            elif(apiName == "pgl.member.profile.my_state"):
-                self.send_response(200)
-                self.end_headers()
-                self.wfile.write(b"{}")
-            elif(apiName == "pdw.home.my_island"):
-                self.send_response(200)
-                self.end_headers()
-                self.wfile.write(b'{"island_id":201, "arranged_interior_list":[]}')
-            elif(apiName == "pdw.croft.my_croft_list"):
-                self.send_response(200)
-                self.end_headers()
-                self.wfile.write(b'{"croft_list":[:"kinomi_state":0, "my_croft_id": 0, "pokeitem_id": 0, "kinomi": 0, "kinomi_id": 52, "dirt_hp": 0, "x": 1, "y": 1}, :"kinomi_state":0, "my_croft_id": 0, "pokeitem_id": 0, "kinomi": 0, "kinomi_id": 52, "dirt_hp": 0, "x": 2, "y": 1}], "diglett_flag":0}')
-            elif(apiName == "pdw.croft.tutorial_start"):
-                self.send_response(200)
-                self.end_headers()
-                self.wfile.write(b'{}')
-            elif(apiName == "pdw.croft.tutorial_end"):
-                self.send_response(200)
-                self.end_headers()
-                self.wfile.write(b'{}')
-            elif(apiName == "pdw.home.my_bridge"):
-                self.send_response(200)
-                self.end_headers()
-                self.wfile.write(b'{}')
-            elif(apiName == "pdw.dreamland.top"):
-                response = {
-                    "dreamland_area_id": random.randint (3, 9),
-                    "object_list" : [],
-                }
-                self.send_response(200)
-                self.end_headers()
-                self.wfile.write(json.dumps(response).encode())
-            elif(apiName == "pdw.dreamland.tree_top"):
-                count = random.randint(1, 5)
-                pokemonList = [{}] * count
-                encountList = [{}] * count
-                for i in range(0, count):
-                    pokemon = random.randint(0, 649)
-                    print(pokemon)
-                    pokemonList[i] = {}
-                    pokemonList[i]["pokemon_no"] = pokemon
-                    pokemonList[i]["form_no"] = 0
-                    encountList[i] = {}
-                    encountList[i]["pokemon_no"] = pokemon
-                    encountList[i]["form_no"] = 0
-                    encountList[i]["pokename"] = "TODO"
-                    encountList[i]["waza_name_disp"] = "TODO"
-                    encountList[i]["speabi3"] = "TODO"
 
-                response = {
-                    "pokemon_list": pokemonList,
-                    "object_list" : encountList,
-                }
-                print(json.dumps(response))
-                self.send_response(200)
-                self.end_headers()
-                self.wfile.write(json.dumps(response).encode())
-            elif(apiName == "pgl.top.init"):
-                self.send_response(200)
-                self.end_headers()
-                self.wfile.write(b"{}")
-            else:
-                self.send_response(404)
-                self.end_headers()
-                self.wfile.write(b"")
+    def _dispatch_api(self, api_name, query, static_map, dynamic_map):
+        """Look up api_name in the dispatch tables and write the response."""
+        
+        query["is_random"] = False
+        if self.server.app_config["is_random"]:
+            query["is_random"] = True
+
+        if api_name in static_map:
+            body = static_map[api_name]
+        elif api_name in dynamic_map:
+            body = dynamic_map[api_name](query)
+        else:
+            logging.warning("Unknown API: %s", api_name)
+            self.send_response(501)
+            self.end_headers()
+            self.wfile.write(b"")
             return
+
+        self.send_response(200)
+        self.end_headers()
+        self.wfile.write(body)
+
+    def _log_referrer(self, file_path):
+        """In debug mode, log the Referer header."""
+        if self.server.app_config["debug"]:
+            referrer = self.headers.get("Referer", "<no referrer>")
+            logging.debug("[DEBUG] File requested: %s  |  Referer: %s", file_path, referrer)
+
+    def do_GET(self):
+        logging.info("GET %s", self.path)
+        parsed = urlsplit(self.path)
+        path = escape(parsed.path)
+
+        if path == "/api/":
+            query = parse_qs(parsed.query, strict_parsing=True)
+            api_name = query["p"][0]
+            logging.info("API GET: %s", api_name)
+            self._dispatch_api(api_name, query, STATIC_GET_RESPONSES, DYNAMIC_GET_RESPONSES)
+            return
+
+        if path == "/":
+            with open(Path(ROOT_DIR / "DreamWorld_data" / "Dream_Park.htm"), "rb") as f:
+                data = f.read()
             
-        if(path == "/"):
-            if(self.headers["User-Agent"] == "Shockwave Flash"):
-                self.send_response(302)
-                self.send_header('Location', "http://127.0.0.1:8080/src/swf/theme/assets/common/main.swf")
-                self.end_headers()
+            self.send_response(200)
+            self.send_header("Content-Length", str(len(data)))
+            self.end_headers()
+            self.wfile.write(data)
+            return
 
-            # support for flash-enabled browsers
-            with open('./Dream_Park.htm', "rb") as f:
-                self.send_response(200)
+        if "flash" not in self.headers.get("User-Agent").lower():
+            file_path = ROOT_DIR / "DreamWorld_data" / path.lstrip("/")
+        else:
+            file_path = ROOT_DIR / path.lstrip("/")
+        
+        if file_path.is_file():
+            self._log_referrer(file_path)
+            
+            with open(file_path, "rb") as f:
                 data = f.read()
-                self.send_header('Content-Length', str(len(data)))
-                self.end_headers()
-                self.wfile.write(data)
+            
+            self.send_response(200)
+            self.send_header("Content-Length", str(len(data)))
+            self.end_headers()
+            self.wfile.write(data)
+            return
 
-        # strip bugged trailing &s that PDW likes to add sometimes
-        if("&") in path:
-            splitPath = path.split("&")
-            path = splitPath[0]
-
-        if(os.path.isfile('./'+path)):
-            with open('./'+path, "rb") as f:
-                self.send_response(200)
-                data = f.read()
-                self.send_header('Content-Length', str(len(data)))
-                self.end_headers()
-                self.wfile.write(data)
-                return
         self.send_response(404)
-        self.send_header('Content-type', 'text/html')
+        self.send_header("Content-type", "text/html")
+        self.end_headers()
         self.wfile.write(b"Error: Not found")
 
     def do_POST(self):
-        logging.info("POST %s\n", str(self.path))
-        content_length = int(self.headers['Content-Length'])
+        logging.info("POST %s", self.path)
+        
+        content_length = int(self.headers["Content-Length"])
         post_data = self.rfile.read(content_length)
         query = parse_qs(post_data.decode(), strict_parsing=True)
-        print(query)
-        apiName = query["p"][0]
-        print(apiName)
-        if(apiName == 'pdw.home.pdw_timecheck'):
-            self.send_response(200)
-            self.end_headers()
-            self.wfile.write(b"{}")
-        elif(apiName == 'pgl.member.profile.pdw_login'):
-            self.send_response(200)
-            self.end_headers()
-            self.wfile.write(b"{}")
-        elif(apiName == 'pdw.home.pdw_start'):
-            response = {
-                "started_at": int(time.time()),
-            }
-            self.send_response(200)
-            self.end_headers()
-            self.wfile.write(json.dumps(response).encode())
-        else:
-            self.send_response(404)
-            self.end_headers()
-            self.wfile.write(b"")
-        return
+        api_name = query["p"][0]
         
-        self.send_response(404)
-        self.send_header('Content-type', 'text/html')
-        self.wfile.write(b"Error: Not found")
+        logging.info("API POST: %s", api_name)
+        
+        self._log_referrer(f"POST:{api_name}")
+        self._dispatch_api(api_name, query, STATIC_POST_RESPONSES, DYNAMIC_POST_RESPONSES)
 
-def run(server_class=HTTPServer, handler_class=S, port=8080):
-    logging.basicConfig(level=logging.INFO)
-    server_address = ('127.0.0.1', port)
+
+# ------------
+# Server start
+# ------------
+
+def run(server_class=HTTPServer, handler_class=S, port=8080, debug=False, is_random=False):
+    
+    server_address = ("127.0.0.1", port)
     httpd = server_class(server_address, handler_class)
-    logging.info('Starting server...\n')
+
+    httpd.app_config = {
+        "debug": debug,
+        "is_random": is_random
+    }
+
+    log_level = logging.DEBUG if httpd.app_config["debug"] else logging.INFO
+    
+    logging.basicConfig(level=log_level)
+    logging.info("Starting server%s...\n", " (debug mode)" if httpd.app_config["debug"] else "")
+    
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:
         pass
+    
     httpd.server_close()
-    logging.info('Stopping server...\n')
-
-if __name__ == '__main__':
-    from sys import argv
-
-    if len(argv) == 2:
-        run(port=int(argv[1]))
-    else:
-        run()
+    
+    logging.info("Stopping server...\n")
