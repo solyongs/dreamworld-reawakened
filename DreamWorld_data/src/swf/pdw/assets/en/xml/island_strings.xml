@@ -107,8 +107,8 @@
     <string id="y_ag_17">y_ag_17</string>
 
     <!-- game10.swf -->
-    <string id="y_ad_24">y_ad_24</string>
-    <string id="y_ad_25">y_ad_25</string>
+    <string id="y_ad_24">It looks like [ポケモン名] wants to play on the lake.</string>
+    <string id="y_ad_25">Play on the lake with [ポケモン名]?</string>
     <string id="y_ag_18">y_ag_18</string>
     <string id="y_ag_19">y_ag_19</string>
 
@@ -124,3 +124,14 @@
     <string id="y_ad_28">y_ad_28</string>
     <string id="y_ad_29">y_ad_29</string>
 </data>
+
+<!--Writing these down now so I don't have to search for them later when I know where they go-->
+
+<!--It looks like [ポケモン名] wants to test its courage.-->
+<!--Blow out candles with [ポケモン名]?-->
+
+<!--It looks like [ポケモン名] is thirsty.-->
+<!--Serve drinks with [ポケモン名]?-->
+
+<!--It looks like [ポケモン名] wants to play on the ice.-->
+<!--Play on the ice with [ポケモン名]?-->
