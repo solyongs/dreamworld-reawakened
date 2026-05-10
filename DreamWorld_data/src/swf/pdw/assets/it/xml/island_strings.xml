@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data locale="it">
+    <string id="lo_a_1">Caricamento</string>
+
+    <!--Tree of Dreams Meter-->
+    <string id="y_aa_1">Contapassi</string>
+    <string id="y_aa_2">Per l'albero del sogni:&#xD;- [画面数]</string>
+    <string id="y_aa_6">Pagina iniziale</string>
+    
+    <!--I wanna see if these come up anywhere
+    <string id="y_aa_5">Test1</string>
+    <string id="y_aa_6">Test2</string>
+    <string id="y_aa_7">Test3</string>
+    <string id="y_aa_8">Test4</string>
+    <string id="y_aa_9">Test5</string>
+    <string id="y_aa_10">Test6</string>
+    <string id="y_aa_11">Test7</string>
+    <string id="y_aa_12">Test8</string>
+    <string id="y_aa_13">Test9</string>
+    <string id="y_aa_14">Test10</string>
+    <string id="y_aa_15">Test11</string>-->
+
+    <!--Tree of Dreams Location-->
+    <string id="t_aa_1">Albero dei sogni</string>
+    <string id="s_aa_2">Pagina iniziale</string>
+
+    <!--Island Titles-->
+    <string id="y_za_1">Eccoti all'Isola dei sogni. Inizia a esplorare il boschetto.</string>
+    <string id="y_aa_3">Il boschetto dell'Isola del sogni</string>
+
+    <string id="y_zc_3">You arrive at the Island of Dreams and decide to explore the Windswept Sky</string>
+    <string id="y_aa_5">Island of Dreams—Windswept Sky</string>
+
+    <string id="y_zb_2">You arrive at the Island of Dreams and decide to explore the Sparkling Sea</string>
+    <string id="y_aa_4">Island of Dreams—Sparkling Sea</string>
+
+    <string id="y_zc_4">You arrive at the Island of Dreams and decide to explore the Spooky Manor</string>
+    <string id="y_aa_16">Island of Dreams—Spooky Manor</string>
+
+    <string id="y_zc_5">You arrive at the Island of Dreams and decide to explore the Rugged Mountain</string>
+    <string id="y_aa_17">Island of Dreams—Rugged Mountain</string>
+
+    <string id="y_zc_6">You arrive at the Island of Dreams and decide to explore the Icy Cave</string>
+    <string id="y_aa_18">Island of Dreams—Icy Cave</string>
+
+    <string id="y_zc_7">You arrive at the Island of Dreams and decide to explore the Dream Park</string>
+    <string id="y_aa_19">Island of Dreams—Dream Park</string>
+
+    <!-- item get -->
+    <string id="y_ai_1">Hai trovato [道具名].</string>
+    <string id="y_aj_1">Hai messo [道具名] nel baule.</string>
+
+    <!-- pokemon get -->
+    <string id="y_ah_1">[ポケモン名] non c'è più...</string> <!-- failure to befriend --!>
+    <string id="y_af_1">[ポケモン名] è diventato tuo amico!</string> <!-- befriended successfully -->
+    <string id="y_af_2">Pokémon:</string>
+    <string id="y_af_3">Abilità:</string>
+    <string id="y_af_4">Tipo:</string>
+    <string id="y_af_5">Sesso:</string>
+    <string id="y_af_6">Mosse:</string>
+    <string id="y_af_7">[ポケモン名] è felice!</string> <!-- minigame won -->
+    <string id="y_ag_9">[ポケモン名] è triste...</string> <!-- minigame lost/aborted -->
+
+    <!-- game header -->
+    <string id="y_ad_1">È [ポケモン名]!</string>
+
+    <!-- game1.swf -->
+    <string id="y_ad_10">Qualcuno si è smarrito e&#xD;[ポケモン名] lo sta cercando.</string>
+    <string id="y_ad_11">Vuoi aiutare [ポケモン名] con la ricerca?</string>
+    <string id="y_ag_5">Non hai trovato il Pokémon smarrito.</string>
+    <string id="y_ag_6">y_ag_6</string>
+
+    <!-- game2.swf -->
+    <string id="y_ad_2">[ポケモン名] sembra avere fame.</string>
+    <string id="y_ad_4">Vuoi fare un gelato assieme a [ポケモン名]?</string>
+    <string id="y_ag_1">y_ag_1</string>
+    <string id="y_ag_2">y_ag_2</string>
+
+    <!-- game3.swf -->
+    <string id="y_ad_7">[ポケモン名] ha voglia di volare.</string>
+    <string id="y_ad_8">Vuoi fare una Corsa aerea con [ポケモン名]?</string>
+    <string id="y_ag_3">y_ag_3</string>
+    <string id="y_ag_4">y_ag_4</string>
+
+    <!-- game4.swf -->
+    <string id="y_ad_13">[ポケモン名] vuole giocare sulla schiena di Wailord.</string>
+    <string id="y_ad_14">Vuoi andare da Wailord con [ポケモン名]?</string>
+    <string id="y_ag_7">y_ag_7</string>
+    <string id="y_ag_8">y_ag_8</string>
+
+    <!-- game5.swf -->
+    <string id="y_ad_15">It looks like [ポケモン名] is thirsty.</string> <!-- request (subheader) -->
+    <string id="y_ad_16">Serve drinks with [ポケモン名]?</string> <!-- select (line with yes/no) --> 
+    <string id="y_ag_10">y_ag_10</string> <!-- failure -->
+    <string id="y_ag_11">y_ag_11</string> <!-- abort (choose to quit)-->
+
+    <!-- game6.swf -->
+    <string id="y_aa_12">[ポケモン名] is interested in the treasure box.</string>
+    <string id="y_aa_13">Open the treasure box with [ポケモン名]?</string>
+    <string id="y_aa_14">y_aa_14</string>
+    <string id="y_aa_15">y_aa_15</string>
+
+    <!-- game7.swf -->
+    <string id="y_ad_18">It looks like [ポケモン名] wants to test its courage.</string>
+    <string id="y_ad_19">Blow out candles with [ポケモン名]?</string>
+    <string id="y_ag_12">y_ag_12</string>
+    <string id="y_ag_13">y_ag_13</string>
+
+    <!-- game8.swf -->
+    <string id="y_ad_20">It looks like [ポケモン名] wants to collect gems.</string>
+    <string id="y_ad_21">Collect Gems with [ポケモン名]?</string>
+    <string id="y_ag_14">y_ag_14</string>
+    <string id="y_ag_15">y_ag_15</string>
+
+    <!-- game9.swf -->
+    <string id="y_ad_22">It looks like [ポケモン名] wants to play on the ice.</string>
+    <string id="y_ad_23">Play on the ice with [ポケモン名]?</string>
+    <string id="y_ag_16">y_ag_16</string>
+    <string id="y_ag_17">y_ag_17</string>
+
+    <!-- game10.swf -->
+    <string id="y_ad_24">It looks like [ポケモン名] wants to play on the lake.</string>
+    <string id="y_ad_25">Play on the lake with [ポケモン名]?</string>
+    <string id="y_ag_18">y_ag_18</string>
+    <string id="y_ag_19">y_ag_19</string>
+
+    <!-- game11.swf -->
+    <string id="y_ad_30">It looks like [ポケモン名] is thirsty.</string>
+    <string id="y_ad_31">Serve drinks with [ポケモン名]?</string>
+    <string id="y_ad_32">y_ad_32</string>
+    <string id="y_ad_33">y_ad_33</string>
+
+    <!-- game12.swf -->
+    <string id="y_ad_26">[ポケモン名] is interested in the treasure box.</string>
+    <string id="y_ad_27">Open the treasure box with [ポケモン名]?</string>
+    <string id="y_ad_28">y_ad_28</string>
+    <string id="y_ad_29">y_ad_29</string>
+</data>

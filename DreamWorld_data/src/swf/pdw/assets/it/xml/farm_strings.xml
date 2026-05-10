@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data locale="it">
+    <string id="k_ad_1">k_ad_1</string>
+    <string id="k_ad_2">Annaffiatoio in uso</string>
+    <string id="k_ad_3">k_ad_3</string>
+    <string id="k_ad_4">k_ad_4</string>
+    <string id="k_ad_5">k_ad_5</string>
+    <string id="k_ad_6">k_ad_6</string>
+    <string id="k_ad_7">k_ad_7</string>
+    <string id="k_ad_8">k_ad_8</string>
+    <string id="k_ad_9">k_ad_9</string>
+    <string id="k_ad_10">k_ad_10</string>
+    <string id="k_ad_11">k_ad_11</string>
+    <string id="k_ad_12">k_ad_12</string>
+    <string id="k_ad_13">k_ad_13</string>
+    <string id="k_ad_14">k_ad_14</string>
+    <string id="k_ad_15">Solco attuale</string>
+
+    <!-- diglett -->
+    <string id="k_as_1">Diglett showed up!</string>
+    <string id="k_at_1">Diglett started plowing&#xD;[arg0]'s garden.</string>
+    <string id="k_au_1">Diglett left the garden.</string>
+    <string id="k_ar_1">A garden bed has been added.</string>
+    <string id="k_asa_1">There are now [arg0] garden beds&#xD;now, thanks to Diglett.</string>
+
+    <string id="b_ad_4">Bacca</string>
+
+    <!-- no berry planted -->
+    <string id="k_ae_2">Vuoi piantare delle Bacche&#xD;nel terreno soffice?</string>
+
+    <!-- berry stage 0: soil -->
+    <string id="k_ag_2">Qui è già piantata&#xD;[arg0]!</string>
+
+    <!-- berry stage 1: sprout -->
+    <string id="k_ai_1">[arg0] è&#xD;germogliata!</string>
+
+    <!-- berry stage 2: trunk -->
+    <string id="k_aj_1">Lo stelo di [arg0]&#xD;è cresciuto!</string>
+
+    <!-- berry stage 3: flower -->
+    <string id="k_ak_1">Sono spuntati dei fiori&#xD;di [arg0]!</string>
+
+    <!-- berry stage 4: fruit -->
+    <string id="k_al_1">È tempo di raccogliere&#xD;[arg0]!</string>
+
+    <string id="k_aff_1">Vuoi piantare la bacca?</string>
+    <string id="k_afff_1">Hai piantato [arg0].</string>
+    <string id="k_aha_1">Il terreno è&#xD;abbastanza umido!</string>
+    <string id="s_ad_2">Chiudi</string>
+    <string id="k_ag_1">Dettagli</string>
+
+    <string id="h_da_3">Torna alla tua pagina iniziale</string>
+</data>
