@@ -14,15 +14,11 @@
     <string id="m_aa_2">See more</string>
     <string id="m_af_2">Check mat</string>
     <string id="m_af_3">See who visited.</string>
-    <string id="m_af_4">Date</string>
+    <string id="m_af_4">Data</string>
     <string id="m_af_5">Pokémon</string>
-    <string id="m_af_6">Pokémon's Nickname</string>
-    <string id="m_af_7">Type</string>
+    <string id="m_af_6">Soprannome</string>
+    <string id="m_af_7">Tipo</string>
     <string id="m_af_8">Action</string>
-
-    <!--Garden-->
-    <string id="k_ad_1">L'orto di [arg0]</string>
-    <string id="k_ad_4">A Watering Can&#xD;to water Berries!</string>
 
     <!--Share Shelf-->
     <string id="s_aa_1">Dispensa doni di [arg0]</string>
@@ -44,7 +40,7 @@
 
     <!--Buttons In Top Right-->
     <string id="h_ca_9">Check info.</string>
-    <string id="h_ca_10">Esci dal Pokémon DW</string> <!-- Not confirmed, but it's very likely to be this in Italian -->
+    <string id="h_ca_10">Esci dal Pokémon DW</string>
     
     <string id="fr_aa_1">fr_aa_1</string>
     <string id="fr_aa_2">fr_aa_2</string>
@@ -65,18 +61,18 @@
     <string id="b_aa_6">Baule</string>
     <string id="b_ad_1">Strumenti da inviare nell'Intramondo</string> <!--This string doesn't belong in this document, apparently?-->
     <string id="b_ad_6">OK</string>
-    <string id="b_ad_7">Cancel</string>
+    <string id="b_ad_7">Annulla</string> <!-- unofficial -->
     <string id="b_ae_1">Send the item(s) in the list?</string>
     <string id="b_af_2">Dopo aver svegliato il Pokémon con il Sincrogioco, potrai ricevere gli strumenti inviati parlando al ragazzo all'ingresso del Bosco Intramondo.</string>
 
     <!-- Friend Board -->
-    <string id="p_aa_1">Friend Board</string>
+    <string id="p_aa_1">Bacheca</string>
     <string id="p_ah_1">No Pokémon have joined you.</string>
-    <string id="p_aa_4">POKÉMON YOU WANT&#xD;TO TAKE</string>
-    <!--Next should be "TO TAKE X/10" where X is a variable-->
-    <!--There should be another line somewhere else reading "THE POKEMON MARKED WITH () WILL BE SENT TO THE ENTRALINK" where an image of a blue dot is between ()-->
-    <string id="p_aa_5">Pokémon already sent</string>
-    <string id="p_aa_6">Pokémon to take</string>
+    <string id="p_aa_4">Pokémon che voglio portare con&#xD;me:</string>
+    <!--Next should be "me: X/10" where X is a variable-->
+    <!--There should be another line somewhere else reading "I Pokémon con () saranno inviati all'Intramondo" where an image of a blue dot is between ()-->
+    <string id="p_aa_5">Pokémon amici</string>
+    <string id="p_aa_6">Pokémon da inviare</string>
 
     <!--Dream Catalogue-->
     <string id="i_ab_3">Catalogo dei sogni</string>
