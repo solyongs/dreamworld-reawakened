@@ -19,6 +19,7 @@ STATIC_GET_RESPONSES = {
     "pdw.home.my_bridge":          b"{}",
     "pdw.croft.tutorial_start":    b"{}",
     "pdw.croft.tutorial_end":      b"{}",
+    "hb":                          b"{}" 
 }
 
 STATIC_POST_RESPONSES = {
