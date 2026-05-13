@@ -34,6 +34,15 @@
 	<!--Leave and stay asleep submenu-->
 	<string id="o_az_1">Fine della visita al Pokémon DW.</string>
 
+	<!--One hour alert-->
+	<string id="da_ad_1">Stai giocando al Dream World da quasi un'ora.</string>
+	<string id="da_ad_2">É quasi trascorsa un'ora da quando hai iniziato a giocare nel Pokémon Dream World. Scegli un'opzione ed esci dal&#xD;Pokémon Dream World.</string>
+	<string id="da_ad_6">Usa questa opzione per uscire temporaneamente dal&#xD;Pokémon DW.</string>
+
+	<!--Final alert, unofficial strings-->
+	<string id="da_af_1">La visita al Dream World è terminata</string>
+	<string id="da_af_2">É trascorsa un'ora da quando hai iniziato a giocare nel Pokémon Dream World. Scegli un'opzione ed esci dal&#xD;Pokémon Dream World.</string>
+
 	<!--Fennel at startup-->
 	<string id="pg_amh_1">Ciao! Sei nel Pokémon Dream World!</string>
 	<string id="pg_amh_2">Potrai giocare al Pokémon DW per un'ora.</string>
