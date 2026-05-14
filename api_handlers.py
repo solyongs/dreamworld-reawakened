@@ -174,6 +174,27 @@ def handle_footprint_list(_query):
 def handle_croft_list(_query):
     return(json.dumps(game_data.crops.data).encode())
 
+def handle_my_island_area(_query):
+    friend_list = []
+    for _ in range(5):
+        friend = {
+            "pgl_name": "OtherPlayerName",
+            "member_id": randint(1,50000),
+            "member_savedata_id": randint(1,50000),
+            "island_id": 201,
+            "country_id": 220,
+            "is_ds": str(randint(0, 1)),
+            "is_gts": str(randint(0, 1)),
+            "is_pdw": str(randint(0, 1))
+        }
+        friend_list.append(friend)
+    response = {
+        "island_id": game_data.player_data["member"]["island_id"],
+        "friend_list": friend_list
+    }
+
+    return(json.dumps(response).encode())
+
 # --------
 
 def handle_kinomi_sowing(_query):
@@ -223,7 +244,8 @@ DYNAMIC_GET_RESPONSES = {
     "pdw.item.item_list":        handle_item_list,
     "pdw.home.my_island":        handle_my_island,
     "pdw.home.footprint_list":   handle_footprint_list,
-    "pdw.croft.my_croft_list":   handle_croft_list
+    "pdw.croft.my_croft_list":   handle_croft_list,
+    "pdw.home.my_island_area":   handle_my_island_area
 }
 
 DYNAMIC_POST_RESPONSES = {
