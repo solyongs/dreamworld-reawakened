@@ -69,7 +69,7 @@
 	<string id="da_aa_5">Exit the Pokémon DW and wake up</string>
 	<string id="da_aa_6">Exit the Pokémon DW without waking</string>
 	<string id="da_ab_1">Choose this option to exit the&#xD;Pokémon DW temporarily.</string>
-	<string id="da_ab_2">If the Pokémon you wished for at the Tree of Dreams is on the board, the rainbow to the Island of Dreams won't appear!</string>
+	<string id="da_ab_2">If the Pokémon that you wished for at the Tree of Dreams is on the board, the rainbow to the Island of Dreams won't appear!</string>
 	<string id="da_ab_3">The Pokémon DW will automatically end one hour after you start playing.</string>
 	<string id="da_ab_4">Keep playing in the Pokémon DW</string>
 
@@ -79,7 +79,7 @@
 	<string id="dc_aa_3">If there is another Pokémon you'd like to take, click "Back" and check the Friend Board in your home.</string>
 	<string id="dc_aa_4">It may take some time for the Pokémon you wished for at the Tree of Dreams to appear on the Friend Board.</string>
 	<string id="dc_aa_5">Next</string>
-	<string id="dc_aa_6">Back</string>
+	<string id="dc_aa_6">Back</string> 
 	<!--It should go to list of items next but as of time of writing, pressing "Next" (or "Back") softlocks-->
 
 	<!--Leave and stay asleep submenu-->

@@ -6,11 +6,12 @@ from random import choices
 from random import randint
 
 import game_data
+from config import args
 
 encounter_store = {}
 
 def handle_dreamland_top(_query):
-    if _query["is_random"]:
+    if args.random:
         object_list = []
         for _ in range(10):
             pkmn = game_data.get_random_pokemon()

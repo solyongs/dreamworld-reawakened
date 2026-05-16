@@ -25,10 +25,6 @@ class S(BaseHTTPRequestHandler):
     def _dispatch_api(self, api_name, query, static_map, dynamic_map):
         """Look up api_name in the dispatch tables and write the response."""
         
-        query["is_random"] = False
-        if self.server.app_config["is_random"]:
-            query["is_random"] = True
-
         if api_name in static_map:
             body = static_map[api_name]
         elif api_name in dynamic_map:
@@ -132,8 +128,7 @@ def run(server_class=HTTPServer, handler_class=S, port=8080, debug=False, is_ran
     httpd = server_class(server_address, handler_class)
 
     httpd.app_config = {
-        "debug": debug,
-        "is_random": is_random
+        "debug": debug
     }
 
     log_level = logging.DEBUG if httpd.app_config["debug"] else logging.INFO

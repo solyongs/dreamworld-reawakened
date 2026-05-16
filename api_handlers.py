@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 import time
 import json
+from pathlib import Path
 from random import choice
 from random import randint
 
 import game_data
+from config import args
 
 from dreamland_handler import handle_dreamland_top, handle_dreamland_tree_top, handle_game_clear
 
@@ -90,7 +92,7 @@ def handle_item_list(_query):
     status       = int(_query.get("status", 0))
 
     if status == 2:
-        return (b'{}')
+        return json.dumps({"cnt":0,"list":[]}).encode()
 
     if item_kind_id == 0: #all items
         item_list = game_data.chest.data["list"]
@@ -116,7 +118,7 @@ def handle_item_list(_query):
 
 
 def handle_my_island(_query):
-    if _query["is_random"]:
+    if args.random:
         pkmn = game_data.get_random_pokemon()
     else:
         pkmn = game_data.sleeping_pokemon
@@ -230,7 +232,25 @@ def handle_waterpot_list_POST(_query):
     return json.dumps(response).encode()
 
 def handle_item_delivery(_query):
-    print(json.dumps(_query, indent=2))
+    return b'{}'
+
+    if args.entralinked:
+        entralinked_dir = game_data.init_entralinked()
+        with open(Path(entralinked_dir) / "data.json", "r") as f:
+            entralinked_data = json.load(f)
+
+        item_list = []
+        for k, item_pair in _query.items():
+            if not k.startswith("item_id"):
+                continue
+            
+            item_id, item_count = item_pair.split("_")
+            item_list.append({"id":int(item_id), "quantity":int(item_count)})
+
+        #entralinked_data["items"] = item_list
+
+        #with open(Path(entralinked_dir) / "data.json", "w") as f:
+            #json.dump(entralinked_data, f, indent=2, ensure_ascii=False)
 
 DYNAMIC_GET_RESPONSES = {
     "pdw.croft.waterpot_list":   handle_waterpot_list_GET,
