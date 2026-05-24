@@ -25,12 +25,14 @@ language = {
 }
 
 def build_swf_params() -> dict:
-    langcode = game_data.player_data["member"]["langcode"]
+    player_data = game_data.read_player_data()
+
+    langcode = player_data["member"]["langcode"]
     return {
         "json": json.dumps({
-            "member": game_data.player_data["member"],
-            "token":  game_data.player_data.get("token", ""),
-            "medals": game_data.player_data.get("medals", []),
+            "member": player_data["member"],
+            "token":  player_data.get("token", ""),
+            "medals": player_data.get("medals", []),
         }),
         "v":             "2.0",
         "api_host_name": "/api/",
@@ -169,6 +171,8 @@ def handle_croft_list(_query):
     return(json.dumps(game_data.crops.data).encode())
 
 def handle_my_island_area(_query):
+    player_data = game_data.read_player_data()
+
     friend_list = []
     for _ in range(5):
         friend = {
@@ -183,7 +187,7 @@ def handle_my_island_area(_query):
         }
         friend_list.append(friend)
     response = {
-        "island_id": game_data.player_data["member"]["island_id"],
+        "island_id": player_data["member"]["island_id"],
         "friend_list": friend_list
     }
 

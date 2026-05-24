@@ -40,10 +40,12 @@ def handle_dreamland_top(_query):
         return json.dumps(response).encode()
 
     # --- get player game version ---
-    rom_name      = game_data.player_data["member"]["rom_name"]
-    player_points = int(game_data.player_data["member"]["point"])
-    player_badges = int(game_data.player_data["member"]["player_badge_num"])
-    player_types  = {game_data.player_data["member"]["type1"], game_data.player_data["member"]["type2"]}
+    player_data = game_data.read_player_data()["member"]
+
+    rom_name      = player_data["rom_name"]
+    player_points = int(player_data["experiment_point"])
+    player_badges = int(player_data["player_badge_num"])
+    player_types  = {player_data["type1"], player_data["type2"]}
 
     is_bw   = rom_name in ("Pokémon Black Version", "Pokémon White Version")
     is_b2w2 = rom_name in ("Pokémon Black Version 2", "Pokémon White Version 2")

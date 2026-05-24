@@ -51,9 +51,8 @@ if __name__ == "__main__":
         from bs4 import BeautifulSoup as bs
         inject_htm_playerdata()
 
-    if args.entralinked:
-        entralinked_dir = game_data.init_entralinked()
-        game_data.write_entralinked_data(entralinked_dir)
+    if args.game_sync:
+        game_data.update_gamesync_status(game_data.PlayerStatus.DREAMING)
 
     game_data.crops.process_berry_growth()
     
