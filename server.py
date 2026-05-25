@@ -5,6 +5,7 @@ from html import escape
 
 import logging
 from pathlib import Path
+from config import args
 
 from api_handlers import (
     STATIC_GET_RESPONSES,
@@ -122,9 +123,9 @@ class S(BaseHTTPRequestHandler):
 # Server start
 # ------------
 
-def run(server_class=HTTPServer, handler_class=S, port=8080, debug=False, is_random=False):
+def run(server_class=HTTPServer, handler_class=S, port=args.port, debug=False, is_random=False):
     
-    server_address = ("127.0.0.1", port)
+    server_address = ("0.0.0.0", port)
     httpd = server_class(server_address, handler_class)
 
     httpd.app_config = {

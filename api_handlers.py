@@ -14,28 +14,18 @@ from dreamland_handler import handle_dreamland_top, handle_dreamland_tree_top, h
 # Special handler for main.swf injection
 # --------------------
 
-language = {
-    1: "ja.",
-    2: "en.",
-    3: "fr.",
-    4: "it.",
-    5: "de.",
-    7: "es.",
-    8: "ko."
-}
-
 def build_swf_params() -> dict:
-    langcode = game_data.player_data["member"]["langcode"]
+    player_data = game_data.read_player_data()
     return {
         "json": json.dumps({
-            "member": game_data.player_data["member"],
-            "token":  game_data.player_data.get("token", ""),
-            "medals": game_data.player_data.get("medals", []),
+            "member": player_data["member"],
+            "token":  player_data.get("token", ""),
+            "medals": player_data.get("medals", []),
         }),
         "v":             "2.0",
         "api_host_name": "/api/",
         "page":          "SITE_PDW",
-        "lang":          language[langcode],
+        "lang":          game_data.player_language+".",
     }
 
 # --------------------
@@ -97,7 +87,7 @@ def handle_item_list(_query):
     if item_kind_id == 0: #all items
         item_list = game_data.chest.data["list"]
     elif item_kind_id == 1: #only berries
-        item_list = [item for item in game_data.chest.data["list"] if int(item["pokeitem_id"]) in range(149, 213)]
+        item_list = [item for item in game_data.chest.data["list"] if item["pokeitem_id"] in range(149, 213)]
 
     if sort_key == 1: #date
         item_list = sorted(item_list, key=lambda x: game_data.date_to_unix(x["date"]), reverse=True)
@@ -151,7 +141,7 @@ def handle_footprint_list(_query):
             "pokemon_name": pkmn["pokemon_name"],
             "pgl_name": "pgl_name",
             "pokemon_no": pkmn["pokemon_no"],
-            "form_no": pkmn.get("form_no", "0"), #below this is used for the popup menu
+            "form_no": pkmn.get("form_no", 0), #below this is used for the popup menu
             "oyaname": "oyaname",
             "level": pkmn["level"],
             "type1": pkmn["type1"],
@@ -169,6 +159,8 @@ def handle_croft_list(_query):
     return(json.dumps(game_data.crops.data).encode())
 
 def handle_my_island_area(_query):
+    player_data = game_data.read_player_data()
+
     friend_list = []
     for _ in range(5):
         friend = {
@@ -177,13 +169,13 @@ def handle_my_island_area(_query):
             "member_savedata_id": randint(1,50000),
             "island_id": 201,
             "country_id": 220,
-            "is_ds": str(randint(0, 1)),
-            "is_gts": str(randint(0, 1)),
-            "is_pdw": str(randint(0, 1))
+            "is_ds": randint(0, 1),
+            "is_gts": randint(0, 1),
+            "is_pdw": randint(0, 1)
         }
         friend_list.append(friend)
     response = {
-        "island_id": game_data.player_data["member"]["island_id"],
+        "island_id": player_data["member"]["island_id"],
         "friend_list": friend_list
     }
 

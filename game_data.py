@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import json
 import time
+from enum import Enum, auto
 from pathlib import Path
 from random import choice
 from random import randint
@@ -11,6 +12,16 @@ ROOT_DIR = Path(__file__).resolve().parent
 # --------------------
 # Helper data
 # --------------------
+
+language = {
+    1: "ja",
+    2: "en",
+    3: "fr",
+    4: "it",
+    5: "de",
+    7: "es",
+    8: "ko"
+}
 
 with open(ROOT_DIR / "json_data" / "items.json", encoding="UTF-8") as f:
     item_info = json.load(f)
@@ -24,13 +35,39 @@ with open(ROOT_DIR / "json_data" / "dream_islands.json", encoding="UTF-8") as f:
 with open(ROOT_DIR / "json_data" / "berries.json", encoding="UTF-8") as f:
     berry_data = json.load(f)
 
-pokemon_natures = ("Adamant","Bashful","Bold","Brave","Calm","Careful","Docile","Gentle","Hardy","Hasty","Impish","Jolly","Lax","Lonely","Mild","Modest","Naive","Naughty","Quiet","Quirky","Rash","Relaxed","Sassy","Serious","Timid")
-
 # --------------------
 # Helper functions
 # --------------------
 
+class PlayerStatus(Enum):
+    AWAKE = 0
+    SLEEPING = auto()
+    DREAMING = auto()
+    WAKE_READY = auto()
+
+def lookup_str(file: str, index: int):
+    if index is None:
+        return None
+    
+    index = int(index)
+    
+    with open(ROOT_DIR / "raw_text" / player_language / f"{file}.txt", "r", encoding="UTF-8") as f:
+        strings = f.read().splitlines()
+    
+    return strings[index]
+
+def lookup_desc(index: int):
+    with open(ROOT_DIR / "raw_text" / player_language / "item_descriptions.txt", "r", encoding="UTF-8") as f:
+        strings = f.read().splitlines()
+        
+    string = strings[index].split("\\n")
+    
+    res = [None, None, None]
+    res[:len(string)] = string
+    return tuple(res)
+
 def generate_otoken():
+    player_data = read_player_data()
     return f"{randint(1, 99)}dwt{player_data['member']['world_id']}{int(time.time()):x}.{randint(10000000, 99999999)}"
 
 def date_to_unix(datetime_string: str):
@@ -57,6 +94,18 @@ class ChestManager:
         with open(self.path, encoding="UTF-8") as f:
             self.data = json.load(f)
 
+    def localize_names(self):
+        for item in self.data["list"]:
+            item_desc = lookup_desc(item["pokeitem_id"])
+
+            item["pokeitem"] = lookup_str("item", item["pokeitem_id"])
+
+            item["field_line1"] = item_desc[0]
+            item["field_line2"] = item_desc[1]
+            item["field_line3"] = item_desc[2]
+        
+        self.save()
+
     def save(self):
         with open(self.path, "w", encoding="UTF-8") as f:
             json.dump(self.data, f, indent=2, ensure_ascii=False)
@@ -76,16 +125,18 @@ class ChestManager:
         else:
             curr_item_info = item_info[str(item_id)]
             self.data["cnt"] += 1
+            
+            item_desc = lookup_desc(item_id)
             new_item = {
                 "pokeitem_id": item_id,
-                "pokeitem": curr_item_info["item_name"],
+                "pokeitem": lookup_str("item", item_id),
                 "item_cnt": count,
                 "bunrui_no": curr_item_info["first_sort"],
                 "b_hozon_sentou": curr_item_info["second_sort"],
                 "date": current_date,
-                "field_line1": curr_item_info["desc"][0],
-                "field_line2": curr_item_info["desc"][1],
-                "field_line3": curr_item_info["desc"][2]
+                "field_line1": item_desc[0],
+                "field_line2": item_desc[1],
+                "field_line3": item_desc[2]
             }
             self.data["list"].append(new_item)
 
@@ -93,7 +144,7 @@ class ChestManager:
 
     def remove_item(self, item_id, count):
         current_date = datetime.now().strftime("%Y-%m-%d")
-        chest_item = self.fetch_item_by_id(int(item_id))
+        chest_item = self.fetch_item_by_id(item_id)
 
         chest_item["item_cnt"] -= count
         chest_item["date"] = current_date
@@ -111,6 +162,21 @@ class CropManager:
         self.path = data_path
         with open(self.path, encoding="UTF-8") as f:
             self.data = json.load(f)
+
+    def localize_names(self):
+        for crop in self.data["croft_list"]:
+            if "pokeitem_id" not in crop:
+                continue
+
+            berry_desc = lookup_desc(crop["pokeitem_id"])
+
+            crop["kinomi"] = lookup_str("item", crop["pokeitem_id"])
+
+            crop["desc1"] = berry_desc[0]
+            crop["desc2"] = berry_desc[1]
+            crop["desc3"] = berry_desc[2]
+        
+        self.save()
 
     def save(self):
         with open(self.path, "w", encoding="UTF-8") as f:
@@ -130,21 +196,22 @@ class CropManager:
 
         current_time = round(time.time())
 
-        berry_id = int(pokeitem_id) - 148
+        berry_id = pokeitem_id - 148
 
+        berry_desc = lookup_desc(pokeitem_id)
         plot.update({
             "my_croft_id": my_croft_id,
-            "pokeitem_id": int(pokeitem_id),
+            "pokeitem_id": pokeitem_id,
             "kinomi": item_info[pokeitem_id]["item_name"],
             "kinomi_id": berry_id,
             "dirt_hp": 100,
-            "desc1": item_info[pokeitem_id]["desc"][0],
-            "desc2": item_info[pokeitem_id]["desc"][1],
-            "desc3": item_info[pokeitem_id]["desc"][2],
+            "desc1": berry_desc[0],
+            "desc2": berry_desc[1],
+            "desc3": berry_desc[2],
             "kinomi_state": 0,
             "x": plot["x"],
             "y": plot["y"],
-            "server": {"planted_time": current_time, "last_update_time": current_time, "yield": berry_data[str(berry_id)]["max_yield"]}
+            "server": {"planted_time": current_time, "last_update_time": current_time, "yield": berry_data[berry_id]["max_yield"]}
         })
 
         self.save()
@@ -202,11 +269,20 @@ class CropManager:
 # Save data
 # --------------------
 
-with open(ROOT_DIR / "save_data" / "player_data.json", encoding="UTF-8") as f:
-    player_data = json.load(f)
+def read_player_data():
+    with open(ROOT_DIR / "save_data" / "player_data.json", encoding="UTF-8") as f:
+        return json.load(f)
+
+def write_player_data(data: dict):
+    player_data = read_player_data()
+    player_data["member"].update(data)
+    with open(ROOT_DIR / "save_data" / "player_data.json", "w", encoding="UTF-8") as f:
+        json.dump(player_data, f, indent=2, ensure_ascii=False)
 
 with open(ROOT_DIR / "save_data" / "sleeping_pokemon.json", encoding="UTF-8") as f:
     sleeping_pokemon = json.load(f)
+
+player_language = language[read_player_data()["member"]["langcode"]]
 
 chest = ChestManager(ROOT_DIR / "save_data" / "chest_data.json")
 
@@ -216,124 +292,10 @@ crops = CropManager(ROOT_DIR / "save_data" / "crop_data.json")
 # Manage Entralinked data
 # --------------------
 
-def write_entralinked_data(entralinked_dir):
-    version_language = {
-        "WHITE_JAPANESE": (20, 1, "ポケットモンスター ホワイト"),
-        "WHITE_ENGLISH":  (20, 2, "Pokémon White Version"),
-        "WHITE_FRENCH":   (20, 3, "Pokémon Version Blanche"),
-        "WHITE_ITALIAN":  (20, 4, "Pokémon Versione Bianca"),
-        "WHITE_GERMAN":   (20, 5, "Pokémon Weiße Edition"),
-        "WHITE_SPANISH":  (20, 7, "Pokémon Edición Blanca"),
-        "WHITE_KOREAN":   (20, 8, "포켓몬스터 화이트"),
+def update_gamesync_status(status: PlayerStatus):
+    game_sync_file = ROOT_DIR / "save_data" / "game_sync.json"
 
-        "BLACK_JAPANESE": (21, 1, "ポケットモンスター ブラック"),
-        "BLACK_ENGLISH":  (21, 2, "Pokémon Black Version"),
-        "BLACK_FRENCH":   (21, 3, "Pokémon Version Noire"),
-        "BLACK_ITALIAN":  (21, 4, "Pokémon Versione Nera"),
-        "BLACK_GERMAN":   (21, 5, "Pokémon Schwarze Edition"),
-        "BLACK_SPANISH":  (21, 7, "Pokémon Edición Negra"),
-        "BLACK_KOREAN":   (21, 8, "포켓몬스터 블랙"),
+    if not game_sync_file.exists():
+        raise FileNotFoundError("A sleeping Pokémon must be tucked to bed first.")
 
-        "WHITE_2_JAPANESE": (22, 1, "ポケットモンスター ホワイト２"),
-        "WHITE_2_ENGLISH":  (22, 2, "Pokémon White Version 2"),
-        "WHITE_2_FRENCH":   (22, 3, "Pokémon Version Blanche 2"),
-        "WHITE_2_ITALIAN":  (22, 4, "Pokémon Versione Bianca 2"),
-        "WHITE_2_GERMAN":   (22, 5, "Pokémon Weiße Edition 2"),
-        "WHITE_2_SPANISH":  (22, 7, "Pokémon Edición Blanca 2"),
-        "WHITE_2_KOREAN":   (22, 8, "포켓몬스터 화이트2"),
-
-        "BLACK_2_JAPANESE": (23, 1, "ポケットモンスター ブラック２"),
-        "BLACK_2_ENGLISH":  (23, 2, "Pokémon Black Version 2"),
-        "BLACK_2_FRENCH":   (23, 3, "Pokémon Version Noire 2"),
-        "BLACK_2_ITALIAN":  (23, 4, "Pokémon Versione Nera 2"),
-        "BLACK_2_GERMAN":   (23, 5, "Pokémon Schwarze Edition 2"),
-        "BLACK_2_SPANISH":  (23, 7, "Pokémon Edición Negra 2"),
-        "BLACK_2_KOREAN":   (23, 8, "포켓몬스터 블랙2")
-    }
-
-    with open(Path(entralinked_dir) / "data.json", "r") as f:
-        data = json.load(f)
-
-    rom_id, langcode, rom_name = version_language[data["gameVersion"]]
-
-    form_str = ""
-    pkmn_species = data['dreamerInfo']['species']
-    pkmn_form = data["dreamerInfo"]["form"]
-    if pkmn_form:
-        form_num = next(k.split("-")[1] for k, v in pokemon_info.items() if v.get("form_no", "0") == str(pkmn_form) and str(pkmn_species) in k)
-        form_str = f"-{form_num}"
-    
-    pkmn_info = pokemon_info[f"{pkmn_species}{form_str}"]
-
-    player_data["member"].update({ 
-        "send_pokemon_count": player_data["member"]["send_pokemon_count"] + 1,
-        "rom_id":             rom_id,
-        "rom_name":           rom_name,
-        #"player_badge_num":   "8",          #not currently tracked by Entralinked
-        #"alter_rom_name":     "PlayerName", #not currently tracked by Entralinked
-        "langcode":           langcode,
-        "pokemon_no":         str(data["dreamerInfo"]["species"]),
-        "pokemon_name":       pkmn_info["pokemon_name"],
-        "form_no":            str(data["dreamerInfo"]["form"]),
-        "type1":              pkmn_info["type1"],
-        "type2":              pkmn_info["type2"],
-        "gscd":               data["gameSyncId"]
-    })
-
-    pkmn_gender = (0 if data["dreamerInfo"]["gender"] == "MALE" else
-                   1 if data["dreamerInfo"]["gender"] == "FEMALE" else 2)
-
-    sleeping_pokemon.update({
-        "pokemon_no":        data["dreamerInfo"]["species"],
-        "pokemon_name":      pkmn_info["pokemon_name"],
-        "form_no":           str(data["dreamerInfo"]["form"]),
-        "type1":             pkmn_info["type1"],
-        "type2":             pkmn_info["type2"],
-        "pokemon_nickname":  data["dreamerInfo"]["nickname"] if data["dreamerInfo"]["nickname"] != pkmn_info["pokemon_name"] else None,
-        "oyaname":           data["dreamerInfo"]["trainerName"],
-        "level":             data["dreamerInfo"]["level"],
-        "sex":               pkmn_gender,
-        "personality":       data["dreamerInfo"]["nature"].title(),
-        #"ball_name":        "Cherish Ball" #not currently tracked by Entralinked
-    })
-
-    with open(ROOT_DIR / "save_data" / "player_data.json", "w", encoding="UTF-8") as f:
-        json.dump(player_data, f, indent=2, ensure_ascii=False)
-
-    with open(ROOT_DIR / "save_data" / "sleeping_pokemon.json", "w", encoding="UTF-8") as f:
-        json.dump(sleeping_pokemon, f, indent=2, ensure_ascii=False)
-
-
-def init_entralinked():
-    entralinked_config = ROOT_DIR / "json_data" / "entralinked.json"
-
-    if entralinked_config.exists():
-        with open(entralinked_config, "r") as f:
-            config = json.load(f)
-            entralinked_dir = config["entralinked_dir"]
-            print("ENTRALINKED: Loaded Entralinked path")
-
-        return entralinked_dir
-
-    else:
-        import tkinter as tk
-        from tkinter.filedialog import askdirectory
-
-        root = tk.Tk()
-        root.withdraw()
-
-        print("ENTRALINKED: Select the folder that contains entralinked.jar")
-        entralink_root_dir = askdirectory(title="Select the folder that contains entralinked.jar")
-        
-        print("ENTRALINKED: Select the folder that corresponds to the Game Sync code")
-        entralinked_dir = askdirectory(title="Select the folder that corresponds to the Game Sync code", initialdir=Path(entralink_root_dir) / "players")
-
-        if Path(entralinked_dir).parts[-2] != "players":
-            print("ENTRALINKED: Error selecting Entralinked data folder. Starting server normally.")
-            return
-        
-        with open(entralinked_config, "w+") as f:
-            json.dump({"entralinked_dir":entralinked_dir}, f, indent=2)
-            print("ENTRALINKED: Saved Entralinked path")
-
-        return entralinked_dir
+    write_player_data({"play_status": status.value})

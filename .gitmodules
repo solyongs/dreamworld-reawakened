@@ -1,0 +1,3 @@
+[submodule "game_sync_server"]
+	path = game_sync_server
+	url = https://github.com/minibug1021/game-sync-python.git

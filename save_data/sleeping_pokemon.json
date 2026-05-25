@@ -1,13 +1,15 @@
 {
-  "pokemon_no": 487,
-  "pokemon_name": "Giratina",
-  "form_no": "0",
-  "type1": "Ghost",
-  "type2": "Dragon",
-  "pokemon_nickname": "Giratina",
-  "oyaname": "SUM2013",
-  "level": 100,
-  "sex": 2,
-  "personality": "Quiet",
-  "ball_name": "Cherish Ball"
+  "pokemon_no": 589,
+  "pokemon_name": "Escavalier",
+  "form_no": 0,
+  "type1": "Bug",
+  "type2": "Steel",
+  "pokemon_nickname": null,
+  "oyaname": "Draako",
+  "level": 26,
+  "sex": 0,
+  "personality": "Careful",
+  "ball_name": "Net Ball",
+  "trainer_id": 24648,
+  "trainer_secret_id": 5145
 }

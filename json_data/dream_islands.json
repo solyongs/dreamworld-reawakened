@@ -4,1692 +4,1699 @@
     "req_points": {"bw": 0, "b2w2": 3000}, 
     "req_badges": {"bw": 0, "b2w2": 8}, 
     "favored_types": ["Bug", "Electric", "Grass", "Poison"], 
-    "pokemon": {
-      "19": {
-        "pokemon": "Rattata", 
+    "pokemon": [
+      {
+        "natdex": 19, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [3], "female": [3] }
+        "minigames": { "m": [3], "f": [3] }
       }, 
-      "29": {
-        "pokemon": "Nidoran♀", 
+      {
+        "natdex": 29, 
         "req_game": "bw", 
         "req_points": 0, 
-        "minigames": { "male": null, "female": [3] }
+        "minigames": { "m": null, "f": [3] }
       }, 
-      "32": {
-        "pokemon": "Nidoran♂", 
+      {
+        "natdex": 32, 
         "req_game": "bw", 
         "req_points": 0, 
-        "minigames": { "male": [3], "female": null }
+        "minigames": { "m": [3], "f": null }
       }, 
-      "37": {
-        "pokemon": "Vulpix", 
+      {
+        "natdex": 37, 
         "req_game": null, 
         "req_points": 10000, 
-        "minigames": { "male": [3, 9], "female": [3, 9] }
+        "minigames": { "m": [3, 9], "f": [3, 9] }
       }, 
-      "43": {
-        "pokemon": "Oddish", 
+      {
+        "natdex": 43, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [4], "female": [4] }
+        "minigames": { "m": [4], "f": [4] }
       }, 
-      "54": {
-        "pokemon": "Psyduck", 
+      {
+        "natdex": 54, 
         "req_game": null, 
         "req_points": 7500, 
-        "minigames": { "male": [9], "female": [9] }
+        "minigames": { "m": [9], "f": [9] }
       }, 
-      "58": {
-        "pokemon": "Growlithe", 
+      {
+        "natdex": 58, 
         "req_game": null, 
         "req_points": 7500, 
-        "minigames": { "male": [2], "female": [2] }
+        "minigames": { "m": [2], "f": [2] }
       }, 
-      "60": {
-        "pokemon": "Poliwag", 
+      {
+        "natdex": 60, 
         "req_game": null, 
         "req_points": 10000, 
-        "minigames": { "male": [1, 11], "female": [1, 11] }
+        "minigames": { "m": [1, 11], "f": [1, 11] }
       }, 
-      "69": {
-        "pokemon": "Bellsprout", 
+      {
+        "natdex": 69, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [4], "female": [4] }
+        "minigames": { "m": [4], "f": [4] }
       }, 
-      "77": {
-        "pokemon": "Ponyta", 
+      {
+        "natdex": 77, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [1], "female": [1] }
+        "minigames": { "m": [1], "f": [1] }
       }, 
-      "83": {
-        "pokemon": "Farfetch'd", 
+      {
+        "natdex": 83, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [2], "female": [2] }
+        "minigames": { "m": [2], "f": [2] }
       }, 
-      "84": {
-        "pokemon": "Doduo", 
+      {
+        "natdex": 84, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [3, 7], "female": [3, 7] }
+        "minigames": { "m": [3, 7], "f": [3, 7] }
       }, 
-      "102": {
-        "pokemon": "Exeggcute", 
+      {
+        "natdex": 102, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [3, 2], "female": [3, 2] }
+        "minigames": { "m": [3, 2], "f": [3, 2] }
       }, 
-      "108": {
-        "pokemon": "Lickitung", 
+      {
+        "natdex": 108, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [1], "female": [1] }
+        "minigames": { "m": [1], "f": [1] }
       }, 
-      "114": {
-        "pokemon": "Tangela", 
+      {
+        "natdex": 114, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [4, 2], "female": [4, 2] }
+        "minigames": { "m": [4, 2], "f": [4, 2] }
       }, 
-      "115": {
-        "pokemon": "Kangaskhan", 
+      {
+        "natdex": 115, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": null, "female": [1] }
+        "minigames": { "m": null, "f": [1] }
       }, 
-      "123": {
-        "pokemon": "Scyther", 
+      {
+        "natdex": 123, 
         "req_game": null, 
         "req_points": 7500, 
-        "minigames": { "male": [3], "female": [3] }
+        "minigames": { "m": [3], "f": [3] }
       }, 
-      "128": {
-        "pokemon": "Tauros", 
+      {
+        "natdex": 128, 
         "req_game": null, 
         "req_points": 7500, 
-        "minigames": { "male": [1], "female": null }
+        "minigames": { "m": [1], "f": null }
       }, 
-      "161": {
-        "pokemon": "Sentret", 
+      {
+        "natdex": 161, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [2], "female": [2] }
+        "minigames": { "m": [2], "f": [2] }
       }, 
-      "174": {
-        "pokemon": "Igglybuff", 
+      {
+        "natdex": 174, 
         "req_game": "bw", 
         "req_points": 0, 
-        "minigames": { "male": [2], "female": [2] }
+        "minigames": { "m": [2], "f": [2] }
       }, 
-      "177": {
-        "pokemon": "Natu", 
+      {
+        "natdex": 177, 
         "req_game": null, 
         "req_points": 10000, 
-        "minigames": { "male": [2, 7], "female": [2, 7] }
+        "minigames": { "m": [2, 7], "f": [2, 7] }
       }, 
-      "179": {
-        "pokemon": "Mareep", 
+      {
+        "natdex": 179, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [1], "female": [1] }
+        "minigames": { "m": [1], "f": [1] }
       }, 
-      "183": {
-        "pokemon": "Marill", 
+      {
+        "natdex": 183, 
         "req_game": null, 
         "req_points": 7500, 
-        "minigames": { "male": [1, 4], "female": [1, 4] }
+        "minigames": { "m": [1, 4], "f": [1, 4] }
       }, 
-      "185": {
-        "pokemon": "Sudowoodo", 
+      {
+        "natdex": 185, 
         "req_game": null, 
         "req_points": 7500, 
-        "minigames": { "male": [2], "female": [2] }
+        "minigames": { "m": [2], "f": [2] }
       }, 
-      "187": {
-        "pokemon": "Hoppip", 
+      {
+        "natdex": 187, 
         "req_game": "bw", 
         "req_points": 0, 
-        "minigames": { "male": [1], "female": [1] }
+        "minigames": { "m": [1], "f": [1] }
       }, 
-      "191": {
-        "pokemon": "Sunkern", 
+      {
+        "natdex": 191, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [1], "female": [1] }
+        "minigames": { "m": [1], "f": [1] }
       }, 
-      "203": {
-        "pokemon": "Girafarig", 
+      {
+        "natdex": 203, 
         "req_game": null, 
         "req_points": 7500, 
-        "minigames": { "male": [2], "female": [2] }
+        "minigames": { "m": [2], "f": [2] }
       }, 
-      "234": {
-        "pokemon": "Stantler", 
+      {
+        "natdex": 234, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [3], "female": [3, 7] }
+        "minigames": { "m": [3], "f": [3, 7] }
       }, 
-      "239": {
-        "pokemon": "Elekid", 
+      {
+        "natdex": 239, 
         "req_game": null, 
         "req_points": 10000, 
-        "minigames": { "male": [3], "female": [3] }
+        "minigames": { "m": [3], "f": [3] }
       }, 
-      "241": {
-        "pokemon": "Miltank", 
+      {
+        "natdex": 241, 
         "req_game": null, 
         "req_points": 7500, 
-        "minigames": { "male": null, "female": [1, 9] }
+        "minigames": { "m": null, "f": [1, 9] }
       }, 
-      "261": {
-        "pokemon": "Poochyena", 
+      {
+        "natdex": 261, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [3, 7], "female": [3, 7] }
+        "minigames": { "m": [3, 7], "f": [3, 7] }
       }, 
-      "263": {
-        "pokemon": "Zigzagoon", 
+      {
+        "natdex": 263, 
         "req_game": null, 
         "req_points": 7500, 
-        "minigames": { "male": [1], "female": [1] }
+        "minigames": { "m": [1], "f": [1] }
       }, 
-      "270": {
-        "pokemon": "Lotad", 
+      {
+        "natdex": 270, 
         "req_game": "bw", 
         "req_points": 0, 
-        "minigames": { "male": [4], "female": [2] }
+        "minigames": { "m": [4], "f": [2] }
       }, 
-      "276": {
-        "pokemon": "Taillow", 
+      {
+        "natdex": 276, 
         "req_game": "bw", 
         "req_points": 0, 
-        "minigames": { "male": [4], "female": [4] }
+        "minigames": { "m": [4], "f": [4] }
       }, 
-      "283": {
-        "pokemon": "Surskit", 
+      {
+        "natdex": 283, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [4], "female": [4, 11] }
+        "minigames": { "m": [4], "f": [4, 11] }
       }, 
-      "300": {
-        "pokemon": "Skitty", 
+      {
+        "natdex": 300, 
         "req_game": null, 
         "req_points": 10000, 
-        "minigames": { "male": [2], "female": [2] }
+        "minigames": { "m": [2], "f": [2] }
       }, 
-      "309": {
-        "pokemon": "Electrike", 
+      {
+        "natdex": 309, 
         "req_game": "bw", 
         "req_points": 7500, 
-        "minigames": { "male": [1], "female": [1] }
+        "minigames": { "m": [1], "f": [1] }
       }, 
-      "351-normal": {
-        "pokemon": "Castform", 
+      {
+        "natdex": 351, 
+        "form": "normal", 
         "req_game": null, 
         "req_points": 7500, 
-        "minigames": { "male": [4], "female": [2] }
+        "minigames": { "m": [4], "f": [2] }
       }, 
-      "399": {
-        "pokemon": "Bidoof", 
+      {
+        "natdex": 399, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [2, 11], "female": [2, 11] }
+        "minigames": { "m": [2, 11], "f": [2, 11] }
       }, 
-      "403": {
-        "pokemon": "Shinx", 
+      {
+        "natdex": 403, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [2], "female": [2] }
+        "minigames": { "m": [2], "f": [2] }
       }, 
-      "417": {
-        "pokemon": "Pachirisu", 
+      {
+        "natdex": 417, 
         "req_game": "bw", 
         "req_points": 7500, 
-        "minigames": { "male": [4], "female": [4] }
+        "minigames": { "m": [4], "f": [4] }
       }, 
-      "427": {
-        "pokemon": "Buneary", 
+      {
+        "natdex": 427, 
         "req_game": null, 
         "req_points": 7500, 
-        "minigames": { "male": [3, 11], "female": [3, 11] }
+        "minigames": { "m": [3, 11], "f": [3, 11] }
       }, 
-      "431": {
-        "pokemon": "Glameow", 
+      {
+        "natdex": 431, 
         "req_game": null, 
         "req_points": 5000, 
-        "minigames": { "male": [1], "female": [1] }
+        "minigames": { "m": [1], "f": [1] }
       }, 
-      "535": {
-        "pokemon": "Tympole", 
+      {
+        "natdex": 535, 
         "req_game": "b2w2", 
         "req_points": 0, 
-        "minigames": { "male": [9], "female": [9] }
+        "minigames": { "m": [9], "f": [9] }
       }, 
-      "545": {
-        "pokemon": "Scolipede", 
+      {
+        "natdex": 545, 
         "req_game": "b2w2", 
         "req_points": 5000, 
-        "minigames": { "male": [7], "female": [7] }
+        "minigames": { "m": [7], "f": [7] }
       }, 
-      "546": {
-        "pokemon": "Cottonee", 
+      {
+        "natdex": 546, 
         "req_game": "b2w2", 
         "req_points": 0, 
-        "minigames": { "male": [11], "female": [11] }
+        "minigames": { "m": [11], "f": [11] }
       }, 
-      "548": {
-        "pokemon": "Petilil", 
+      {
+        "natdex": 548, 
         "req_game": "b2w2", 
         "req_points": 0, 
-        "minigames": { "male": null, "female": [9] }
+        "minigames": { "m": null, "f": [9] }
       }, 
-      "588": {
-        "pokemon": "Karrablast", 
+      {
+        "natdex": 588, 
         "req_game": "b2w2", 
         "req_points": 0, 
-        "minigames": { "male": [7], "female": [7] }
+        "minigames": { "m": [7], "f": [7] }
       }, 
-      "616": {
-        "pokemon": "Shelmet", 
+      {
+        "natdex": 616, 
         "req_game": "b2w2", 
         "req_points": 0, 
-        "minigames": { "male": [2], "female": [2] }
+        "minigames": { "m": [2], "f": [2] }
       }
-    }, 
-    "items": {
-      "3"  : { "item_name": "Great Ball"  , "req_points":  7500 }, 
-      "4"  : { "item_name": "Poké Ball"   , "req_points":     0 }, 
-      "6"  : { "item_name": "Net Ball"    , "req_points":     0 }, 
-      "8"  : { "item_name": "Nest Ball"   , "req_points":     0 }, 
-      "14" : { "item_name": "Heal Ball"   , "req_points":     0 }, 
-      "26" : { "item_name": "Super Potion", "req_points":     0 }, 
-      "33" : { "item_name": "Moomoo Milk" , "req_points":  7500 }, 
-      "38" : { "item_name": "Ether"       , "req_points":  7500 }, 
-      "86" : { "item_name": "TinyMushroom", "req_points":  7500 }, 
-      "87" : { "item_name": "Big Mushroom", "req_points": 10000 }, 
-      "149": { "item_name": "Cheri Berry" , "req_points":     0 }, 
-      "151": { "item_name": "Pecha Berry" , "req_points":     0 }, 
-      "155": { "item_name": "Oran Berry"  , "req_points":     0 }, 
-      "158": { "item_name": "Sitrus Berry", "req_points":     0 }, 
-      "159": { "item_name": "Figy Berry"  , "req_points":     0 }, 
-      "243": { "item_name": "Mystic Water", "req_points":  7500 }, 
-      "244": { "item_name": "Sharp Beak"  , "req_points":  7500 }, 
-      "259": { "item_name": "Stick"       , "req_points": 10000 }, 
-      "265": { "item_name": "Wide Lens"   , "req_points": 10000 }, 
-      "279": { "item_name": "Lagging Tail", "req_points":  7500 }, 
-      "575": { "item_name": "Pass Orb"    , "req_points":     0 }
-    }
+    ], 
+    "items": [
+      [3, 7500], 
+      [4, 0], 
+      [6, 0], 
+      [8, 0], 
+      [14, 0], 
+      [26, 0], 
+      [33, 7500], 
+      [38, 7500], 
+      [86, 7500], 
+      [87, 10000], 
+      [149, 0], 
+      [151, 0], 
+      [155, 0], 
+      [158, 0], 
+      [159, 0], 
+      [243, 7500], 
+      [244, 7500], 
+      [259, 10000], 
+      [265, 10000], 
+      [279, 7500], 
+      [575, 0]
+    ]
   }, 
   "4": {
     "area_name": "Sparkling Sea", 
     "req_points": {"bw": 5000, "b2w2": 0}, 
     "req_badges": {"bw": 8, "b2w2": 0}, 
     "favored_types": ["Water"], 
-    "pokemon": {
-      "72": {
-        "pokemon": "Tentacool", 
+    "pokemon": [
+      {
+        "natdex": 72, 
         "req_game": null, 
         "req_points": 7500, 
-        "minigames": { "male": [4], "female": [4] }
+        "minigames": { "m": [4], "f": [4] }
       }, 
-      "79": {
-        "pokemon": "Slowpoke", 
+      {
+        "natdex": 79, 
         "req_game": "bw", 
         "req_points": 0, 
-        "minigames": { "male": [1], "female": [2] }
+        "minigames": { "m": [1], "f": [2] }
       }, 
-      "86": {
-        "pokemon": "Seel", 
+      {
+        "natdex": 86, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [1, 3], "female": [1, 3] }
+        "minigames": { "m": [1, 3], "f": [1, 3] }
       }, 
-      "90": {
-        "pokemon": "Shellder", 
+      {
+        "natdex": 90, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [1], "female": [1] }
+        "minigames": { "m": [1], "f": [1] }
       }, 
-      "98": {
-        "pokemon": "Krabby", 
+      {
+        "natdex": 98, 
         "req_game": "bw", 
         "req_points": 0, 
-        "minigames": { "male": [1], "female": [1] }
+        "minigames": { "m": [1], "f": [1] }
       }, 
-      "116": {
-        "pokemon": "Horsea", 
+      {
+        "natdex": 116, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [3, 11], "female": [3, 11] }
+        "minigames": { "m": [3, 11], "f": [3, 11] }
       }, 
-      "118": {
-        "pokemon": "Goldeen", 
+      {
+        "natdex": 118, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [4], "female": [4] }
+        "minigames": { "m": [4], "f": [4] }
       }, 
-      "119": {
-        "pokemon": "Seaking", 
+      {
+        "natdex": 119, 
         "req_game": "bw", 
         "req_points": 0, 
-        "minigames": { "male": [1], "female": [2] }
+        "minigames": { "m": [1], "f": [2] }
       }, 
-      "120": {
-        "pokemon": "Staryu", 
+      {
+        "natdex": 120, 
         "req_game": "bw", 
         "req_points": 0, 
-        "minigames": { "male": [1], "female": [1] }
+        "minigames": { "m": [1], "f": [1] }
       }, 
-      "129": {
-        "pokemon": "Magikarp", 
+      {
+        "natdex": 129, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [3], "female": [3] }
+        "minigames": { "m": [3], "f": [3] }
       }, 
-      "131": {
-        "pokemon": "Lapras", 
+      {
+        "natdex": 131, 
         "req_game": null, 
         "req_points": 10000, 
-        "minigames": { "male": [3], "female": [9] }
+        "minigames": { "m": [3], "f": [9] }
       }, 
-      "138": {
-        "pokemon": "Omanyte", 
+      {
+        "natdex": 138, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [3, 11], "female": [3, 11] }
+        "minigames": { "m": [3, 11], "f": [3, 11] }
       }, 
-      "140": {
-        "pokemon": "Kabuto", 
+      {
+        "natdex": 140, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [3, 11], "female": [3, 11] }
+        "minigames": { "m": [3, 11], "f": [3, 11] }
       }, 
-      "147": {
-        "pokemon": "Dratini", 
+      {
+        "natdex": 147, 
         "req_game": null, 
         "req_points": 10000, 
-        "minigames": { "male": [3], "female": [9] }
+        "minigames": { "m": [3], "f": [9] }
       }, 
-      "170": {
-        "pokemon": "Chinchou", 
+      {
+        "natdex": 170, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [1], "female": [1] }
+        "minigames": { "m": [1], "f": [1] }
       }, 
-      "194": {
-        "pokemon": "Wooper", 
+      {
+        "natdex": 194, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [2, 4], "female": [2, 4] }
+        "minigames": { "m": [2, 4], "f": [2, 4] }
       }, 
-      "211": {
-        "pokemon": "Qwilfish", 
+      {
+        "natdex": 211, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [4, 1], "female": [1, 1] }
+        "minigames": { "m": [4, 1], "f": [1, 1] }
       }, 
-      "222": {
-        "pokemon": "Corsola", 
+      {
+        "natdex": 222, 
         "req_game": "bw", 
         "req_points": 0, 
-        "minigames": { "male": [2], "female": [2] }
+        "minigames": { "m": [2], "f": [2] }
       }, 
-      "223": {
-        "pokemon": "Remoraid", 
+      {
+        "natdex": 223, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [2, 9], "female": [2, 9] }
+        "minigames": { "m": [2, 9], "f": [2, 9] }
       }, 
-      "226": {
-        "pokemon": "Mantine", 
+      {
+        "natdex": 226, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [2, 9], "female": [2, 9] }
+        "minigames": { "m": [2, 9], "f": [2, 9] }
       }, 
-      "318": {
-        "pokemon": "Carvanha", 
+      {
+        "natdex": 318, 
         "req_game": null, 
         "req_points": 7500, 
-        "minigames": { "male": [1, 4], "female": [1, 4] }
+        "minigames": { "m": [1, 4], "f": [1, 4] }
       }, 
-      "320": {
-        "pokemon": "Wailmer", 
+      {
+        "natdex": 320, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [1, 9], "female": [1, 9] }
+        "minigames": { "m": [1, 9], "f": [1, 9] }
       }, 
-      "339": {
-        "pokemon": "Barboach", 
+      {
+        "natdex": 339, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [3], "female": [3] }
+        "minigames": { "m": [3], "f": [3] }
       }, 
-      "341": {
-        "pokemon": "Corphish", 
+      {
+        "natdex": 341, 
         "req_game": null, 
         "req_points": 7500, 
-        "minigames": { "male": [2, 9], "female": [2, 9] }
+        "minigames": { "m": [2, 9], "f": [2, 9] }
       }, 
-      "345": {
-        "pokemon": "Lileep", 
+      {
+        "natdex": 345, 
         "req_game": null, 
         "req_points": 7500, 
-        "minigames": { "male": [3], "female": [3] }
+        "minigames": { "m": [3], "f": [3] }
       }, 
-      "347": {
-        "pokemon": "Anorith", 
+      {
+        "natdex": 347, 
         "req_game": null, 
         "req_points": 7500, 
-        "minigames": { "male": [3, 1], "female": [3, 1] }
+        "minigames": { "m": [3, 1], "f": [3, 1] }
       }, 
-      "349": {
-        "pokemon": "Feebas", 
+      {
+        "natdex": 349, 
         "req_game": null, 
         "req_points": 7500, 
-        "minigames": { "male": [1, 4], "female": [1, 4] }
+        "minigames": { "m": [1, 4], "f": [1, 4] }
       }, 
-      "366": {
-        "pokemon": "Clamperl", 
+      {
+        "natdex": 366, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [4], "female": [4] }
+        "minigames": { "m": [4], "f": [4] }
       }, 
-      "369": {
-        "pokemon": "Relicanth", 
+      {
+        "natdex": 369, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [4, 1], "female": [4, 1] }
+        "minigames": { "m": [4, 1], "f": [4, 1] }
       }, 
-      "370": {
-        "pokemon": "Luvdisc", 
+      {
+        "natdex": 370, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [3, 11], "female": [3, 11] }
+        "minigames": { "m": [3, 11], "f": [3, 11] }
       }, 
-      "418": {
-        "pokemon": "Buizel", 
+      {
+        "natdex": 418, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [1, 9], "female": [1, 9] }
+        "minigames": { "m": [1, 9], "f": [1, 9] }
       }, 
-      "422-west": {
-        "pokemon": "Shellos", 
+      {
+        "natdex": 422, 
+        "form": "west", 
         "req_game": "bw", 
         "req_points": 7500, 
-        "minigames": { "male": [2], "female": [2] }
+        "minigames": { "m": [2], "f": [2] }
       }, 
-      "422-east": {
-        "pokemon": "Shellos", 
+      {
+        "natdex": 422, 
+        "form": "east", 
         "req_game": "bw", 
         "req_points": 7500, 
-        "minigames": { "male": [4], "female": [4] }
+        "minigames": { "m": [4], "f": [4] }
       }, 
-      "456": {
-        "pokemon": "Finneon", 
+      {
+        "natdex": 456, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [2, 4], "female": [2, 4] }
+        "minigames": { "m": [2, 4], "f": [2, 4] }
       }, 
-      "550-red": {
-        "pokemon": "Basculin", 
+      {
+        "natdex": 550, 
+        "form": "red", 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [1], "female": [1] }
+        "minigames": { "m": [1], "f": [1] }
       }, 
-      "550-blue": {
-        "pokemon": "Basculin", 
+      {
+        "natdex": 550, 
+        "form": "blue", 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [1], "female": [1] }
+        "minigames": { "m": [1], "f": [1] }
       }, 
-      "564": {
-        "pokemon": "Tirtouga", 
+      {
+        "natdex": 564, 
         "req_game": "b2w2", 
         "req_points": 5000, 
-        "minigames": { "male": [11], "female": [11] }
+        "minigames": { "m": [11], "f": [11] }
       }, 
-      "594": {
-        "pokemon": "Alomomola", 
+      {
+        "natdex": 594, 
         "req_game": "b2w2", 
         "req_points": 0, 
-        "minigames": { "male": [11], "female": [11] }
+        "minigames": { "m": [11], "f": [11] }
       }, 
-      "618": {
-        "pokemon": "Stunfisk", 
+      {
+        "natdex": 618, 
         "req_game": "b2w2", 
         "req_points": 0, 
-        "minigames": { "male": [3], "female": [3] }
+        "minigames": { "m": [3], "f": [3] }
       }
-    }, 
-    "items": {
-      "7"  : { "item_name": "Dive Ball"   , "req_points":     0 }, 
-      "26" : { "item_name": "Super Potion", "req_points":     0 }, 
-      "27" : { "item_name": "Full Heal"   , "req_points":     0 }, 
-      "28" : { "item_name": "Revive"      , "req_points":  7500 }, 
-      "88" : { "item_name": "Pearl"       , "req_points":  7500 }, 
-      "89" : { "item_name": "Big Pearl"   , "req_points": 10000 }, 
-      "93" : { "item_name": "Heart Scale" , "req_points":  7500 }, 
-      "150": { "item_name": "Chesto Berry", "req_points":     0 }, 
-      "152": { "item_name": "Rawst Berry" , "req_points":     0 }, 
-      "160": { "item_name": "Wiki Berry"  , "req_points":     0 }, 
-      "161": { "item_name": "Mago Berry"  , "req_points":     0 }, 
-      "238": { "item_name": "Hard Stone"  , "req_points":  7500 }, 
-      "245": { "item_name": "Poison Barb" , "req_points":  7500 }, 
-      "296": { "item_name": "Big Root"    , "req_points":  7500 }, 
-      "575": { "item_name": "Pass Orb"    , "req_points":     0 }
-    }
+    ], 
+    "items": [
+      [7, 0], 
+      [26, 0], 
+      [27, 0], 
+      [28, 7500], 
+      [88, 7500], 
+      [89, 10000], 
+      [93, 7500], 
+      [150, 0], 
+      [152, 0], 
+      [160, 0], 
+      [161, 0], 
+      [238, 7500], 
+      [245, 7500], 
+      [296, 7500], 
+      [575, 0]
+    ]
   }, 
   "5": {
     "area_name": "Windswept Sky", 
     "req_points": {"bw": 2500, "b2w2": 1500}, 
     "req_badges": {"bw": 4, "b2w2": 4}, 
     "favored_types": ["Flying"], 
-    "pokemon": {
-      "12": {
-        "pokemon": "Butterfree", 
+    "pokemon": [
+      {
+        "natdex": 12, 
         "req_game": "bw", 
         "req_points": 0, 
-        "minigames": { "male": [1], "female": [1] }
+        "minigames": { "m": [1], "f": [1] }
       }, 
-      "16": {
-        "pokemon": "Pidgey", 
+      {
+        "natdex": 16, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [1], "female": [2, 12] }
+        "minigames": { "m": [1], "f": [2, 12] }
       }, 
-      "21": {
-        "pokemon": "Spearow", 
+      {
+        "natdex": 21, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [1], "female": [1] }
+        "minigames": { "m": [1], "f": [1] }
       }, 
-      "41": {
-        "pokemon": "Zubat", 
+      {
+        "natdex": 41, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [3, 8], "female": [3, 8] }
+        "minigames": { "m": [3, 8], "f": [3, 8] }
       }, 
-      "142": {
-        "pokemon": "Aerodactyl", 
+      {
+        "natdex": 142, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [3], "female": [3] }
+        "minigames": { "m": [3], "f": [3] }
       }, 
-      "163": {
-        "pokemon": "Hoothoot", 
+      {
+        "natdex": 163, 
         "req_game": "bw", 
         "req_points": 0, 
-        "minigames": { "male": [2], "female": [2] }
+        "minigames": { "m": [2], "f": [2] }
       }, 
-      "165": {
-        "pokemon": "Ledyba", 
+      {
+        "natdex": 165, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [2, 12], "female": [1, 12] }
+        "minigames": { "m": [2, 12], "f": [1, 12] }
       }, 
-      "187": {
-        "pokemon": "Hoppip", 
+      {
+        "natdex": 187, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [1, 2, 12], "female": [1, 12] }
+        "minigames": { "m": [1, 2, 12], "f": [1, 12] }
       }, 
-      "193": {
-        "pokemon": "Yanma", 
+      {
+        "natdex": 193, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [3], "female": [3, 8] }
+        "minigames": { "m": [3], "f": [3, 8] }
       }, 
-      "198": {
-        "pokemon": "Murkrow", 
+      {
+        "natdex": 198, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [1], "female": [1] }
+        "minigames": { "m": [1], "f": [1] }
       }, 
-      "207": {
-        "pokemon": "Gligar", 
+      {
+        "natdex": 207, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [3, 12], "female": [3, 12] }
+        "minigames": { "m": [3, 12], "f": [3, 12] }
       }, 
-      "225": {
-        "pokemon": "Delibird", 
+      {
+        "natdex": 225, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [3], "female": [1] }
+        "minigames": { "m": [3], "f": [1] }
       }, 
-      "227": {
-        "pokemon": "Skarmory", 
+      {
+        "natdex": 227, 
         "req_game": null, 
         "req_points": 7500, 
-        "minigames": { "male": [4, 12], "female": [4, 12] }
+        "minigames": { "m": [4, 12], "f": [4, 12] }
       }, 
-      "276": {
-        "pokemon": "Taillow", 
+      {
+        "natdex": 276, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [4, 8], "female": [4, 8] }
+        "minigames": { "m": [4, 8], "f": [4, 8] }
       }, 
-      "278": {
-        "pokemon": "Wingull", 
+      {
+        "natdex": 278, 
         "req_game": "bw", 
         "req_points": 0, 
-        "minigames": { "male": [4], "female": [4] }
+        "minigames": { "m": [4], "f": [4] }
       }, 
-      "333": {
-        "pokemon": "Swablu", 
+      {
+        "natdex": 333, 
         "req_game": "bw", 
         "req_points": 0, 
-        "minigames": { "male": [4], "female": [4] }
+        "minigames": { "m": [4], "f": [4] }
       }, 
-      "357": {
-        "pokemon": "Tropius", 
+      {
+        "natdex": 357, 
         "req_game": null, 
         "req_points": 7500, 
-        "minigames": { "male": [4, 12], "female": [4, 12] }
+        "minigames": { "m": [4, 12], "f": [4, 12] }
       }, 
-      "397": {
-        "pokemon": "Staravia", 
+      {
+        "natdex": 397, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [4, 8], "female": [4, 8] }
+        "minigames": { "m": [4, 8], "f": [4, 8] }
       }, 
-      "425": {
-        "pokemon": "Drifloon", 
+      {
+        "natdex": 425, 
         "req_game": "bw", 
         "req_points": 7500, 
-        "minigames": { "male": [2], "female": [2] }
+        "minigames": { "m": [2], "f": [2] }
       }, 
-      "441": {
-        "pokemon": "Chatot", 
+      {
+        "natdex": 441, 
         "req_game": "bw", 
         "req_points": 7500, 
-        "minigames": { "male": [2], "female": [2] }
+        "minigames": { "m": [2], "f": [2] }
       }, 
-      "519": {
-        "pokemon": "Pidove", 
+      {
+        "natdex": 519, 
         "req_game": "b2w2", 
         "req_points": 0, 
-        "minigames": { "male": [12], "female": [12] }
+        "minigames": { "m": [12], "f": [12] }
       }, 
-      "561": {
-        "pokemon": "Sigilyph", 
+      {
+        "natdex": 561, 
         "req_game": "b2w2", 
         "req_points": 0, 
-        "minigames": { "male": [8], "female": [8] }
+        "minigames": { "m": [8], "f": [8] }
       }, 
-      "580": {
-        "pokemon": "Ducklett", 
+      {
+        "natdex": 580, 
         "req_game": "b2w2", 
         "req_points": 0, 
-        "minigames": { "male": [3], "female": [3] }
+        "minigames": { "m": [3], "f": [3] }
       }, 
-      "587": {
-        "pokemon": "Emolga", 
+      {
+        "natdex": 587, 
         "req_game": "b2w2", 
         "req_points": 5000, 
-        "minigames": { "male": [3], "female": [3] }
+        "minigames": { "m": [3], "f": [3] }
       }
-    }, 
-    "items": {
-      "2"  : { "item_name": "Ultra Ball"  , "req_points":  7500 }, 
-      "15" : { "item_name": "Quick Ball"  , "req_points":     0 }, 
-      "25" : { "item_name": "Hyper Potion", "req_points":     0 }, 
-      "90" : { "item_name": "Stardust"    , "req_points":  7500 }, 
-      "91" : { "item_name": "Star Piece"  , "req_points": 10000 }, 
-      "153": { "item_name": "Aspear Berry", "req_points":     0 }, 
-      "156": { "item_name": "Persim Berry", "req_points":     0 }, 
-      "162": { "item_name": "Aguav Berry" , "req_points":     0 }, 
-      "163": { "item_name": "Iapapa Berry", "req_points":     0 }, 
-      "169": { "item_name": "Pomeg Berry" , "req_points":     0 }, 
-      "170": { "item_name": "Kelpsy Berry", "req_points":     0 }, 
-      "171": { "item_name": "Qualot Berry", "req_points":     0 }, 
-      "172": { "item_name": "Hondew Berry", "req_points":     0 }, 
-      "173": { "item_name": "Grepa Berry" , "req_points":     0 }, 
-      "174": { "item_name": "Tamato Berry", "req_points":     0 }, 
-      "222": { "item_name": "SilverPowder", "req_points":  7500 }, 
-      "265": { "item_name": "Wide Lens"   , "req_points": 10000 }, 
-      "277": { "item_name": "Metronome"   , "req_points":  7500 }, 
-      "575": { "item_name": "Pass Orb"    , "req_points":     0 }
-    }
+    ], 
+    "items": [
+      [2, 7500], 
+      [15, 0], 
+      [25, 0], 
+      [90, 7500], 
+      [91, 10000], 
+      [153, 0], 
+      [156, 0], 
+      [162, 0], 
+      [163, 0], 
+      [169, 0], 
+      [170, 0], 
+      [171, 0], 
+      [172, 0], 
+      [173, 0], 
+      [174, 0], 
+      [222, 7500], 
+      [265, 10000], 
+      [277, 7500], 
+      [575, 0]
+    ]
   }, 
   "6": {
     "area_name": "Rugged Mountain", 
     "req_points": {"bw": 0, "b2w2": 3000}, 
     "req_badges": {"bw": 0, "b2w2": 8}, 
     "favored_types": ["Fire", "Fighting", "Ground", "Rock", "Steel"], 
-    "pokemon": {
-      "56": {
-        "pokemon": "Mankey", 
+    "pokemon": [
+      {
+        "natdex": 56, 
         "req_game": "bw", 
         "req_points": 0, 
-        "minigames": { "male": [8], "female": [8] }
+        "minigames": { "m": [8], "f": [8] }
       }, 
-      "66": {
-        "pokemon": "Machop", 
+      {
+        "natdex": 66, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [8], "female": [8] }
+        "minigames": { "m": [8], "f": [8] }
       }, 
-      "81": {
-        "pokemon": "Magnemite", 
+      {
+        "natdex": 81, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [4, 3], "female": [4, 3] }
+        "minigames": { "m": [4, 3], "f": [4, 3] }
       }, 
-      "109": {
-        "pokemon": "Koffing", 
+      {
+        "natdex": 109, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [8], "female": [12] }
+        "minigames": { "m": [8], "f": [12] }
       }, 
-      "111": {
-        "pokemon": "Rhyhorn", 
+      {
+        "natdex": 111, 
         "req_game": "bw", 
         "req_points": 0, 
-        "minigames": { "male": [3], "female": [3] }
+        "minigames": { "m": [3], "f": [3] }
       }, 
-      "216": {
-        "pokemon": "Teddiursa", 
+      {
+        "natdex": 216, 
         "req_game": "bw", 
         "req_points": 7500, 
-        "minigames": { "male": [2], "female": [2] }
+        "minigames": { "m": [2], "f": [2] }
       }, 
-      "218": {
-        "pokemon": "Slugma", 
+      {
+        "natdex": 218, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [7], "female": [1] }
+        "minigames": { "m": [7], "f": [1] }
       }, 
-      "231": {
-        "pokemon": "Phanpy", 
+      {
+        "natdex": 231, 
         "req_game": "bw", 
         "req_points": 0, 
-        "minigames": { "male": [2], "female": [2] }
+        "minigames": { "m": [2], "f": [2] }
       }, 
-      "236": {
-        "pokemon": "Tyrogue", 
+      {
+        "natdex": 236, 
         "req_game": null, 
         "req_points": 10000, 
-        "minigames": { "male": [8], "female": null }
+        "minigames": { "m": [8], "f": null }
       }, 
-      "240": {
-        "pokemon": "Magby", 
+      {
+        "natdex": 240, 
         "req_game": null, 
         "req_points": 5000, 
-        "minigames": { "male": [4, 8], "female": [4, 8] }
+        "minigames": { "m": [4, 8], "f": [4, 8] }
       }, 
-      "246": {
-        "pokemon": "Larvitar", 
+      {
+        "natdex": 246, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [8], "female": [8] }
+        "minigames": { "m": [8], "f": [8] }
       }, 
-      "296": {
-        "pokemon": "Makuhita", 
+      {
+        "natdex": 296, 
         "req_game": "bw", 
         "req_points": 7500, 
-        "minigames": { "male": [1], "female": [1] }
+        "minigames": { "m": [1], "f": [1] }
       }, 
-      "322": {
-        "pokemon": "Numel", 
+      {
+        "natdex": 322, 
         "req_game": null, 
         "req_points": 7500, 
-        "minigames": { "male": [4], "female": [4] }
+        "minigames": { "m": [4], "f": [4] }
       }, 
-      "324": {
-        "pokemon": "Torkoal", 
+      {
+        "natdex": 324, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [7], "female": [1, 7] }
+        "minigames": { "m": [7], "f": [1, 7] }
       }, 
-      "327": {
-        "pokemon": "Spinda", 
+      {
+        "natdex": 327, 
         "req_game": "bw", 
         "req_points": 7500, 
-        "minigames": { "male": [3], "female": [3] }
+        "minigames": { "m": [3], "f": [3] }
       }, 
-      "328": {
-        "pokemon": "Trapinch", 
+      {
+        "natdex": 328, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [2, 8], "female": [2, 8] }
+        "minigames": { "m": [2, 8], "f": [2, 8] }
       }, 
-      "331": {
-        "pokemon": "Cacnea", 
+      {
+        "natdex": 331, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [8], "female": [3] }
+        "minigames": { "m": [8], "f": [3] }
       }, 
-      "359": {
-        "pokemon": "Absol", 
+      {
+        "natdex": 359, 
         "req_game": null, 
         "req_points": 7500, 
-        "minigames": { "male": [1], "female": [1] }
+        "minigames": { "m": [1], "f": [1] }
       }, 
-      "371": {
-        "pokemon": "Bagon", 
+      {
+        "natdex": 371, 
         "req_game": null, 
         "req_points": 10000, 
-        "minigames": { "male": [8], "female": [8, 12] }
+        "minigames": { "m": [8], "f": [8, 12] }
       }, 
-      "374": {
-        "pokemon": "Beldum", 
+      {
+        "natdex": 374, 
         "req_game": "bw", 
         "req_points": 7500, 
-        "minigames": { "male": [3], "female": [3] }
+        "minigames": { "m": [3], "f": [3] }
       }, 
-      "412-trash": {
-        "pokemon": "Burmy", 
+      {
+        "natdex": 412, 
+        "form": "trash", 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [8], "female": [8] }
+        "minigames": { "m": [8], "f": [8] }
       }, 
-      "447": {
-        "pokemon": "Riolu", 
+      {
+        "natdex": 447, 
         "req_game": "bw", 
         "req_points": 10000, 
-        "minigames": { "male": [8], "female": [8] }
+        "minigames": { "m": [8], "f": [8] }
       }, 
-      "449": {
-        "pokemon": "Hippopotas", 
+      {
+        "natdex": 449, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [3], "female": [3] }
+        "minigames": { "m": [3], "f": [3] }
       }, 
-      "451": {
-        "pokemon": "Skorupi", 
+      {
+        "natdex": 451, 
         "req_game": "bw", 
         "req_points": 0, 
-        "minigames": { "male": [4], "female": [4] }
+        "minigames": { "m": [4], "f": [4] }
       }, 
-      "453": {
-        "pokemon": "Croagunk", 
+      {
+        "natdex": 453, 
         "req_game": null, 
         "req_points": 7500, 
-        "minigames": { "male": [2, 1], "female": [2, 1] }
+        "minigames": { "m": [2, 1], "f": [2, 1] }
       }, 
-      "553": {
-        "pokemon": "Krookodile", 
+      {
+        "natdex": 553, 
         "req_game": "b2w2", 
         "req_points": 10000, 
-        "minigames": { "male": [8], "female": [8] }
+        "minigames": { "m": [8], "f": [8] }
       }, 
-      "556": {
-        "pokemon": "Maractus", 
+      {
+        "natdex": 556, 
         "req_game": "b2w2", 
         "req_points": 5000, 
-        "minigames": { "male": [7], "female": [7] }
+        "minigames": { "m": [7], "f": [7] }
       }, 
-      "558": {
-        "pokemon": "Crustle", 
+      {
+        "natdex": 558, 
         "req_game": "b2w2", 
         "req_points": 5000, 
-        "minigames": { "male": [3], "female": [3] }
+        "minigames": { "m": [3], "f": [3] }
       }, 
-      "631": {
-        "pokemon": "Heatmor", 
+      {
+        "natdex": 631, 
         "req_game": "b2w2", 
         "req_points": 0, 
-        "minigames": { "male": [12], "female": [12] }
+        "minigames": { "m": [12], "f": [12] }
       }, 
-      "632": {
-        "pokemon": "Durant", 
+      {
+        "natdex": 632, 
         "req_game": "b2w2", 
         "req_points": 0, 
-        "minigames": { "male": [8], "female": [8] }
+        "minigames": { "m": [8], "f": [8] }
       }
-    }, 
-    "items": {
-      "9"  : { "item_name": "Repeat Ball" , "req_points":     0 }, 
-      "10" : { "item_name": "Timer Ball"  , "req_points":     0 }, 
-      "50" : { "item_name": "Rare Candy"  , "req_points":  7500 }, 
-      "80" : { "item_name": "Sun Stone"   , "req_points": 10000 }, 
-      "81" : { "item_name": "Moon Stone"  , "req_points": 10000 }, 
-      "82" : { "item_name": "Fire Stone"  , "req_points":  7500 }, 
-      "83" : { "item_name": "Thunderstone", "req_points":  7500 }, 
-      "84" : { "item_name": "Water Stone" , "req_points":  7500 }, 
-      "85" : { "item_name": "Leaf Stone"  , "req_points":  7500 }, 
-      "107": { "item_name": "Shiny Stone" , "req_points": 10000 }, 
-      "108": { "item_name": "Dusk Stone"  , "req_points": 10000 }, 
-      "109": { "item_name": "Dawn Stone"  , "req_points":  7500 }, 
-      "110": { "item_name": "Oval Stone"  , "req_points":  7500 }, 
-      "167": { "item_name": "Wepear Berry", "req_points":     0 }, 
-      "168": { "item_name": "Pinap Berry" , "req_points":     0 }, 
-      "175": { "item_name": "Cornn Berry" , "req_points":     0 }, 
-      "176": { "item_name": "Magost Berry", "req_points":     0 }, 
-      "229": { "item_name": "Everstone"   , "req_points":     0 }, 
-      "233": { "item_name": "Metal Coat"  , "req_points":     0 }, 
-      "237": { "item_name": "Soft Sand"   , "req_points":     0 }, 
-      "241": { "item_name": "Black Belt"  , "req_points":     0 }, 
-      "249": { "item_name": "Charcoal"    , "req_points":     0 }, 
-      "250": { "item_name": "Dragon Fang" , "req_points":  7500 }, 
-      "288": { "item_name": "Sticky Barb" , "req_points":  7500 }, 
-      "539": { "item_name": "Float Stone" , "req_points":     0 }, 
-      "575": { "item_name": "Pass Orb"    , "req_points":     0 }, 
-      "583": { "item_name": "Comet Shard" , "req_points": 10000 }
-    }
+    ], 
+    "items": [
+      [9, 0], 
+      [10, 0], 
+      [50, 7500], 
+      [80, 10000], 
+      [81, 10000], 
+      [82, 7500], 
+      [83, 7500], 
+      [84, 7500], 
+      [85, 7500], 
+      [107, 10000], 
+      [108, 10000], 
+      [109, 7500], 
+      [110, 7500], 
+      [167, 0], 
+      [168, 0], 
+      [175, 0], 
+      [176, 0], 
+      [229, 0], 
+      [233, 0], 
+      [237, 0], 
+      [241, 0], 
+      [249, 0], 
+      [250, 7500], 
+      [288, 7500], 
+      [539, 0], 
+      [575, 0], 
+      [583, 10000]
+    ]
   }, 
   "7": {
     "area_name": "Spooky Manor", 
     "req_points": {"bw": 0, "b2w2": 1500}, 
     "req_badges": {"bw": 0, "b2w2": 4}, 
     "favored_types": ["Dark", "Ghost", "Psychic"], 
-    "pokemon": {
-      "52": {
-        "pokemon": "Meowth", 
+    "pokemon": [
+      {
+        "natdex": 52, 
         "req_game": "bw", 
         "req_points": 7500, 
-        "minigames": { "male": [3], "female": [3] }
+        "minigames": { "m": [3], "f": [3] }
       }, 
-      "63": {
-        "pokemon": "Abra", 
+      {
+        "natdex": 63, 
         "req_game": null, 
         "req_points": 10000, 
-        "minigames": { "male": [7], "female": [7, 2] }
+        "minigames": { "m": [7], "f": [7, 2] }
       }, 
-      "92": {
-        "pokemon": "Gastly", 
+      {
+        "natdex": 92, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [7, 1], "female": [7, 1] }
+        "minigames": { "m": [7, 1], "f": [7, 1] }
       }, 
-      "96": {
-        "pokemon": "Drowzee", 
+      {
+        "natdex": 96, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [7], "female": [7] }
+        "minigames": { "m": [7], "f": [7] }
       }, 
-      "122": {
-        "pokemon": "Mr. Mime", 
+      {
+        "natdex": 122, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [1], "female": [1] }
+        "minigames": { "m": [1], "f": [1] }
       }, 
-      "167": {
-        "pokemon": "Spinarak", 
+      {
+        "natdex": 167, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [7, 2], "female": [7, 2] }
+        "minigames": { "m": [7, 2], "f": [7, 2] }
       }, 
-      "200": {
-        "pokemon": "Misdreavus", 
+      {
+        "natdex": 200, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [7, 4], "female": [7, 8] }
+        "minigames": { "m": [7, 4], "f": [7, 8] }
       }, 
-      "202": {
-        "pokemon": "Wobbuffet", 
+      {
+        "natdex": 202, 
         "req_game": "bw", 
         "req_points": 0, 
-        "minigames": { "male": [1], "female": [1] }
+        "minigames": { "m": [1], "f": [1] }
       }, 
-      "209": {
-        "pokemon": "Snubbull", 
+      {
+        "natdex": 209, 
         "req_game": null, 
         "req_points": 7500, 
-        "minigames": { "male": [4], "female": [4] }
+        "minigames": { "m": [4], "f": [4] }
       }, 
-      "228": {
-        "pokemon": "Houndour", 
+      {
+        "natdex": 228, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [4], "female": [4] }
+        "minigames": { "m": [4], "f": [4] }
       }, 
-      "235": {
-        "pokemon": "Smeargle", 
+      {
+        "natdex": 235, 
         "req_game": null, 
         "req_points": 7500, 
-        "minigames": { "male": [1], "female": [1] }
+        "minigames": { "m": [1], "f": [1] }
       }, 
-      "238": {
-        "pokemon": "Smoochum", 
+      {
+        "natdex": 238, 
         "req_game": "bw", 
         "req_points": 0, 
-        "minigames": { "male": null, "female": [7] }
+        "minigames": { "m": null, "f": [7] }
       }, 
-      "280": {
-        "pokemon": "Ralts", 
+      {
+        "natdex": 280, 
         "req_game": "bw", 
         "req_points": 10000, 
-        "minigames": { "male": [2], "female": [2] }
+        "minigames": { "m": [2], "f": [2] }
       }, 
-      "302": {
-        "pokemon": "Sableye", 
+      {
+        "natdex": 302, 
         "req_game": "bw", 
         "req_points": 10000, 
-        "minigames": { "male": [7], "female": [7] }
+        "minigames": { "m": [7], "f": [7] }
       }, 
-      "303": {
-        "pokemon": "Mawile", 
+      {
+        "natdex": 303, 
         "req_game": "bw", 
         "req_points": 0, 
-        "minigames": { "male": [4], "female": [4] }
+        "minigames": { "m": [4], "f": [4] }
       }, 
-      "307": {
-        "pokemon": "Meditite", 
+      {
+        "natdex": 307, 
         "req_game": "bw", 
         "req_points": 0, 
-        "minigames": { "male": [3], "female": [3] }
+        "minigames": { "m": [3], "f": [3] }
       }, 
-      "313": {
-        "pokemon": "Volbeat", 
+      {
+        "natdex": 313, 
         "req_game": null, 
         "req_points": 7500, 
-        "minigames": { "male": [3], "female": null }
+        "minigames": { "m": [3], "f": null }
       }, 
-      "314": {
-        "pokemon": "Illumise", 
+      {
+        "natdex": 314, 
         "req_game": null, 
         "req_points": 7500, 
-        "minigames": { "male": null, "female": [4] }
+        "minigames": { "m": null, "f": [4] }
       }, 
-      "325": {
-        "pokemon": "Spoink", 
+      {
+        "natdex": 325, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [3], "female": [3, 8] }
+        "minigames": { "m": [3], "f": [3, 8] }
       }, 
-      "353": {
-        "pokemon": "Shuppet", 
+      {
+        "natdex": 353, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [2], "female": [2] }
+        "minigames": { "m": [2], "f": [2] }
       }, 
-      "355": {
-        "pokemon": "Duskull", 
+      {
+        "natdex": 355, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [7], "female": [8] }
+        "minigames": { "m": [7], "f": [8] }
       }, 
-      "358": {
-        "pokemon": "Chimecho", 
+      {
+        "natdex": 358, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [2], "female": [2] }
+        "minigames": { "m": [2], "f": [2] }
       }, 
-      "434": {
-        "pokemon": "Stunky", 
+      {
+        "natdex": 434, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [7, 8], "female": [7, 8] }
+        "minigames": { "m": [7, 8], "f": [7, 8] }
       }, 
-      "436": {
-        "pokemon": "Bronzor", 
+      {
+        "natdex": 436, 
         "req_game": "bw", 
         "req_points": 0, 
-        "minigames": { "male": [7], "female": [7] }
+        "minigames": { "m": [7], "f": [7] }
       }, 
-      "442": {
-        "pokemon": "Spiritomb", 
+      {
+        "natdex": 442, 
         "req_game": "bw", 
         "req_points": 10000, 
-        "minigames": { "male": [7], "female": [7] }
+        "minigames": { "m": [7], "f": [7] }
       }, 
-      "479": {
-        "pokemon": "Rotom", 
+      {
+        "natdex": 479, 
         "req_game": "bw", 
         "req_points": 7500, 
-        "minigames": { "male": [1], "female": [1] }
+        "minigames": { "m": [1], "f": [1] }
       }, 
-      "578": {
-        "pokemon": "Duosion", 
+      {
+        "natdex": 578, 
         "req_game": "b2w2", 
         "req_points": 10000, 
-        "minigames": { "male": [4], "female": [4] }
+        "minigames": { "m": [4], "f": [4] }
       }, 
-      "596": {
-        "pokemon": "Galvantula", 
+      {
+        "natdex": 596, 
         "req_game": "b2w2", 
         "req_points": 5000, 
-        "minigames": { "male": [2], "female": [2] }
+        "minigames": { "m": [2], "f": [2] }
       }, 
-      "605": {
-        "pokemon": "Elgyem", 
+      {
+        "natdex": 605, 
         "req_game": "b2w2", 
         "req_points": 0, 
-        "minigames": { "male": [7], "female": [7] }
+        "minigames": { "m": [7], "f": [7] }
       }, 
-      "622": {
-        "pokemon": "Golett", 
+      {
+        "natdex": 622, 
         "req_game": "b2w2", 
         "req_points": 10000, 
-        "minigames": { "male": [8], "female": [8] }
+        "minigames": { "m": [8], "f": [8] }
       }, 
-      "624": {
-        "pokemon": "Pawniard", 
+      {
+        "natdex": 624, 
         "req_game": "b2w2", 
         "req_points": 0, 
-        "minigames": { "male": [7], "female": [7] }
+        "minigames": { "m": [7], "f": [7] }
       }
-    }, 
-    "items": {
-      "39" : { "item_name": "Max Ether"   , "req_points":     0 }, 
-      "40" : { "item_name": "Elixir"      , "req_points":     0 }, 
-      "45" : { "item_name": "HP Up"       , "req_points":     0 }, 
-      "46" : { "item_name": "Protein"     , "req_points":     0 }, 
-      "47" : { "item_name": "Iron"        , "req_points":     0 }, 
-      "48" : { "item_name": "Carbos"      , "req_points":     0 }, 
-      "49" : { "item_name": "Calcium"     , "req_points":     0 }, 
-      "50" : { "item_name": "Rare Candy"  , "req_points":  7500 }, 
-      "52" : { "item_name": "Zinc"        , "req_points":     0 }, 
-      "54" : { "item_name": "Old Gateau"  , "req_points":     0 }, 
-      "157": { "item_name": "Lum Berry"   , "req_points":     0 }, 
-      "164": { "item_name": "Razz Berry"  , "req_points":     0 }, 
-      "165": { "item_name": "Bluk Berry"  , "req_points":     0 }, 
-      "166": { "item_name": "Nanab Berry" , "req_points":     0 }, 
-      "224": { "item_name": "Cleanse Tag" , "req_points": 10000 }, 
-      "247": { "item_name": "Spell Tag"   , "req_points":  7500 }, 
-      "248": { "item_name": "TwistedSpoon", "req_points":  7500 }, 
-      "325": { "item_name": "Reaper Cloth", "req_points": 10000 }, 
-      "542": { "item_name": "Red Card"    , "req_points": 10000 }, 
-      "575": { "item_name": "Pass Orb"    , "req_points":     0 }
-    }
+    ], 
+    "items": [
+      [39, 0], 
+      [40, 0], 
+      [45, 0], 
+      [46, 0], 
+      [47, 0], 
+      [48, 0], 
+      [49, 0], 
+      [50, 7500], 
+      [52, 0], 
+      [54, 0], 
+      [157, 0], 
+      [164, 0], 
+      [165, 0], 
+      [166, 0], 
+      [224, 10000], 
+      [247, 7500], 
+      [248, 7500], 
+      [325, 10000], 
+      [542, 10000], 
+      [575, 0]
+    ]
   }, 
   "8": {
     "area_name": "Icy Cave", 
     "req_points": {"bw": 0, "b2w2": 0}, 
     "req_badges": {"bw": 0, "b2w2": 0}, 
     "favored_types": ["Ground", "Ice", "Rock", "Steel"], 
-    "pokemon": {
-      "27": {
-        "pokemon": "Sandshrew", 
+    "pokemon": [
+      {
+        "natdex": 27, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [9, 12], "female": [9, 12] }
+        "minigames": { "m": [9, 12], "f": [9, 12] }
       }, 
-      "50": {
-        "pokemon": "Diglett", 
-        "req_game": null, 
-        "req_points": 5000, 
-        "minigames": { "male": [1], "female": [1] }
-      }, 
-      "74": {
-        "pokemon": "Geodude", 
-        "req_game": null, 
-        "req_points": 0, 
-        "minigames": { "male": [3, 2], "female": [3, 2] }
-      }, 
-      "95": {
-        "pokemon": "Onix", 
-        "req_game": null, 
-        "req_points": 0, 
-        "minigames": { "male": [4, 12], "female": [4, 1] }
-      }, 
-      "100": {
-        "pokemon": "Voltorb", 
-        "req_game": null, 
-        "req_points": 0, 
-        "minigames": { "male": [4, 12], "female": [4, 12] }
-      }, 
-      "104": {
-        "pokemon": "Cubone", 
-        "req_game": null, 
-        "req_points": 0, 
-        "minigames": { "male": [9, 12], "female": [9, 12] }
-      }, 
-      "173": {
-        "pokemon": "Cleffa", 
-        "req_game": "bw", 
-        "req_points": 0, 
-        "minigames": { "male": [2], "female": [2] }
-      }, 
-      "206": {
-        "pokemon": "Dunsparce", 
-        "req_game": "bw", 
-        "req_points": 5000, 
-        "minigames": { "male": [9], "female": [9] }
-      }, 
-      "213": {
-        "pokemon": "Shuckle", 
-        "req_game": "bw", 
-        "req_points": 0, 
-        "minigames": { "male": [2], "female": [2] }
-      }, 
-      "215": {
-        "pokemon": "Sneasel", 
+      {
+        "natdex": 50, 
         "req_game": null, 
         "req_points": 5000, 
-        "minigames": { "male": [9, 12], "female": [9, 12] }
+        "minigames": { "m": [1], "f": [1] }
       }, 
-      "220": {
-        "pokemon": "Swinub", 
+      {
+        "natdex": 74, 
+        "req_game": null, 
+        "req_points": 0, 
+        "minigames": { "m": [3, 2], "f": [3, 2] }
+      }, 
+      {
+        "natdex": 95, 
+        "req_game": null, 
+        "req_points": 0, 
+        "minigames": { "m": [4, 12], "f": [4, 1] }
+      }, 
+      {
+        "natdex": 100, 
+        "req_game": null, 
+        "req_points": 0, 
+        "minigames": { "m": [4, 12], "f": [4, 12] }
+      }, 
+      {
+        "natdex": 104, 
+        "req_game": null, 
+        "req_points": 0, 
+        "minigames": { "m": [9, 12], "f": [9, 12] }
+      }, 
+      {
+        "natdex": 173, 
+        "req_game": "bw", 
+        "req_points": 0, 
+        "minigames": { "m": [2], "f": [2] }
+      }, 
+      {
+        "natdex": 206, 
+        "req_game": "bw", 
+        "req_points": 5000, 
+        "minigames": { "m": [9], "f": [9] }
+      }, 
+      {
+        "natdex": 213, 
+        "req_game": "bw", 
+        "req_points": 0, 
+        "minigames": { "m": [2], "f": [2] }
+      }, 
+      {
+        "natdex": 215, 
+        "req_game": null, 
+        "req_points": 5000, 
+        "minigames": { "m": [9, 12], "f": [9, 12] }
+      }, 
+      {
+        "natdex": 220, 
         "req_game": null, 
         "req_points": 10000, 
-        "minigames": { "male": [9], "female": [9] }
+        "minigames": { "m": [9], "f": [9] }
       }, 
-      "293": {
-        "pokemon": "Whismur", 
+      {
+        "natdex": 293, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [3, 2], "female": [3, 2] }
+        "minigames": { "m": [3, 2], "f": [3, 2] }
       }, 
-      "299": {
-        "pokemon": "Nosepass", 
+      {
+        "natdex": 299, 
         "req_game": "bw", 
         "req_points": 0, 
-        "minigames": { "male": [1], "female": [1] }
+        "minigames": { "m": [1], "f": [1] }
       }, 
-      "304": {
-        "pokemon": "Aron", 
+      {
+        "natdex": 304, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [2, 11], "female": [2, 11] }
+        "minigames": { "m": [2, 11], "f": [2, 11] }
       }, 
-      "337": {
-        "pokemon": "Lunatone", 
+      {
+        "natdex": 337, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [1, 4], "female": [1, 4] }
+        "minigames": { "m": [1, 4], "f": [1, 4] }
       }, 
-      "338": {
-        "pokemon": "Solrock", 
+      {
+        "natdex": 338, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [1, 4], "female": [1, 4] }
+        "minigames": { "m": [1, 4], "f": [1, 4] }
       }, 
-      "343": {
-        "pokemon": "Baltoy", 
+      {
+        "natdex": 343, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [4, 12], "female": [4, 12] }
+        "minigames": { "m": [4, 12], "f": [4, 12] }
       }, 
-      "361": {
-        "pokemon": "Snorunt", 
+      {
+        "natdex": 361, 
         "req_game": null, 
         "req_points": 7500, 
-        "minigames": { "male": [9], "female": [9] }
+        "minigames": { "m": [9], "f": [9] }
       }, 
-      "363": {
-        "pokemon": "Spheal", 
+      {
+        "natdex": 363, 
         "req_game": "bw", 
         "req_points": 0, 
-        "minigames": { "male": [9], "female": [9] }
+        "minigames": { "m": [9], "f": [9] }
       }, 
-      "408": {
-        "pokemon": "Cranidos", 
+      {
+        "natdex": 408, 
         "req_game": "bw", 
         "req_points": 0, 
-        "minigames": { "male": [3], "female": [3] }
+        "minigames": { "m": [3], "f": [3] }
       }, 
-      "410": {
-        "pokemon": "Shieldon", 
+      {
+        "natdex": 410, 
         "req_game": "bw", 
         "req_points": 7500, 
-        "minigames": { "male": [3], "female": [3] }
+        "minigames": { "m": [3], "f": [3] }
       }, 
-      "443": {
-        "pokemon": "Gible", 
+      {
+        "natdex": 443, 
         "req_game": null, 
         "req_points": 10000, 
-        "minigames": { "male": [2, 11], "female": [2, 11] }
+        "minigames": { "m": [2, 11], "f": [2, 11] }
       }, 
-      "459": {
-        "pokemon": "Snover", 
+      {
+        "natdex": 459, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [9, 11], "female": [9, 11] }
+        "minigames": { "m": [9, 11], "f": [9, 11] }
       }, 
-      "525": {
-        "pokemon": "Boldore", 
+      {
+        "natdex": 525, 
         "req_game": "b2w2", 
         "req_points": 5000, 
-        "minigames": { "male": [9], "female": [9] }
+        "minigames": { "m": [9], "f": [9] }
       }, 
-      "529": {
-        "pokemon": "Drilbur", 
+      {
+        "natdex": 529, 
         "req_game": "b2w2", 
         "req_points": 0, 
-        "minigames": { "male": [9], "female": [9] }
+        "minigames": { "m": [9], "f": [9] }
       }, 
-      "583": {
-        "pokemon": "Vanillish", 
+      {
+        "natdex": 583, 
         "req_game": "b2w2", 
         "req_points": 5000, 
-        "minigames": { "male": [9, 2], "female": [9, 2] }
+        "minigames": { "m": [9, 2], "f": [9, 2] }
       }, 
-      "600": {
-        "pokemon": "Klang", 
+      {
+        "natdex": 600, 
         "req_game": "b2w2", 
         "req_points": 5000, 
-        "minigames": { "male": [4], "female": [4] }
+        "minigames": { "m": [4], "f": [4] }
       }, 
-      "610": {
-        "pokemon": "Axew", 
+      {
+        "natdex": 610, 
         "req_game": "b2w2", 
         "req_points": 10000, 
-        "minigames": { "male": [9], "female": [9] }
+        "minigames": { "m": [9], "f": [9] }
       }, 
-      "621": {
-        "pokemon": "Druddigon", 
+      {
+        "natdex": 621, 
         "req_game": "b2w2", 
         "req_points": 0, 
-        "minigames": { "male": [9], "female": [9] }
+        "minigames": { "m": [9], "f": [9] }
       }
-    }, 
-    "items": {
-      "13" : { "item_name": "Dusk Ball"   , "req_points":     0 }, 
-      "28" : { "item_name": "Revive"      , "req_points":     0 }, 
-      "50" : { "item_name": "Rare Candy"  , "req_points": 10000 }, 
-      "72" : { "item_name": "Red Shard"   , "req_points":  7500 }, 
-      "73" : { "item_name": "Blue Shard"  , "req_points":  7500 }, 
-      "74" : { "item_name": "Yellow Shard", "req_points":  7500 }, 
-      "75" : { "item_name": "Green Shard" , "req_points":  7500 }, 
-      "93" : { "item_name": "Heart Scale" , "req_points":  5000 }, 
-      "106": { "item_name": "Rare Bone"   , "req_points":  7500 }, 
-      "154": { "item_name": "Leppa Berry" , "req_points":     0 }, 
-      "181": { "item_name": "Watmel Berry", "req_points":     0 }, 
-      "182": { "item_name": "Durin Berry" , "req_points":     0 }, 
-      "183": { "item_name": "Belue Berry" , "req_points":     0 }, 
-      "246": { "item_name": "NeverMeltIce", "req_points": 10000 }, 
-      "269": { "item_name": "Light Clay"  , "req_points": 10000 }, 
-      "278": { "item_name": "Iron Ball"   , "req_points": 10000 }, 
-      "282": { "item_name": "Icy Rock"    , "req_points": 10000 }, 
-      "283": { "item_name": "Smooth Rock" , "req_points": 10000 }, 
-      "284": { "item_name": "Heat Rock"   , "req_points": 10000 }, 
-      "285": { "item_name": "Damp Rock"   , "req_points": 10000 }, 
-      "548": { "item_name": "Fire Gem"    , "req_points":     0 }, 
-      "549": { "item_name": "Water Gem"   , "req_points":     0 }, 
-      "550": { "item_name": "Electric Gem", "req_points":     0 }, 
-      "551": { "item_name": "Grass Gem"   , "req_points":     0 }, 
-      "552": { "item_name": "Ice Gem"     , "req_points":     0 }, 
-      "553": { "item_name": "Fighting Gem", "req_points":     0 }, 
-      "554": { "item_name": "Poison Gem"  , "req_points":     0 }, 
-      "555": { "item_name": "Ground Gem"  , "req_points":     0 }, 
-      "556": { "item_name": "Flying Gem"  , "req_points":     0 }, 
-      "557": { "item_name": "Psychic Gem" , "req_points":     0 }, 
-      "558": { "item_name": "Bug Gem"     , "req_points":     0 }, 
-      "559": { "item_name": "Rock Gem"    , "req_points":     0 }, 
-      "560": { "item_name": "Ghost Gem"   , "req_points":     0 }, 
-      "561": { "item_name": "Dragon Gem"  , "req_points":     0 }, 
-      "562": { "item_name": "Dark Gem"    , "req_points":     0 }, 
-      "563": { "item_name": "Steel Gem"   , "req_points":     0 }, 
-      "564": { "item_name": "Normal Gem"  , "req_points":     0 }, 
-      "575": { "item_name": "Pass Orb"    , "req_points":     0 }
-    }
+    ], 
+    "items": [
+      [13, 0], 
+      [28, 0], 
+      [50, 10000], 
+      [72, 7500], 
+      [73, 7500], 
+      [74, 7500], 
+      [75, 7500], 
+      [93, 5000], 
+      [106, 7500], 
+      [154, 0], 
+      [181, 0], 
+      [182, 0], 
+      [183, 0], 
+      [246, 10000], 
+      [269, 10000], 
+      [278, 10000], 
+      [282, 10000], 
+      [283, 10000], 
+      [284, 10000], 
+      [285, 10000], 
+      [548, 0], 
+      [549, 0], 
+      [550, 0], 
+      [551, 0], 
+      [552, 0], 
+      [553, 0], 
+      [554, 0], 
+      [555, 0], 
+      [556, 0], 
+      [557, 0], 
+      [558, 0], 
+      [559, 0], 
+      [560, 0], 
+      [561, 0], 
+      [562, 0], 
+      [563, 0], 
+      [564, 0], 
+      [575, 0]
+    ]
   }, 
   "9": {
     "area_name": "Dream Park", 
     "req_points": {"bw": 0, "b2w2": 0}, 
     "req_badges": {"bw": 0, "b2w2": 0}, 
     "favored_types": ["Normal"], 
-    "pokemon": {
-      "15": {
-        "pokemon": "Beedrill", 
+    "pokemon": [
+      {
+        "natdex": 15, 
         "req_game": "bw", 
         "req_points": 1500, 
-        "minigames": { "male": [4], "female": [4] }
+        "minigames": { "m": [4], "f": [4] }
       }, 
-      "23": {
-        "pokemon": "Ekans", 
+      {
+        "natdex": 23, 
         "req_game": null, 
         "req_points": 5000, 
-        "minigames": { "male": [10], "female": [10] }
+        "minigames": { "m": [10], "f": [10] }
       }, 
-      "46": {
-        "pokemon": "Paras", 
+      {
+        "natdex": 46, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [10, 2], "female": [2, 2] }
+        "minigames": { "m": [10, 2], "f": [2, 2] }
       }, 
-      "48": {
-        "pokemon": "Venonat", 
+      {
+        "natdex": 48, 
         "req_game": "bw", 
         "req_points": 1500, 
-        "minigames": { "male": [10], "female": [10] }
+        "minigames": { "m": [10], "f": [10] }
       }, 
-      "88": {
-        "pokemon": "Grimer", 
+      {
+        "natdex": 88, 
         "req_game": "bw", 
         "req_points": 1500, 
-        "minigames": { "male": [2], "female": [2] }
+        "minigames": { "m": [2], "f": [2] }
       }, 
-      "113": {
-        "pokemon": "Chansey", 
+      {
+        "natdex": 113, 
         "req_game": null, 
         "req_points": 10000, 
-        "minigames": { "male": null, "female": [8, 10] }
+        "minigames": { "m": null, "f": [8, 10] }
       }, 
-      "127": {
-        "pokemon": "Pinsir", 
+      {
+        "natdex": 127, 
         "req_game": null, 
         "req_points": 10000, 
-        "minigames": { "male": [10, 12], "female": [10, 12] }
+        "minigames": { "m": [10, 12], "f": [10, 12] }
       }, 
-      "133": {
-        "pokemon": "Eevee", 
+      {
+        "natdex": 133, 
         "req_game": null, 
         "req_points": 10000, 
-        "minigames": { "male": [12, 10], "female": [12, 10] }
+        "minigames": { "m": [12, 10], "f": [12, 10] }
       }, 
-      "143": {
-        "pokemon": "Snorlax", 
+      {
+        "natdex": 143, 
         "req_game": null, 
         "req_points": 10000, 
-        "minigames": { "male": [3, 7], "female": [7, 3] }
+        "minigames": { "m": [3, 7], "f": [7, 3] }
       }, 
-      "175": {
-        "pokemon": "Togepi", 
+      {
+        "natdex": 175, 
         "req_game": null, 
         "req_points": 5000, 
-        "minigames": { "male": [10], "female": [10] }
+        "minigames": { "m": [10], "f": [10] }
       }, 
-      "190": {
-        "pokemon": "Aipom", 
+      {
+        "natdex": 190, 
         "req_game": null, 
         "req_points": 5000, 
-        "minigames": { "male": [4, 9], "female": [4, 9] }
+        "minigames": { "m": [4, 9], "f": [4, 9] }
       }, 
-      "204": {
-        "pokemon": "Pineco", 
+      {
+        "natdex": 204, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [3, 3], "female": [7, 7] }
+        "minigames": { "m": [3, 3], "f": [7, 7] }
       }, 
-      "214": {
-        "pokemon": "Heracross", 
+      {
+        "natdex": 214, 
         "req_game": null, 
         "req_points": 10000, 
-        "minigames": { "male": [3, 7], "female": [7, 3] }
+        "minigames": { "m": [3, 7], "f": [7, 3] }
       }, 
-      "265": {
-        "pokemon": "Wurmple", 
+      {
+        "natdex": 265, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [4, 3], "female": [4, 3] }
+        "minigames": { "m": [4, 3], "f": [4, 3] }
       }, 
-      "273": {
-        "pokemon": "Seedot", 
+      {
+        "natdex": 273, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [1, 10], "female": [1, 10] }
+        "minigames": { "m": [1, 10], "f": [1, 10] }
       }, 
-      "285": {
-        "pokemon": "Shroomish", 
+      {
+        "natdex": 285, 
         "req_game": null, 
         "req_points": 5000, 
-        "minigames": { "male": [9, 4], "female": [9, 4] }
+        "minigames": { "m": [9, 4], "f": [9, 4] }
       }, 
-      "287": {
-        "pokemon": "Slakoth", 
+      {
+        "natdex": 287, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [8, 1], "female": [3, 4] }
+        "minigames": { "m": [8, 1], "f": [3, 4] }
       }, 
-      "290": {
-        "pokemon": "Nincada", 
+      {
+        "natdex": 290, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [7, 3], "female": [7, 3] }
+        "minigames": { "m": [7, 3], "f": [7, 3] }
       }, 
-      "311": {
-        "pokemon": "Plusle", 
+      {
+        "natdex": 311, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [9, 10], "female": [9, 2] }
+        "minigames": { "m": [9, 10], "f": [9, 2] }
       }, 
-      "312": {
-        "pokemon": "Minun", 
+      {
+        "natdex": 312, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [9, 10], "female": [9, 10] }
+        "minigames": { "m": [9, 10], "f": [9, 10] }
       }, 
-      "315": {
-        "pokemon": "Roselia", 
+      {
+        "natdex": 315, 
         "req_game": null, 
         "req_points": 7500, 
-        "minigames": { "male": [10, 8], "female": [10, 8] }
+        "minigames": { "m": [10, 8], "f": [10, 8] }
       }, 
-      "316": {
-        "pokemon": "Gulpin", 
+      {
+        "natdex": 316, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [1, 2], "female": [1, 2] }
+        "minigames": { "m": [1, 2], "f": [1, 2] }
       }, 
-      "335": {
-        "pokemon": "Zangoose", 
+      {
+        "natdex": 335, 
         "req_game": "bw", 
         "req_points": 7500, 
-        "minigames": { "male": [1], "female": [1] }
+        "minigames": { "m": [1], "f": [1] }
       }, 
-      "336": {
-        "pokemon": "Seviper", 
+      {
+        "natdex": 336, 
         "req_game": "bw", 
         "req_points": 7500, 
-        "minigames": { "male": [1], "female": [1] }
+        "minigames": { "m": [1], "f": [1] }
       }, 
-      "352": {
-        "pokemon": "Kecleon", 
+      {
+        "natdex": 352, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [10, 2], "female": [1, 2] }
+        "minigames": { "m": [10, 2], "f": [1, 2] }
       }, 
-      "401": {
-        "pokemon": "Kricketot", 
+      {
+        "natdex": 401, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [1, 8], "female": [1, 8] }
+        "minigames": { "m": [1, 8], "f": [1, 8] }
       }, 
-      "415": {
-        "pokemon": "Combee", 
+      {
+        "natdex": 415, 
         "req_game": "bw", 
         "req_points": 1500, 
-        "minigames": { "male": [1], "female": [1] }
+        "minigames": { "m": [1], "f": [1] }
       }, 
-      "420": {
-        "pokemon": "Cherubi", 
+      {
+        "natdex": 420, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [2, 4], "female": [4, 4] }
+        "minigames": { "m": [2, 4], "f": [4, 4] }
       }, 
-      "455": {
-        "pokemon": "Carnivine", 
+      {
+        "natdex": 455, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [2, 4], "female": [8, 4] }
+        "minigames": { "m": [2, 4], "f": [8, 4] }
       }, 
-      "531": {
-        "pokemon": "Audino", 
+      {
+        "natdex": 531, 
         "req_game": "b2w2", 
         "req_points": 0, 
-        "minigames": { "male": [11], "female": [11] }
+        "minigames": { "m": [11], "f": [11] }
       }, 
-      "533": {
-        "pokemon": "Gurdurr", 
+      {
+        "natdex": 533, 
         "req_game": "b2w2", 
         "req_points": 5000, 
-        "minigames": { "male": [11], "female": [11] }
+        "minigames": { "m": [11], "f": [11] }
       }, 
-      "538": {
-        "pokemon": "Throh", 
+      {
+        "natdex": 538, 
         "req_game": "b2w2", 
         "req_points": 0, 
-        "minigames": { "male": [12], "female": null }
+        "minigames": { "m": [12], "f": null }
       }, 
-      "539": {
-        "pokemon": "Sawk", 
+      {
+        "natdex": 539, 
         "req_game": "b2w2", 
         "req_points": 0, 
-        "minigames": { "male": [10], "female": null }
+        "minigames": { "m": [10], "f": null }
       }, 
-      "559": {
-        "pokemon": "Scraggy", 
+      {
+        "natdex": 559, 
         "req_game": "b2w2", 
         "req_points": 0, 
-        "minigames": { "male": [10], "female": [10] }
+        "minigames": { "m": [10], "f": [10] }
       }
-    }, 
-    "items": {
-      "50" : { "item_name": "Rare Candy"  , "req_points":  7500 }, 
-      "76" : { "item_name": "Super Repel" , "req_points":     0 }, 
-      "77" : { "item_name": "Max Repel"   , "req_points":  7500 }, 
-      "79" : { "item_name": "Repel"       , "req_points":     0 }, 
-      "94" : { "item_name": "Honey"       , "req_points":  5000 }, 
-      "177": { "item_name": "Rabuta Berry", "req_points":     0 }, 
-      "178": { "item_name": "Nomel Berry" , "req_points":     0 }, 
-      "179": { "item_name": "Spelon Berry", "req_points":     0 }, 
-      "180": { "item_name": "Pamtre Berry", "req_points":     0 }, 
-      "231": { "item_name": "Lucky Egg"   , "req_points": 10000 }, 
-      "234": { "item_name": "Leftovers"   , "req_points": 10000 }, 
-      "256": { "item_name": "Lucky Punch" , "req_points": 10000 }, 
-      "295": { "item_name": "Shed Shell"  , "req_points":  5000 }, 
-      "541": { "item_name": "Air Balloon" , "req_points":  5000 }, 
-      "565": { "item_name": "Health Wing" , "req_points":     0 }, 
-      "566": { "item_name": "Muscle Wing" , "req_points":     0 }, 
-      "567": { "item_name": "Resist Wing" , "req_points":     0 }, 
-      "568": { "item_name": "Genius Wing" , "req_points":     0 }, 
-      "569": { "item_name": "Clever Wing" , "req_points":     0 }, 
-      "570": { "item_name": "Swift Wing"  , "req_points":     0 }, 
-      "571": { "item_name": "Pretty Wing" , "req_points":     0 }, 
-      "575": { "item_name": "Pass Orb"    , "req_points":     0 }
-    }
+    ], 
+    "items": [
+      [50, 7500], 
+      [76, 0], 
+      [77, 7500], 
+      [79, 0], 
+      [94, 5000], 
+      [177, 0], 
+      [178, 0], 
+      [179, 0], 
+      [180, 0], 
+      [231, 10000], 
+      [234, 10000], 
+      [256, 10000], 
+      [295, 5000], 
+      [541, 5000], 
+      [565, 0], 
+      [566, 0], 
+      [567, 0], 
+      [568, 0], 
+      [569, 0], 
+      [570, 0], 
+      [571, 0], 
+      [575, 0]
+    ]
   }, 
   "50": {
     "area_name": "Pokémon Café Forest", 
     "req_points": {"bw": 0, "b2w2": 0}, 
     "req_badges": {"bw": 0, "b2w2": 0}, 
     "favored_types": [], 
-    "pokemon": {
-      "61": {
-        "pokemon": "Poliwhirl", 
+    "pokemon": [
+      {
+        "natdex": 61, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [5], "female": [5] }
+        "minigames": { "m": [5], "f": [5] }
       }, 
-      "133": {
-        "pokemon": "Eevee", 
+      {
+        "natdex": 133, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [5], "female": [5] }
+        "minigames": { "m": [5], "f": [5] }
       }, 
-      "235": {
-        "pokemon": "Smeargle", 
+      {
+        "natdex": 235, 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [5], "female": [5] }
+        "minigames": { "m": [5], "f": [5] }
       }, 
-      "412-plant": {
-        "pokemon": "Burmy", 
+      {
+        "natdex": 412, 
+        "form": "plant", 
         "req_game": null, 
         "req_points": 0, 
-        "minigames": { "male": [5], "female": [5] }
+        "minigames": { "m": [5], "f": [5] }
       }
-    }, 
-    "items": {
-      "30" : { "item_name": "Fresh Water" , "req_points": 0 }, 
-      "31" : { "item_name": "Soda Pop"    , "req_points": 0 }, 
-      "32" : { "item_name": "Lemonade"    , "req_points": 0 }, 
-      "33" : { "item_name": "Moomoo Milk" , "req_points": 0 }, 
-      "50" : { "item_name": "Rare Candy"  , "req_points": 0 }, 
-      "82" : { "item_name": "Fire Stone"  , "req_points": 0 }, 
-      "83" : { "item_name": "Thunderstone", "req_points": 0 }, 
-      "84" : { "item_name": "Water Stone" , "req_points": 0 }, 
-      "134": { "item_name": "Sweet Heart" , "req_points": 0 }, 
-      "157": { "item_name": "Lum Berry"   , "req_points": 0 }, 
-      "221": { "item_name": "King's Rock" , "req_points": 0 }
-    }
+    ], 
+    "items": [
+      [30, 0], 
+      [31, 0], 
+      [32, 0], 
+      [33, 0], 
+      [50, 0], 
+      [82, 0], 
+      [83, 0], 
+      [84, 0], 
+      [134, 0], 
+      [157, 0], 
+      [221, 0]
+    ]
   }
 }

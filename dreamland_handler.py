@@ -6,44 +6,18 @@ from random import choices
 from random import randint
 
 import game_data
-from config import args
 
 encounter_store = {}
 
 def handle_dreamland_top(_query):
-    if args.random:
-        object_list = []
-        for _ in range(10):
-            pkmn = game_data.get_random_pokemon()
-            
-            object_list.append(
-                {
-                "object_id": randint(1, 1000),
-                "object_category": randint(0, 1),
-                "pokemon": {
-                    "pokemon_no": pkmn["pokemon_no"],
-                    "form_no": pkmn.get("form_no", "0"),
-                    "pokename": pkmn["pokemon_name"]
-                },
-                "minigame_id": choice([1, 2, 3, 4, 6, 8, 9, 10, 12]),
-                "kinomi_id": 0,
-                "kinomi_count": 0,
-                "pokeitem_id": 0,
-                "object_pokemon_id": 0,
-                "otoken": game_data.generate_otoken()
-                }
-            )
-        response = {
-            "dreamland_area_id": randint(3, 9),
-            "object_list": object_list
-        }
-        return json.dumps(response).encode()
 
     # --- get player game version ---
-    rom_name      = game_data.player_data["member"]["rom_name"]
-    player_points = int(game_data.player_data["member"]["point"])
-    player_badges = int(game_data.player_data["member"]["player_badge_num"])
-    player_types  = {game_data.player_data["member"]["type1"], game_data.player_data["member"]["type2"]}
+    player_data = game_data.read_player_data()["member"]
+
+    rom_name      = player_data["rom_name"]
+    player_points = int(player_data["experiment_point"])
+    player_badges = int(player_data["player_badge_num"])
+    player_types  = {player_data["type1"], player_data["type2"]}
 
     is_bw   = rom_name in ("Pokémon Black Version", "Pokémon White Version")
     is_b2w2 = rom_name in ("Pokémon Black Version 2", "Pokémon White Version 2")
@@ -53,7 +27,7 @@ def handle_dreamland_top(_query):
     eligible_areas = []
     area_weights   = []
     for area_id, area in game_data.area_info.items():
-        if area_id == "50": #we don't have the file for Pokémon Café Forest
+        if area_id == 50: #we don't have the file for Pokémon Café Forest
             continue
 
         if player_points < area["req_points"][game_key]:
@@ -73,7 +47,7 @@ def handle_dreamland_top(_query):
     # --- filter eligible Pokémon for the chosen area ---
     def get_eligible_pokemon() -> dict:
         eligible = {}
-        for natdex, pdata in area["pokemon"].items():
+        for pdata in area["pokemon"]:
             if player_points < pdata["req_points"]:
                 continue
             req_game = pdata.get("req_game")
@@ -81,7 +55,7 @@ def handle_dreamland_top(_query):
                 continue
             if req_game == "b2w2" and not is_b2w2:
                 continue
-            eligible[natdex] = pdata
+            eligible[pdata["natdex"]] = pdata
         return eligible
 
     # --- pick one eligible Pokémon from the area ---
@@ -89,15 +63,18 @@ def handle_dreamland_top(_query):
         eligible = get_eligible_pokemon()
         natdex = choice(list(eligible.keys()))
         pdata  = eligible[natdex]
-        pkmn_entry = game_data.pokemon_info.get(natdex)
 
-        pkmn = {**pkmn_entry, "pokemon_no": natdex.split("-")[0]}
+        form_name = pdata.get("form")
+        lookup_key = f"{natdex}-{form_name}" if form_name else str(natdex)
+
+        pkmn_entry = game_data.pokemon_info.get(lookup_key)
+
+        pkmn = {**pkmn_entry, "pokemon_no": natdex}
         return pkmn, pdata
 
     # --- pick one eligible item from the area ---
     def pick_area_item():
-        eligible = [iid for iid, idata in area["items"].items()
-                    if player_points >= idata["req_points"]]
+        eligible = [iid for iid, ipoints in area["items"] if player_points >= ipoints]
 
         item_id = choice(eligible)
 
@@ -106,51 +83,51 @@ def handle_dreamland_top(_query):
         return item_id
 
     # --- Encounter builders ---
-    def make_pokemon_encounter(pkmn, pdata, obj_id, obj_pkmn_id, category="0"):
+    def make_pokemon_encounter(pkmn, pdata, obj_id, obj_pkmn_id, category=0):
         gender_id = choice(pkmn["gender_ratio"])
-        gender_key = "male" if gender_id == "0" else "female"
+        gender_key = "m" if gender_id == 0 else "f"
 
         # Use the gender-specific minigame list
         minigame_pool = pdata["minigames"].get(gender_key)
-        minigame_id = "1" if category == "1" else str(choice(minigame_pool))
+        minigame_id = 1 if category == 1 else choice(minigame_pool)
 
-        encounter_store[str(obj_pkmn_id)] = {"type": "pokemon", "pokemon": pkmn}
+        encounter_store[obj_pkmn_id] = {"type": "pokemon", "pokemon": pkmn}
         return {
-            "object_id":         str(obj_id),
+            "object_id":         obj_id,
             "otoken":            game_data.generate_otoken(),
             "public_date_from":  None,
             "public_date_to":    None,
             "object_category":   category,
             "minigame_id":       minigame_id,
-            "kinomi_id":         "0",
-            "kinomi_count":      "0",
+            "kinomi_id":         0,
+            "kinomi_count":      0,
             "pokeitem_id":       0,
             "object_pokemon_id": obj_pkmn_id,
             "pokemon": {
                 "pokemon_no":  pkmn["pokemon_no"],
-                "form_no":     pkmn.get("form_no", "0"),
-                "pokename":    pkmn["pokemon_name"],
-                "sex_id":      str(gender_id),
-                "action_type": "1",
-                "type1":       pkmn["type1"],
-                "type2":       pkmn.get("type2", ""),
-                "speabi1":     pkmn["speabi1"],
-                "speabi2":     pkmn.get("speabi2", ""),
-                "speabi3":     pkmn["speabi3"],
+                "form_no":     pkmn.get("form_no", 0),
+                "pokename":    game_data.lookup_str("pokemon", pkmn["pokemon_no"]),
+                "sex_id":      gender_id,
+                "action_type": 1,
+                "type1":       game_data.lookup_str("type", pkmn["type1"]),
+                "type2":       game_data.lookup_str("type", pkmn["type2"]),
+                "speabi1":     game_data.lookup_str("ability", pkmn["speabi1"]),
+                "speabi2":     game_data.lookup_str("ability", pkmn["speabi2"]),
+                "speabi3":     game_data.lookup_str("ability", pkmn["speabi3"])
             }
         }
 
     def make_item_encounter(item_id, obj_id, obj_pkmn_id):
-        encounter_store[str(obj_pkmn_id)] = {"type": "item", "item_id": item_id}
+        encounter_store[obj_pkmn_id] = {"type": "item", "item_id": item_id}
         return {
-            "object_id":         str(obj_id),
+            "object_id":         obj_id,
             "otoken":            game_data.generate_otoken(),
             "public_date_from":  None,
             "public_date_to":    None,
-            "object_category":   "2",
-            "minigame_id":       "0",
-            "kinomi_id":         "0",
-            "kinomi_count":      "0",
+            "object_category":   2,
+            "minigame_id":       0,
+            "kinomi_id":         0,
+            "kinomi_count":      0,
             "pokeitem_id":       0,
             "object_pokemon_id": obj_pkmn_id,
         }
@@ -161,7 +138,7 @@ def handle_dreamland_top(_query):
 
     # First entry is always the special Pokémon (category 1)
     pkmn, pdata = pick_area_pokemon()
-    object_list.append(make_pokemon_encounter(pkmn, pdata, randint(100, 400), base_obj_pkmn_id, category="1"))
+    object_list.append(make_pokemon_encounter(pkmn, pdata, randint(100, 400), base_obj_pkmn_id, category=1))
 
     for i in range(1, 30):
         obj_id = randint(90, 400)
@@ -193,19 +170,19 @@ def handle_dreamland_tree_top(_query):
 
         pokemon_list.append({
             "pokemon_no":        pkmn["pokemon_no"],
-            "form_no":           pkmn.get("form_no", "0"),
+            "form_no":           pkmn.get("form_no", 0),
             "pgl_name":          "PGLName",
             "member_savedata_id": 123,
             "nickname":          None,
-            "pokename":          pkmn["pokemon_name"],
+            "pokename":          game_data.lookup_str("pokemon", pkmn["pokemon_no"]),
             "oyaname":           "PlayerName",
             "level":             randint(1, 100),
-            "type1":             pkmn["type1"],
-            "type2":             pkmn["type2"],
+            "type1":             game_data.lookup_str("type", pkmn["type1"]),
+            "type2":             game_data.lookup_str("type", pkmn["type2"]),
             "sex_id":            0,
-            "pokekaku":          choice(game_data.pokemon_natures),
+            "pokekaku":          game_data.lookup_str("nature", randint(0, 24)),
             "pokeplace":         "Route 1",
-            "ball_name":         "Poke Ball"
+            "ball_name":         game_data.lookup_str("ball", 4)
         }
     )   
 
@@ -215,30 +192,30 @@ def handle_dreamland_tree_top(_query):
 
 
 def handle_game_clear(_query):
-    encounter = encounter_store.get(str(_query["object_pokemon_id"]))
+    encounter = encounter_store[int(_query["object_pokemon_id"])]
 
     if encounter["type"] == "pokemon":
         pkmn = encounter["pokemon"]
         
         if len(pkmn["gender_ratio"]) > 1:
-            gender_id = choices(["0", "1"], weights=[75, 25], k=1)[0]
+            gender_id = choices([0, 1], weights=[75, 25], k=1)[0]
         else:
             gender_id = pkmn["gender_ratio"][0]
         
         reward = {
             "pokemon": {
                 "pokemon_no":     pkmn["pokemon_no"],
-                "pokename":       pkmn["pokemon_name"],
-                "form_no":        pkmn.get("form_no", "0"),
+                "pokename":       game_data.lookup_str("pokemon", pkmn["pokemon_no"]),
+                "form_no":        pkmn.get("form_no", 0),
                 "sex_id":         gender_id,
-                "waza_name_disp": "Sunny Day" if "special_moves" not in pkmn else choice(pkmn["special_moves"])["move_name"],
+                "waza_name_disp": None if "special_moves" not in pkmn else game_data.lookup_str("move", choice(pkmn["special_moves"])),
                 "waza_count":     4,
-                "action_type":    "1",
-                "type1":          pkmn["type1"],
-                "type2":          pkmn.get("type2", ""),
-                "speabi1":        pkmn["speabi1"],
-                "speabi2":        pkmn.get("speabi2", ""),
-                "speabi3":        pkmn["speabi3"],
+                "action_type":    1,
+                "type1":       game_data.lookup_str("type", pkmn["type1"]),
+                "type2":       game_data.lookup_str("type", pkmn["type2"]),
+                "speabi1":     game_data.lookup_str("ability", pkmn["speabi1"]),
+                "speabi2":     game_data.lookup_str("ability", pkmn["speabi2"]),
+                "speabi3":     game_data.lookup_str("ability", pkmn["speabi3"])
             },
             "item":     None,
             "interior": None,
@@ -248,12 +225,12 @@ def handle_game_clear(_query):
     #there is an encounter-with-berry branch missing here
     
     elif encounter["type"] == "item":
-        item_id = int(encounter["item_id"])
+        item_id = encounter["item_id"]
         reward = {
             "pokemon": None,
             "item": {
                 "pokeitem_id":   item_id,
-                "pokeitem":      game_data.item_info[str(item_id)]["item_name"],
+                "pokeitem":      game_data.lookup_str("item", item_id),
                 "poke_item_num": 1,
             },
             "interior": None,
