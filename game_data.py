@@ -13,6 +13,16 @@ ROOT_DIR = Path(__file__).resolve().parent
 # Helper data
 # --------------------
 
+language = {
+    1: "ja",
+    2: "en",
+    3: "fr",
+    4: "it",
+    5: "de",
+    7: "es",
+    8: "ko"
+}
+
 with open(ROOT_DIR / "json_data" / "items.json", encoding="UTF-8") as f:
     item_info = json.load(f)
 
@@ -25,8 +35,6 @@ with open(ROOT_DIR / "json_data" / "dream_islands.json", encoding="UTF-8") as f:
 with open(ROOT_DIR / "json_data" / "berries.json", encoding="UTF-8") as f:
     berry_data = json.load(f)
 
-pokemon_natures = ("Adamant","Bashful","Bold","Brave","Calm","Careful","Docile","Gentle","Hardy","Hasty","Impish","Jolly","Lax","Lonely","Mild","Modest","Naive","Naughty","Quiet","Quirky","Rash","Relaxed","Sassy","Serious","Timid")
-
 # --------------------
 # Helper functions
 # --------------------
@@ -36,6 +44,27 @@ class PlayerStatus(Enum):
     SLEEPING = auto()
     DREAMING = auto()
     WAKE_READY = auto()
+
+def lookup_str(file: str, index: int):
+    if index is None:
+        return None
+    
+    index = int(index)
+    
+    with open(ROOT_DIR / "raw_text" / player_language / f"{file}.txt", "r", encoding="UTF-8") as f:
+        strings = f.read().splitlines()
+    
+    return strings[index]
+
+def lookup_desc(index: int):
+    with open(ROOT_DIR / "raw_text" / player_language / "item_descriptions.txt", "r", encoding="UTF-8") as f:
+        strings = f.read().splitlines()
+        
+    string = strings[index].split("\\n")
+    
+    res = [None, None, None]
+    res[:len(string)] = string
+    return tuple(res)
 
 def generate_otoken():
     player_data = read_player_data()
@@ -65,6 +94,18 @@ class ChestManager:
         with open(self.path, encoding="UTF-8") as f:
             self.data = json.load(f)
 
+    def localize_names(self):
+        for item in self.data["list"]:
+            item_desc = lookup_desc(item["pokeitem_id"])
+
+            item["pokeitem"] = lookup_str("item", item["pokeitem_id"])
+
+            item["field_line1"] = item_desc[0]
+            item["field_line2"] = item_desc[1]
+            item["field_line3"] = item_desc[2]
+        
+        self.save()
+
     def save(self):
         with open(self.path, "w", encoding="UTF-8") as f:
             json.dump(self.data, f, indent=2, ensure_ascii=False)
@@ -84,16 +125,18 @@ class ChestManager:
         else:
             curr_item_info = item_info[str(item_id)]
             self.data["cnt"] += 1
+            
+            item_desc = lookup_desc(item_id)
             new_item = {
                 "pokeitem_id": item_id,
-                "pokeitem": curr_item_info["item_name"],
+                "pokeitem": lookup_str("item", item_id),
                 "item_cnt": count,
                 "bunrui_no": curr_item_info["first_sort"],
                 "b_hozon_sentou": curr_item_info["second_sort"],
                 "date": current_date,
-                "field_line1": curr_item_info["desc"][0],
-                "field_line2": curr_item_info["desc"][1],
-                "field_line3": curr_item_info["desc"][2]
+                "field_line1": item_desc[0],
+                "field_line2": item_desc[1],
+                "field_line3": item_desc[2]
             }
             self.data["list"].append(new_item)
 
@@ -101,7 +144,7 @@ class ChestManager:
 
     def remove_item(self, item_id, count):
         current_date = datetime.now().strftime("%Y-%m-%d")
-        chest_item = self.fetch_item_by_id(int(item_id))
+        chest_item = self.fetch_item_by_id(item_id)
 
         chest_item["item_cnt"] -= count
         chest_item["date"] = current_date
@@ -119,6 +162,21 @@ class CropManager:
         self.path = data_path
         with open(self.path, encoding="UTF-8") as f:
             self.data = json.load(f)
+
+    def localize_names(self):
+        for crop in self.data["croft_list"]:
+            if "pokeitem_id" not in crop:
+                continue
+
+            berry_desc = lookup_desc(crop["pokeitem_id"])
+
+            crop["kinomi"] = lookup_str("item", crop["pokeitem_id"])
+
+            crop["desc1"] = berry_desc[0]
+            crop["desc2"] = berry_desc[1]
+            crop["desc3"] = berry_desc[2]
+        
+        self.save()
 
     def save(self):
         with open(self.path, "w", encoding="UTF-8") as f:
@@ -138,21 +196,22 @@ class CropManager:
 
         current_time = round(time.time())
 
-        berry_id = int(pokeitem_id) - 148
+        berry_id = pokeitem_id - 148
 
+        berry_desc = lookup_desc(pokeitem_id)
         plot.update({
             "my_croft_id": my_croft_id,
-            "pokeitem_id": int(pokeitem_id),
+            "pokeitem_id": pokeitem_id,
             "kinomi": item_info[pokeitem_id]["item_name"],
             "kinomi_id": berry_id,
             "dirt_hp": 100,
-            "desc1": item_info[pokeitem_id]["desc"][0],
-            "desc2": item_info[pokeitem_id]["desc"][1],
-            "desc3": item_info[pokeitem_id]["desc"][2],
+            "desc1": berry_desc[0],
+            "desc2": berry_desc[1],
+            "desc3": berry_desc[2],
             "kinomi_state": 0,
             "x": plot["x"],
             "y": plot["y"],
-            "server": {"planted_time": current_time, "last_update_time": current_time, "yield": berry_data[str(berry_id)]["max_yield"]}
+            "server": {"planted_time": current_time, "last_update_time": current_time, "yield": berry_data[berry_id]["max_yield"]}
         })
 
         self.save()
@@ -222,6 +281,8 @@ def write_player_data(data: dict):
 
 with open(ROOT_DIR / "save_data" / "sleeping_pokemon.json", encoding="UTF-8") as f:
     sleeping_pokemon = json.load(f)
+
+player_language = language[read_player_data()["member"]["langcode"]]
 
 chest = ChestManager(ROOT_DIR / "save_data" / "chest_data.json")
 
