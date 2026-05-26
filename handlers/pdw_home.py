@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import json
 import time
+import psutil
 import utility
 from random import choice, randint
 
@@ -90,7 +91,9 @@ def GET_my_island_area(_query):
 
 
 def GET_pdw_end(_query):
-    print(json.dumps(_query, indent=2))
+    for proc in psutil.process_iter():
+        if "flashplayer" in proc.name():
+            proc.kill()
 
     return b'{}'
 
