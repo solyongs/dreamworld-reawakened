@@ -107,7 +107,7 @@ class S(BaseHTTPRequestHandler):
 
         content_length = int(self.headers["Content-Length"])
         post_data = self.rfile.read(content_length)
-        query = {k: v[0] for k, v in parse_qs(post_data.decode(), strict_parsing=True).items()}
+        query = {k: v[0] for k, v in parse_qs(post_data.decode(encoding="UTF-8"), strict_parsing=True).items()}
         api_name = query["p"]
 
         logging.info("API POST: %s", api_name)
