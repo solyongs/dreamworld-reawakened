@@ -49,7 +49,7 @@ di [arg0]!</string>
 	<string id="k_ama_1">k_ama_1</string>
 	<string id="k_ar_1" unofficial="true">È stata aggiunta un’aiuola.</string>
 	<string id="k_as_1" unofficial="true">È apparso Diglett!</string>
-	<string id="k_asa_1" unofficial="true">Ora ci sono [arg0] aiuole, grazie a Diglett.</string>
+	<string id="k_asa_1" unofficial="true">Ci sono adesso [arg0] aiuole, grazie a Diglett.</string>
 	<string id="k_at_1" unofficial="true">Diglett ha iniziato ad arare l’orto di [arg0].</string>
 	<string id="k_au_1" unofficial="true">Diglett ha lasciato il giardino.</string>
 	<string id="k_ca_1">k_ca_1</string>
