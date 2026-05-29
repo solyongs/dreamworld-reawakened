@@ -51,6 +51,10 @@ if __name__ == "__main__":
         from bs4 import BeautifulSoup as bs
         inject_htm_playerdata()
 
+    args.game_sync = False
+    if (ROOT_DIR / "save_data" / "game_sync.json").exists():
+        args.game_sync = True
+
     if args.game_sync:
         utility.update_gamesync_status(utility.PlayerStatus.DREAMING)
 
@@ -59,4 +63,4 @@ if __name__ == "__main__":
     utility.chest.localize_names()
     utility.crops.localize_names()
 
-    run(port=args.port, debug=args.debug, is_random=args.random)
+    run(port=args.port, debug=args.debug)

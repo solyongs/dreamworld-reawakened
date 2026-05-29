@@ -6,15 +6,6 @@
 	<string id="fs_ad_6">fs_ad_6</string>
 	<string id="h_da_3">Return to your home.</string>
 	<string id="k_ad_1">[arg0]'s garden</string>
-	<string id="k_ad_10">k_ad_10</string>
-	<string id="k_ad_11">k_ad_11</string>
-	<string id="k_ad_12">k_ad_12</string>
-	<string id="k_ad_13">k_ad_13</string>
-	<string id="k_ad_14">k_ad_14</string>
-	<string id="k_ad_15">Current garden bed</string>
-	<string id="k_ad_16">k_ad_16</string>
-	<string id="k_ad_17">k_ad_17</string>
-	<string id="k_ad_18">k_ad_18</string>
 	<string id="k_ad_2">In use</string>
 	<string id="k_ad_3">k_ad_3</string>
 	<string id="k_ad_4">A Watering Can
@@ -24,6 +15,15 @@ to water Berries!</string>
 	<string id="k_ad_7">k_ad_7</string>
 	<string id="k_ad_8">k_ad_8</string>
 	<string id="k_ad_9">k_ad_9</string>
+	<string id="k_ad_10">k_ad_10</string>
+	<string id="k_ad_11">k_ad_11</string>
+	<string id="k_ad_12">k_ad_12</string>
+	<string id="k_ad_13">k_ad_13</string>
+	<string id="k_ad_14">k_ad_14</string>
+	<string id="k_ad_15">Current garden bed</string>
+	<string id="k_ad_16">k_ad_16</string>
+	<string id="k_ad_17">k_ad_17</string>
+	<string id="k_ad_18">k_ad_18</string>
 	<string id="k_ada_1">k_ada_1</string>
 	<string id="k_ae_2">Plant a Berry
 in the garden?</string>
@@ -65,13 +65,13 @@ now, thanks to Diglett.</string>
 	<string id="s_ad_2">Close</string>
 	<string id="s_af_1">s_af_1</string>
 	<string id="s_ag_1">s_ag_1</string>
-	<string id="s_ag_10">s_ag_10</string>
 	<string id="s_ag_3">s_ag_3</string>
 	<string id="s_ag_4">s_ag_4</string>
 	<string id="s_ag_5">s_ag_5</string>
 	<string id="s_ag_7">s_ag_7</string>
 	<string id="s_ag_8">s_ag_8</string>
 	<string id="s_ag_9">s_ag_9</string>
+	<string id="s_ag_10">s_ag_10</string>
 	<string id="s_ah_1">s_ah_1</string>
 	<string id="s_ah_2">s_ah_2</string>
 	<string id="s_al_1">s_al_1</string>

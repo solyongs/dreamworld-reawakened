@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data locale="es">
+	<string id="c_aa_1">Información detallada</string>
+	<string id="c_aa_3">Siguiente</string>
+	<string id="c_aa_4">A los participantes en la promoción:</string>
 	<string id="c_ad_1">Promociones</string>
 	<string id="c_ad_2">Fecha</string>
 	<string id="c_ad_3">Estado</string>
 	<string id="c_ad_4">Título</string>
 	<string id="c_ad_11">Cómo participar en la promoción</string>
-	<string id="c_aa_1">Información detallada</string>
-	<string id="c_aa_3">Siguiente</string>
-	<string id="c_aa_4">A los participantes en la promoción:</string>
-	<string id="c_bb_3">
-Período de la promoción: del [DD1]-[MM1]-[YYYY1] [hh1]:[mm1] al [DD2]-[MM2]-[YYYY2] [hh2]:[mm2]
-</string>
 	<string id="c_ba_1">
 Para participar en la promoción, es necesario tener una cuenta del Club de Entrenadores Pokémon. Si ya tienes una cuenta, inicia sesión desde la página de inicio.
 </string>
@@ -18,6 +15,9 @@ Para participar en la promoción, es necesario tener una cuenta del Club de Entr
 	<string id="c_ba_3">Registrarse</string>
 	<string id="c_bb_1">
 Para participar en la promoción, es necesario obtener permiso en el Club de Entrenadores Pokémon. Compruébalo en el sitio web oficial.
+</string>
+	<string id="c_bb_3">
+Período de la promoción: del [DD1]-[MM1]-[YYYY1] [hh1]:[mm1] al [DD2]-[MM2]-[YYYY2] [hh2]:[mm2]
 </string>
 	<string id="c_bb_7">Atrás</string>
 	<string id="c_bd_1">Esta promoción estará disponible muy pronto.</string>

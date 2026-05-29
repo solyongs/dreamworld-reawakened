@@ -59,9 +59,9 @@
 	<string id="pg_amd_2" size="12" letterSpacing="1.0" />
 	<string id="pg_amd_3" size="12" letterSpacing="1.0" />
 	<string id="pg_ame_1" size="12" letterSpacing="1.0" />
-	<string id="pg_amh_1" size="16" letterSpacing="1.0" color="#000000" bold="true" />
-	<string id="pg_amh_2" size="12" letterSpacing="1.0" color="#656565" bold="true" />
-	<string id="pg_amh_3" size="12" letterSpacing="0.52" leading="1" color="#969696" bold="true" />
-	<string id="pg_amh_4" size="14" letterSpacing="1.0" color="#FFFFFF" bold="true" />
+	<string id="pg_amh_1" size="16" letterSpacing="1.0" color="00000000" bold="true" />
+	<string id="pg_amh_2" size="12" letterSpacing="1.0" color="0x656565" bold="true" />
+	<string id="pg_amh_3" size="12" letterSpacing="0.52" leading="1" color="0x969696" bold="true" />
+	<string id="pg_amh_4" size="14" letterSpacing="1.0" color="0xFFFFFF" bold="true" />
 	<string id="pg_amk_1" size="12" letterSpacing="1.0" />
 </data>
