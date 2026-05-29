@@ -3,10 +3,11 @@ import json
 from pathlib import Path
 from urllib.parse import quote, unquote, parse_qs, urlencode
 
-from server import run
+from api.server import run
 from config import args
 
-import utility
+from utils import save_data
+from utils import managers
 
 ROOT_DIR = Path(__file__).resolve().parent
 
@@ -51,16 +52,12 @@ if __name__ == "__main__":
         from bs4 import BeautifulSoup as bs
         inject_htm_playerdata()
 
-    args.game_sync = False
-    if (ROOT_DIR / "save_data" / "game_sync.json").exists():
-        args.game_sync = True
-
     if args.game_sync:
-        utility.update_gamesync_status(utility.PlayerStatus.DREAMING)
+        save_data.update_gamesync_status(save_data.PlayerStatus.DREAMING)
 
-    utility.crops.update_json()
-    utility.chest.update_json()
+    managers.crops.update_json()
+    managers.chest.update_json()
 
-    utility.crops.process_berry_growth()
+    managers.crops.process_berry_growth()
 
     run(port=8080, debug=args.debug)
