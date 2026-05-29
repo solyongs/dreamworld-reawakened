@@ -24,25 +24,18 @@
 	<string id="k_ad_17">k_ad_17</string>
 	<string id="k_ad_18">k_ad_18</string>
 	<string id="k_ada_1">k_ada_1</string>
-	<string id="k_ae_2">Vuoi piantare delle Bacche
-nel terreno soffice?</string>
+	<string id="k_ae_2">Vuoi piantare delle Bacche&amp;#xD;nel terreno soffice?</string>
 	<string id="k_aff_1">Vuoi piantare la bacca?</string>
 	<string id="k_afff_1">Hai piantato [arg0].</string>
 	<string id="k_ag_1">Dettagli</string>
-	<string id="k_ag_2">Qui è già piantata
-[arg0]!</string>
-	<string id="k_aha_1">Il terreno è
-abbastanza umido!</string>
+	<string id="k_ag_2">Qui è già piantata&amp;#xD;[arg0]!</string>
+	<string id="k_aha_1">Il terreno è&amp;#xD;abbastanza umido!</string>
 	<string id="k_ahb_1">k_ahb_1</string>
 	<string id="k_ahb_2">k_ahb_2</string>
-	<string id="k_ai_1">[arg0] è
-germogliata!</string>
-	<string id="k_aj_1">Lo stelo di [arg0]
-è cresciuto!</string>
-	<string id="k_ak_1">Sono spuntati dei fiori
-di [arg0]!</string>
-	<string id="k_al_1">È tempo di raccogliere
-[arg0]!</string>
+	<string id="k_ai_1">[arg0] è&amp;#xD;germogliata!</string>
+	<string id="k_aj_1">Lo stelo di [arg0]&amp;#xD;è cresciuto!</string>
+	<string id="k_ak_1">Sono spuntati dei fiori&amp;#xD;di [arg0]!</string>
+	<string id="k_al_1">È tempo di raccogliere&amp;#xD;[arg0]!</string>
 	<string id="k_am_1">Hai raccolto [arg0] x [arg1] .</string>
 	<string id="k_am_2">k_am_2</string>
 	<string id="k_am_3">Le bacche raccolte sono nel baule.</string>

@@ -67,8 +67,7 @@
 	<string id="m_af_12">m_af_12</string>
 	<string id="new_home_3">new_home_3</string>
 	<string id="p_aa_1">なかよしボード</string>
-	<string id="p_aa_4">つれて行きたいポケモン
-[arg0]/10 ひき</string>
+	<string id="p_aa_4">つれて行きたいポケモン&amp;#xD;[arg0]/10 ひき</string>
 	<string id="p_aa_5">なかまになったポケモン</string>
 	<string id="p_aa_6">つれて行くポケモン</string>
 	<string id="p_ah_1">なかまになったポケモンはいません。</string>

@@ -8,8 +8,7 @@
 	<string id="s_aa_2">Zurück auf deine Insel</string>
 	<string id="t_aa_1">Traumeiche</string>
 	<string id="y_aa_1">Traumeiche</string>
-	<string id="y_aa_2" unofficial="true">Zur Traumeiche
-[画面数] ist gegangen</string>
+	<string id="y_aa_2" unofficial="true">Zur Traumeiche&amp;#xD;[画面数] ist gegangen</string>
 	<string id="y_aa_3">Trauminsel—Kleiner Wald</string>
 	<string id="y_aa_4">Trauminsel—Funkelndes Meer</string>
 	<string id="y_aa_5">Trauminsel—Horizont</string>

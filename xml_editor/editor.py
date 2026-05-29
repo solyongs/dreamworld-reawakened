@@ -68,7 +68,7 @@ class XMLLineEditWidget(QWidget):
         main_layout.addLayout(self._build_toolbar_row())
         main_layout.addLayout(self._build_top_row())
 
-        self.text_string.textChanged.connect(lambda: setattr(self.entry, "text_string", self.text_string.toPlainText().replace("↵\n", "\n")))
+        self.text_string.textChanged.connect(lambda: setattr(self.entry, "text_string", self.text_string.toPlainText()))
         self.text_size.valueChanged.connect(lambda v: setattr(self.entry, "size", v))
         self.letter_spacing.valueChanged.connect(lambda v: setattr(self.entry, "letterSpacing", v))
         self.leading.valueChanged.connect(lambda v: setattr(self.entry, "leading", v))
@@ -261,7 +261,7 @@ class MainWindow(QMainWindow):
                 continue
 
             result[sid] = {
-                "string": el.text or "",
+                "string": (el.text or "").replace("\r", "\n"),
                 "is_translation": el.get("unofficial", "false").lower() == "true",
             }
 
@@ -455,7 +455,7 @@ class MainWindow(QMainWindow):
                     el.set("unofficial", "true")
 
                 # fall back to string_id if text is empty
-                el.text = entry.text_string or entry.string_id
+                el.text = (entry.text_string or entry.string_id).replace("\n", "\r")
 
             ET.indent(strings_root, space="\t")
 

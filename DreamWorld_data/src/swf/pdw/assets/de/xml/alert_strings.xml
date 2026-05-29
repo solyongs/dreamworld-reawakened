@@ -41,19 +41,13 @@
 	<string id="pg_adi_5">pg_adi_5</string>
 	<string id="pg_adi_6">pg_adi_6</string>
 	<string id="pg_adi_7">pg_adi_7</string>
-	<string id="pg_alc_1" unofficial="true">Deine Daten werden für die Pokémon Dream World verarbeitet.
-Bitte warten Sie, bevor Sie es erneut versuchen.
-Es könnte fünf Minuten oder länger brauchen um den Vorgang abzuschliessen.</string>
+	<string id="pg_alc_1" unofficial="true">Deine Daten werden für die Pokémon Dream World verarbeitet.&amp;#xD;Bitte warten Sie, bevor Sie es erneut versuchen.&amp;#xD;Es könnte fünf Minuten oder länger brauchen um den Vorgang abzuschliessen.</string>
 	<string id="pg_alc_2" unofficial="true">*Es kann eine Weile dauern bis ein Pokémon wieder anfängt zu Träumen nach dem du es zum Schlafen gelegt hast mit der Spielsynchro.</string>
-	<string id="pg_ald_1" unofficial="true">Verarbeitung der Registrierungsdaten.
-Bitte warten Sie, bevor Sie es erneut versuchen.
-Es könnte fünf Minuten oder länger brauchen um den Vorgang abzuschliessen.</string>
+	<string id="pg_ald_1" unofficial="true">Verarbeitung der Registrierungsdaten.&amp;#xD;Bitte warten Sie, bevor Sie es erneut versuchen.&amp;#xD;Es könnte fünf Minuten oder länger brauchen um den Vorgang abzuschliessen.</string>
 	<string id="pg_ald_2">Schliessen</string>
 	<string id="pg_ale_1" unofficial="true">Kein Pokémon schläft. Benutz die Spielsynchro um ein Pokémon zum Schlafen auswählen.</string>
 	<string id="pg_ale_2">Schliessen</string>
-	<string id="pg_alf_1" unofficial="true">Kein Pokémon ist am Träumen.
-Benutze Spielsynchro um ein Pokémon aufzuwecken.
-Um in der Pokémon DW wieder zu spielen, lege ein Pokémon zu Schlafen.</string>
+	<string id="pg_alf_1" unofficial="true">Kein Pokémon ist am Träumen.&amp;#xD;Benutze Spielsynchro um ein Pokémon aufzuwecken.&amp;#xD;Um in der Pokémon DW wieder zu spielen, lege ein Pokémon zu Schlafen.</string>
 	<string id="pg_alf_2" unofficial="true">*Benutze Spielsynchro um ein Pokémon nur ein mal pro Tag Schlafen zu legen.</string>
 	<string id="pg_alf_3">Schliessen</string>
 	<string id="pg_alg_1">pg_alg_1</string>
@@ -66,13 +60,10 @@ Um in der Pokémon DW wieder zu spielen, lege ein Pokémon zu Schlafen.</string>
 	<string id="pg_amd_2">pg_amd_2</string>
 	<string id="pg_amd_3">pg_amd_3</string>
 	<string id="pg_ame_1" unofficial="true">Ein Fehler ist aufgetreten während der Datenverarbeitung.</string>
-	<string id="pg_amf_1" unofficial="true">Ein Datenbank Fehler ist aufgetreten.
-Deine Verbindung wird getrennt.</string>
+	<string id="pg_amf_1" unofficial="true">Ein Datenbank Fehler ist aufgetreten.&amp;#xD;Deine Verbindung wird getrennt.</string>
 	<string id="pg_amh_1" unofficial="true">Willkommen in der Pokémon Dream World!</string>
 	<string id="pg_amh_2">Ab jetzt hast du eine Stunde zeit, um dich in der Pokémon DW zu vergnügen.</string>
-	<string id="pg_amh_3">Nach Ablauf einer Stunde verlässt du die Pokémon DW automatisch. 
-Wenn dein Pokémon DW-Aufenthalt automatisch beendet wird, kann es vorkommen, dass die Daten deiner aktuellen Spielpartie nicht vollständig gespeichert werden.
-Es ist daher ratsam, die Pokémon DW zum Zeitpunkt der Benachrichtigung nach Ablauf einer Stunde selbständig zu verlassen.</string>
+	<string id="pg_amh_3">Nach Ablauf einer Stunde verlässt du die Pokémon DW automatisch. &amp;#xD;Wenn dein Pokémon DW-Aufenthalt automatisch beendet wird, kann es vorkommen, dass die Daten deiner aktuellen Spielpartie nicht vollständig gespeichert werden.&amp;#xD;Es ist daher ratsam, die Pokémon DW zum Zeitpunkt der Benachrichtigung nach Ablauf einer Stunde selbständig zu verlassen.</string>
 	<string id="pg_amh_4">Überspringen</string>
 	<string id="pg_amk_1">pg_amk_1</string>
 	<string id="pg_ay_2">O.K.</string>

@@ -8,8 +8,7 @@
 	<string id="s_aa_2">Pagina iniziale</string>
 	<string id="t_aa_1">Albero dei sogni</string>
 	<string id="y_aa_1">Contapassi</string>
-	<string id="y_aa_2">Per l'albero del sogni:
-- [画面数]</string>
+	<string id="y_aa_2">Per l'albero del sogni:&amp;#xD;- [画面数]</string>
 	<string id="y_aa_3">Il boschetto dell'Isola del sogni</string>
 	<string id="y_aa_4" unofficial="true">Isola dei sogni: Mar Brillante</string>
 	<string id="y_aa_5">Isola dei sogni, settimo cielo</string>
@@ -30,8 +29,7 @@
 	<string id="y_ad_4">Vuoi fare un gelato assieme a [ポケモン名]?</string>
 	<string id="y_ad_7">[ポケモン名] ha voglia di volare.</string>
 	<string id="y_ad_8">Vuoi fare una Corsa aerea con [ポケモン名]?</string>
-	<string id="y_ad_10">Qualcuno si è smarrito e
-[ポケモン名] lo sta cercando.</string>
+	<string id="y_ad_10">Qualcuno si è smarrito e&amp;#xD;[ポケモン名] lo sta cercando.</string>
 	<string id="y_ad_11">Vuoi aiutare [ポケモン名] con la ricerca?</string>
 	<string id="y_ad_13">[ポケモン名] vuole giocare sulla schiena di Wailord.</string>
 	<string id="y_ad_14">Vuoi andare da Wailord con [ポケモン名]?</string>

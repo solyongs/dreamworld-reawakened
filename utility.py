@@ -2,6 +2,7 @@
 import json
 import time
 import utility
+from config import args
 from typing import List
 from pathlib import Path
 from random import choice
@@ -351,6 +352,9 @@ crops = CropManager(ROOT_DIR / "save_data" / "crop_data.json")
 # --------------------
 
 def update_gamesync_status(status: PlayerStatus):
+    if not args.game_sync:
+        return
+
     game_sync_file = ROOT_DIR / "save_data" / "game_sync.json"
 
     if not game_sync_file.exists():

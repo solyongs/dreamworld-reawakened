@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data locale="en">
 	<string id="f_af_1">Dream Pal request</string>
-	<string id="f_af_2">This Pokémon has invited you to be a Dream Pal.
-Go to this Pokémon's home?</string>
+	<string id="f_af_2">This Pokémon has invited you to be a Dream Pal.&amp;#xD;Go to this Pokémon's home?</string>
 	<string id="f_af_3">Nickname</string>
 	<string id="f_af_4">PGL Nickname</string>
 	<string id="f_af_6">O.T.</string>
@@ -17,8 +16,7 @@ Go to this Pokémon's home?</string>
 	<string id="f_af_17">Close</string>
 	<string id="f_af_18">Go to this Pokémon's home.</string>
 	<string id="m_ac_1">Look! A footprint!</string>
-	<string id="m_ac_2">If a Pokémon has left a footprint, you can ask it to be your
-Dream Pal. Go to the Pokémon's home and make a request.</string>
+	<string id="m_ac_2">If a Pokémon has left a footprint, you can ask it to be your&amp;#xD;Dream Pal. Go to the Pokémon's home and make a request.</string>
 	<string id="m_ac_3">Nickname</string>
 	<string id="m_ac_4">PGL Nickname</string>
 	<string id="m_ac_6">O.T.</string>
