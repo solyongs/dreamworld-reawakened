@@ -8,6 +8,13 @@
 	<string id="s_aa_2">Pagina iniziale</string>
 	<string id="t_aa_1">Albero dei sogni</string>
 	<string id="y_aa_1">Contapassi</string>
+	<string id="y_aa_2">Per l'albero del sogni:&amp;#xD;- [画面数]</string>
+	<string id="y_aa_3">Il boschetto dell'Isola del sogni</string>
+	<string id="y_aa_4" unofficial="true">Isola dei sogni: Mar Brillante</string>
+	<string id="y_aa_5">Isola dei sogni, settimo cielo</string>
+	<string id="y_aa_6">Pagina iniziale</string>
+	<string id="y_aa_8">y_aa_8</string>
+	<string id="y_aa_9">y_aa_9</string>
 	<string id="y_aa_12">[ポケモン名] è incuriosito dal baule.</string>
 	<string id="y_aa_13">Aiuta [ポケモン名]!</string>
 	<string id="y_aa_14">y_aa_14</string>
@@ -16,17 +23,13 @@
 	<string id="y_aa_17">Isola dei sogni: Monte Spigolo</string>
 	<string id="y_aa_18" unofficial="true">Isola dei sogni: Grotta Refrigerio</string>
 	<string id="y_aa_19" unofficial="true">Il Parco Incanto dell'Isola dei sogni</string>
-	<string id="y_aa_2">Per l'albero del sogni:
-- [画面数]</string>
-	<string id="y_aa_3">Il boschetto dell'Isola del sogni</string>
-	<string id="y_aa_4" unofficial="true">Isola dei sogni: Mar Brillante</string>
-	<string id="y_aa_5">Isola dei sogni, settimo cielo</string>
-	<string id="y_aa_6">Pagina iniziale</string>
-	<string id="y_aa_8">y_aa_8</string>
-	<string id="y_aa_9">y_aa_9</string>
 	<string id="y_ad_1">È [ポケモン名]!</string>
-	<string id="y_ad_10">Qualcuno si è smarrito e
-[ポケモン名] lo sta cercando.</string>
+	<string id="y_ad_2">[ポケモン名] sembra avere fame.</string>
+	<string id="y_ad_3">y_ad_3</string>
+	<string id="y_ad_4">Vuoi fare un gelato assieme a [ポケモン名]?</string>
+	<string id="y_ad_7">[ポケモン名] ha voglia di volare.</string>
+	<string id="y_ad_8">Vuoi fare una Corsa aerea con [ポケモン名]?</string>
+	<string id="y_ad_10">Qualcuno si è smarrito e&amp;#xD;[ポケモン名] lo sta cercando.</string>
 	<string id="y_ad_11">Vuoi aiutare [ポケモン名] con la ricerca?</string>
 	<string id="y_ad_13">[ポケモン名] vuole giocare sulla schiena di Wailord.</string>
 	<string id="y_ad_14">Vuoi andare da Wailord con [ポケモン名]?</string>
@@ -34,7 +37,6 @@
 	<string id="y_ad_16" unofficial="true">Vuoi andare a servire le bevande con [ポケモン名]?</string>
 	<string id="y_ad_18">[ポケモン名] vuole fare una prova di coraggio.</string>
 	<string id="y_ad_19">Vuoi provare a spegnere le candele con [ポケモン名]?</string>
-	<string id="y_ad_2">[ポケモン名] sembra avere fame.</string>
 	<string id="y_ad_20" unofficial="true">[ポケモン名] vuole raccogliere gioielli.</string>
 	<string id="y_ad_21" unofficial="true">Vuoi andare a raccogliere gioielli con [ポケモン名]?</string>
 	<string id="y_ad_22" unofficial="true">[ポケモン名] vuole giocare sul ghiaccio.</string>
@@ -45,17 +47,11 @@
 	<string id="y_ad_27" unofficial="true">Vuoi aprire lo scrigno con [ポケモン名]?</string>
 	<string id="y_ad_28">y_ad_28</string>
 	<string id="y_ad_29">y_ad_29</string>
-	<string id="y_ad_3">y_ad_3</string>
 	<string id="y_ad_30" unofficial="true">[ポケモン名] sembra avere sete.</string>
 	<string id="y_ad_31" unofficial="true">Vuoi andare a servire bevande con [ポケモン名]?</string>
 	<string id="y_ad_32">y_ad_32</string>
 	<string id="y_ad_33">y_ad_33</string>
-	<string id="y_ad_4">Vuoi fare un gelato assieme a [ポケモン名]?</string>
-	<string id="y_ad_7">[ポケモン名] ha voglia di volare.</string>
-	<string id="y_ad_8">Vuoi fare una Corsa aerea con [ポケモン名]?</string>
 	<string id="y_af_1">[ポケモン名] è diventato tuo amico!</string>
-	<string id="y_af_10">y_af_10</string>
-	<string id="y_af_11">y_af_11</string>
 	<string id="y_af_2">Pokémon:</string>
 	<string id="y_af_3">Abilità:</string>
 	<string id="y_af_4">Tipo:</string>
@@ -64,7 +60,17 @@
 	<string id="y_af_7">[ポケモン名] è felice!</string>
 	<string id="y_af_8">y_af_8</string>
 	<string id="y_af_9">y_af_9</string>
+	<string id="y_af_10">y_af_10</string>
+	<string id="y_af_11">y_af_11</string>
 	<string id="y_ag_1" unofficial="true">I'm sorry you didn't succeed at Ice Cream Scoop.</string>
+	<string id="y_ag_2">y_ag_2</string>
+	<string id="y_ag_3" unofficial="true">I'm sorry you didn't complete the Sky Race.</string>
+	<string id="y_ag_4">y_ag_4</string>
+	<string id="y_ag_5">Non hai trovato il Pokémon smarrito.</string>
+	<string id="y_ag_6">y_ag_6</string>
+	<string id="y_ag_7" unofficial="true">I'm sorry you didn't succeed at Wailord's Water Spout.</string>
+	<string id="y_ag_8">y_ag_8</string>
+	<string id="y_ag_9">[ポケモン名] è triste...</string>
 	<string id="y_ag_10">y_ag_10</string>
 	<string id="y_ag_11">y_ag_11</string>
 	<string id="y_ag_12">y_ag_12</string>
@@ -75,14 +81,6 @@
 	<string id="y_ag_17">y_ag_17</string>
 	<string id="y_ag_18">y_ag_18</string>
 	<string id="y_ag_19">y_ag_19</string>
-	<string id="y_ag_2">y_ag_2</string>
-	<string id="y_ag_3" unofficial="true">I'm sorry you didn't complete the Sky Race.</string>
-	<string id="y_ag_4">y_ag_4</string>
-	<string id="y_ag_5">Non hai trovato il Pokémon smarrito.</string>
-	<string id="y_ag_6">y_ag_6</string>
-	<string id="y_ag_7" unofficial="true">I'm sorry you didn't succeed at Wailord's Water Spout.</string>
-	<string id="y_ag_8">y_ag_8</string>
-	<string id="y_ag_9">[ポケモン名] è triste...</string>
 	<string id="y_ah_1">[ポケモン名] non c'è più...</string>
 	<string id="y_ai_1">Hai trovato [道具名].</string>
 	<string id="y_aj_1">Hai messo [道具名] nel baule.</string>

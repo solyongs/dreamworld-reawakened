@@ -6,6 +6,14 @@
 	<string id="fs_ad_6">fs_ad_6</string>
 	<string id="h_da_3">Return to your home.</string>
 	<string id="k_ad_1">[arg0]'s garden</string>
+	<string id="k_ad_2">In use</string>
+	<string id="k_ad_3">k_ad_3</string>
+	<string id="k_ad_4">A Watering Can&amp;#xD;to water Berries!</string>
+	<string id="k_ad_5">k_ad_5</string>
+	<string id="k_ad_6">k_ad_6</string>
+	<string id="k_ad_7">k_ad_7</string>
+	<string id="k_ad_8">k_ad_8</string>
+	<string id="k_ad_9">k_ad_9</string>
 	<string id="k_ad_10">k_ad_10</string>
 	<string id="k_ad_11">k_ad_11</string>
 	<string id="k_ad_12">k_ad_12</string>
@@ -15,46 +23,27 @@
 	<string id="k_ad_16">k_ad_16</string>
 	<string id="k_ad_17">k_ad_17</string>
 	<string id="k_ad_18">k_ad_18</string>
-	<string id="k_ad_2">In use</string>
-	<string id="k_ad_3">k_ad_3</string>
-	<string id="k_ad_4">A Watering Can
-to water Berries!</string>
-	<string id="k_ad_5">k_ad_5</string>
-	<string id="k_ad_6">k_ad_6</string>
-	<string id="k_ad_7">k_ad_7</string>
-	<string id="k_ad_8">k_ad_8</string>
-	<string id="k_ad_9">k_ad_9</string>
 	<string id="k_ada_1">k_ada_1</string>
-	<string id="k_ae_2">Plant a Berry
-in the garden?</string>
+	<string id="k_ae_2">Plant a Berry&amp;#xD;in the garden?</string>
 	<string id="k_aff_1">Plant this Berry?</string>
-	<string id="k_afff_1">Planted the
-[arg0].</string>
+	<string id="k_afff_1">Planted the&amp;#xD;[arg0].</string>
 	<string id="k_ag_1">See Details</string>
-	<string id="k_ag_2">[arg0]!
-It's planted!</string>
-	<string id="k_aha_1">The soil is
-very moist.</string>
+	<string id="k_ag_2">[arg0]!&amp;#xD;It's planted!</string>
+	<string id="k_aha_1">The soil is&amp;#xD;very moist.</string>
 	<string id="k_ahb_1">k_ahb_1</string>
 	<string id="k_ahb_2">k_ahb_2</string>
-	<string id="k_ai_1">[arg0]!
-It's sprouting!</string>
-	<string id="k_aj_1">[arg0]!
-It's growing!</string>
-	<string id="k_ak_1">[arg0]!
-It's blooming!</string>
-	<string id="k_al_1">[arg0]!
-It has Berries!</string>
+	<string id="k_ai_1">[arg0]!&amp;#xD;It's sprouting!</string>
+	<string id="k_aj_1">[arg0]!&amp;#xD;It's growing!</string>
+	<string id="k_ak_1">[arg0]!&amp;#xD;It's blooming!</string>
+	<string id="k_al_1">[arg0]!&amp;#xD;It has Berries!</string>
 	<string id="k_am_1">[arg0] Harvested: [arg1]</string>
 	<string id="k_am_2">k_am_2</string>
 	<string id="k_am_3">Berries were put in the Treasure Chest.</string>
 	<string id="k_ama_1">k_ama_1</string>
 	<string id="k_ar_1">A garden bed has been added.</string>
 	<string id="k_as_1">Diglett showed up!</string>
-	<string id="k_asa_1">There are now [arg0] garden beds
-now, thanks to Diglett.</string>
-	<string id="k_at_1">Diglett started plowing
-[arg0]'s garden.</string>
+	<string id="k_asa_1">There are now [arg0] garden beds&amp;#xD;now, thanks to Diglett.</string>
+	<string id="k_at_1">Diglett started plowing&amp;#xD;[arg0]'s garden.</string>
 	<string id="k_au_1">Diglett left the garden.</string>
 	<string id="k_ca_1">k_ca_1</string>
 	<string id="k_ca_2">k_ca_2</string>
@@ -65,13 +54,13 @@ now, thanks to Diglett.</string>
 	<string id="s_ad_2">Close</string>
 	<string id="s_af_1">s_af_1</string>
 	<string id="s_ag_1">s_ag_1</string>
-	<string id="s_ag_10">s_ag_10</string>
 	<string id="s_ag_3">s_ag_3</string>
 	<string id="s_ag_4">s_ag_4</string>
 	<string id="s_ag_5">s_ag_5</string>
 	<string id="s_ag_7">s_ag_7</string>
 	<string id="s_ag_8">s_ag_8</string>
 	<string id="s_ag_9">s_ag_9</string>
+	<string id="s_ag_10">s_ag_10</string>
 	<string id="s_ah_1">s_ah_1</string>
 	<string id="s_ah_2">s_ah_2</string>
 	<string id="s_al_1">s_al_1</string>

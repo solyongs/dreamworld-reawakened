@@ -4,7 +4,6 @@
 	<string id="b_ae_4">No</string>
 	<string id="k_af_1">Your Berries</string>
 	<string id="t_ac_1">Pokémon Nickname</string>
-	<string id="t_ac_10">Poké Ball Used</string>
 	<string id="t_ac_2">PGL Nickname</string>
 	<string id="t_ac_3">Pokémon</string>
 	<string id="t_ac_4">O.T.</string>
@@ -13,5 +12,6 @@
 	<string id="t_ac_7">Gender</string>
 	<string id="t_ac_8">Nature</string>
 	<string id="t_ac_9">t_ac_9</string>
+	<string id="t_ac_10">Poké Ball Used</string>
 	<string id="t_ad_1">Make a wish? You'll need one Berry.</string>
 </data>

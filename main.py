@@ -3,10 +3,11 @@ import json
 from pathlib import Path
 from urllib.parse import quote, unquote, parse_qs, urlencode
 
-from server import run
+from api.server import run
 from config import args
 
-import utility
+from utils import save_data
+from utils import managers
 
 ROOT_DIR = Path(__file__).resolve().parent
 
@@ -52,11 +53,11 @@ if __name__ == "__main__":
         inject_htm_playerdata()
 
     if args.game_sync:
-        utility.update_gamesync_status(utility.PlayerStatus.DREAMING)
+        save_data.update_gamesync_status(save_data.PlayerStatus.DREAMING)
 
-    utility.crops.process_berry_growth()
+    managers.crops.update_json()
+    managers.chest.update_json()
 
-    utility.chest.localize_names()
-    utility.crops.localize_names()
+    managers.crops.process_berry_growth()
 
-    run(port=args.port, debug=args.debug, is_random=args.random)
+    run(port=8080, debug=args.debug)
