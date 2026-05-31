@@ -5,8 +5,7 @@ In the terminal, after installing Python, run `pip install -r requirements.txt`.
 After this, run `python main.py` to start the server.
 
 ## Standalone startup
-- Run `python main.py` in the terminal
-    - Load http://127.0.0.1:8080/DreamWorld_data/src/swf/theme/assets/common/main.swf with the standalone Adobe Flash Player (download: [Windows](https://archive.org/download/standaloneflashplayers/fp/fp_32/32.0.0.465/flashplayer32_0r0_465_win_sa.exe), [Mac](https://archive.org/download/standaloneflashplayers/fp/fp_32/32.0.0.465/flashplayer32_0r0_465_mac_sa.dmg), [Linux](https://archive.org/download/standaloneflashplayers/fp/fp_32/32.0.0.465/flashplayer32_0r0_465_linux_sa.x86_64.tar.gz))
+- Load http://127.0.0.1:8080/DreamWorld_data/src/swf/theme/assets/common/main.swf with the standalone Adobe Flash Player (download: [Windows](https://archive.org/download/standaloneflashplayers/fp/fp_32/32.0.0.465/flashplayer32_0r0_465_win_sa.exe), [Mac](https://archive.org/download/standaloneflashplayers/fp/fp_32/32.0.0.465/flashplayer32_0r0_465_mac_sa.dmg), [Linux](https://archive.org/download/standaloneflashplayers/fp/fp_32/32.0.0.465/flashplayer32_0r0_465_linux_sa.x86_64.tar.gz))
 
 ## Flash browser startup
 
@@ -15,7 +14,11 @@ Ruffle currently cannot emulate the Dream World correctly.
 
 ### Windows
 
-- To be written
+- Install [Basilisk](https://www.basilisk-browser.org/), a browser which still supports NPAPI based plugins.
+
+- Download and install the archived version of [Flash Player 32.0.0.371](https://web.archive.org/web/20200609220527/https://fpdownload.macromedia.com/pub/flashplayer/installers/archive/fp_32.0.0.371_archive.zip) for Windows.
+
+- Navigate to http://127.0.0.1:8080/ in Basilisk.
 
 ### Linux
 
@@ -29,7 +32,7 @@ Ruffle currently cannot emulate the Dream World correctly.
 
 - Run Basilisk with proper environment variable like so: `MOZ_PLUGIN_PATH=/usr/lib64/mozilla/plugins ./basilisk`
 
-- Load http://127.0.0.1:8080/ in Basilisk.
+- Navigate to http://127.0.0.1:8080/ in Basilisk.
 
 # Save data manager
 This requires the installation of PyQt5 with `pip install PyQt5`
