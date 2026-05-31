@@ -1,0 +1,13 @@
+import re
+import sys
+
+def extract_srcs(html_file):
+    with open(html_file, "r", encoding="utf-8") as f:
+        content = f.read()
+    
+    srcs = re.findall(r'src=["\']([^"\']+)["\']', content)
+    for src in srcs:
+        print(src)
+
+if __name__ == "__main__":
+    extract_srcs(sys.argv[1])
