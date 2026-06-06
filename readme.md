@@ -6,7 +6,7 @@
 
 For the Game Sync server (for connecting your DS to the Dream World server, must be done first):
 - Install the newest version of Python
-- Download the latest release from this link here
+- Download the latest release from [this link here](https://github.com/minibug1021/dreamworld-reawakened/releases/download/v1.0/dreamworld-reawakened-main.zip)
 - Extract the folder into any directory
 - Navigate into the extracted `dreamworld-reawakened/game_sync_server` folder
 - Hold down shift and right-click in the folder (the empty space, not on a file/folder) and select "open PowerShell window here"
