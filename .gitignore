@@ -1,7 +1,3 @@
 __pycache__/
 
 save_data/
-db_manager.py
-utils/patch_swf.py
-tools/ffdec-cli.jar
-tools/ffdec.jar

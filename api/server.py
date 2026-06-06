@@ -6,6 +6,7 @@ from urllib.parse import parse_qs
 from flask import Flask, request, redirect, Response
 
 from utils import language
+from utils.patch_swf import get_cached, SWF_PATHS
 from game_sync_server.entralinked.utility.db_manager import db
 from api.routes import GET_RESPONSES, POST_RESPONSES
 
@@ -15,6 +16,7 @@ from api.routes import GET_RESPONSES, POST_RESPONSES
 
 atexit.register(db.close)
 
+PATCHED_SWFS = set(SWF_PATHS.keys())
 LANG = language.player_language
 
 ROOT_DIR   = Path(__file__).resolve().parent.parent
@@ -23,7 +25,7 @@ SHARED_DIR = ROOT_DIR / "dreamworld_assets" / "shared.pokemon-gl.com"
 
 # file extensions that should be patched before serving
 # binary assets (images, fonts, etc.) are served as-is
-PATCHABLE_EXTENSIONS = {".js", ".html", ".htm", ".css"}
+PATCHABLE_EXTENSIONS = {".js", ".html", ".css"}
 
 # incoming paths that need to be redirected to an equivalent local path
 # rules are mutually exclusive, only the first match is applied
@@ -66,6 +68,8 @@ def apply_replacements(data: bytes, filename: str) -> bytes:
             b"(location.href.match(/\\W(ja|en|fr|it|de|es|ko)\\./) || [null, 'ja'])[1];",
             f"'{LANG}';".encode(),
         ),
+        (b'http://cdn2.pokemon-gl.com',   b''),
+        (b'/cdn2.pokemon-gl.com',         b''),
         (b'oncontextmenu="return false"', b""),
         (b'ondragstart="return false"',   b""),
         (b'onselectstart="return false"', b""),
@@ -95,6 +99,9 @@ def send_file(file_path: Path) -> Response:
     content_type, _ = mimetypes.guess_type(file_path)
     return Response(data, content_type=content_type or "application/octet-stream")
 
+def send_bytes(data: bytes, content_type: str) -> Response:
+    """Serve raw bytes for patched SWF assets."""
+    return Response(data, content_type=content_type)
 
 def resolve_static(path: str) -> Path | None:
     """Return the filesystem path for a static asset, checking site dir, then shared dir as a fallback."""
@@ -169,8 +176,13 @@ def api_post():
 @app.route("/<path:path>")
 def catch_all(path: str):
     full_path = f"/{path}"
+    filename  = Path(path).name
 
-    #find first HTML file inside given directory
+    # return patched SWFs from our cache
+    if filename in PATCHED_SWFS:
+        return send_bytes(get_cached(filename), "application/x-shockwave-flash")
+
+    # find first HTML file inside given directory
     dir_path = SITE_DIR / path
     if dir_path.is_dir():
         index = next(iter(sorted(dir_path.glob("*.html"))), None)
@@ -178,7 +190,7 @@ def catch_all(path: str):
             return not_found(full_path)
         return send_file(index)
 
-    # satic asset
+    # static asset
     file_path = resolve_static(full_path)
     if file_path is None:
         return not_found(full_path)
