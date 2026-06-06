@@ -144,7 +144,8 @@ def get_patched_bytes(swf_name: str):
 
     return out_bytes
 
-if not (TOOLS_DIR / "ffdec-cli.jar").exists():
+if not TOOLS_DIR.exists():
+    TOOLS_DIR.mkdir(exist_ok=True)
     print("First run - need to download ffdec for swf patching")
     urlretrieve("https://github.com/jindrapetrik/jpexs-decompiler/releases/download/version26.2.1/ffdec_26.2.1.zip", ROOT_DIR / "tools" / "ffdec.zip")
 
