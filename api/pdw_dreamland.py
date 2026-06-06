@@ -242,8 +242,8 @@ def POST_game_clear(_query):
     if encounter["type"] == "pokemon":
         pkmn = encounter["pokemon"]
 
-        if len(pkmn["gender_ratio"]) > 1: #DW pokemon are always 75/25 male/female regardless of normal gender ratios
-            gender_id = choices([0, 1], weights=[75, 25], k=1)[0]
+        if len(pkmn["gender_ratio"]) > 1: #DW pokemon are always 66/33 male/female regardless of normal gender ratios
+            gender_id = choices([0, 1], weights=[2/3, 1/3], k=1)[0]
         else:
             gender_id = pkmn["gender_ratio"][0]
 

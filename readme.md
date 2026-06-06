@@ -1,13 +1,30 @@
 # Pokemon Dream World - Reawakened
 
-In the terminal, after installing Python, run `pip install -r requirements.txt`.
+## Tutorial
 
-After this, run `python main.py` to start the server.
+### Windows
 
-## Standalone startup
-- Load http://127.0.0.1:8080/DreamWorld_data/src/swf/theme/assets/common/main.swf with the standalone Adobe Flash Player (download: [Windows](https://archive.org/download/standaloneflashplayers/fp/fp_32/32.0.0.465/flashplayer32_0r0_465_win_sa.exe), [Mac](https://archive.org/download/standaloneflashplayers/fp/fp_32/32.0.0.465/flashplayer32_0r0_465_mac_sa.dmg), [Linux](https://archive.org/download/standaloneflashplayers/fp/fp_32/32.0.0.465/flashplayer32_0r0_465_linux_sa.x86_64.tar.gz))
+For the Game Sync server (for connecting your DS to the Dream World server, must be done first):
+- Install the newest version of Python
+- Download the latest release from this link here
+- Extract the folder into any directory
+- Navigate into the extracted `dreamworld-reawakened/game_sync_server` folder
+- Hold down shift and right-click in the folder (the empty space, not on a file/folder) and select "open PowerShell window here"
+- In the PowerShell window, run the command `pip install -r requirements.txt`
+- Run `python server.py` to start the server
+- The server will give you a DNS, which you can change from the "Nintendo WFC Settings" menu located on the save file select screen of the Gen5 game.
+- Connect to the Game Sync in-game and tuck in a Pokémon.
 
-## Flash browser startup
+For the Dream World server (the Pokémon Global Link site):
+- Navigate into the `dreamworld-reawakened` folder
+- Open a new PowerShell window here
+- In the PowerShell window, run the command `pip install -r requirements.txt`
+- Run `python main.py` to start the server
+
+### Linux
+- Same as above, but the Game Sync server must be run as root, as one of the ports used (53) is privileged and cannot be opened by a non-root user.
+
+## Flash browser setup
 
 **Ruffle will not work.**
 Ruffle currently cannot emulate the Dream World correctly.
@@ -34,13 +51,12 @@ Ruffle currently cannot emulate the Dream World correctly.
 
 - Navigate to http://127.0.0.1:8080/ in Basilisk.
 
-# Save data manager
-This requires the installation of PyQt5 with `pip install PyQt5`
+## Standalone startup
+- Load http://127.0.0.1:8080/DreamWorld_data/src/swf/theme/assets/common/main.swf with the standalone Adobe Flash Player (download: [Windows](https://archive.org/download/standaloneflashplayers/fp/fp_32/32.0.0.465/flashplayer32_0r0_465_win_sa.exe), [Mac](https://archive.org/download/standaloneflashplayers/fp/fp_32/32.0.0.465/flashplayer32_0r0_465_mac_sa.dmg), [Linux](https://archive.org/download/standaloneflashplayers/fp/fp_32/32.0.0.465/flashplayer32_0r0_465_linux_sa.x86_64.tar.gz))
 
-If you open the terminal inside `save_data_manager` and run `python3 save_manager.py`, through a UI you can load a Gen5 save file (.sav only) and "send" a Pokémon to the Dream World. This will modify both `save_data/player_data.json` and `save_data/sleeping_pokemon.json`.
+# Things that are not working
 
-# Other Info
-
-Save data that is currently managed by the server:
-- Functionality related to Berries. Planting, watering, and harvesting work as expected. Berries will grow over time and their water level will deplete. When harvesting Berries, they will be placed in the player's Treasure Chest, which will be updated on disk as well.
-
+- Making a wish at the Tree of Dreams
+- Sending back Pokémon through the Entralink
+- Dream Catalogue
+- Share Shelf

@@ -1,3 +1,4 @@
+import os
 import sys
 from pathlib import Path
 import xml.etree.ElementTree as ET
@@ -191,8 +192,10 @@ class XMLLineEditWidget(QWidget):
 
 class MainWindow(QMainWindow):
     SOURCE_ROOTS = [
-        "../DreamWorld_data/src/swf/pdw/assets/{lang}/xml",
-        "../DreamWorld_data/src/swf/theme/assets/{lang}/xml",
+        "../dreamworld_assets/{lang}.pokemon-gl.com/src/swf/theme/assets/{lang}/xml",
+        "../dreamworld_assets/{lang}.pokemon-gl.com/src/swf/pdw/assets/{lang}/xml",
+        "../dreamworld_assets/{lang}.pokemon-gl.com/src/swf/pdw/assets/game/game1",
+        "../dreamworld_assets/{lang}.pokemon-gl.com/src/swf/pdw/assets/game",
     ]
 
     def __init__(self):
@@ -261,7 +264,7 @@ class MainWindow(QMainWindow):
                 continue
 
             result[sid] = {
-                "string": (el.text or "").replace("\r", "\n"),
+                "string": (el.text or "").replace("&#xD;", os.linesep),
                 "is_translation": el.get("unofficial", "false").lower() == "true",
             }
 
@@ -331,18 +334,18 @@ class MainWindow(QMainWindow):
                 # collect the list of string IDs from the English file
                 en_string_ids = [el.get("id") for el in en_root.findall("string") if el.get("id")]
 
-                # derive the format filename
-                format_stem = stem.replace("strings", "format")
-
                 for string_id in en_string_ids:
                     self.entry_list[stem][string_id] = {}
 
                     for lang_code in lang_codes:
                         lang_dir = Path(root_template.format(lang=lang_code))
-                        xml_path = lang_dir / en_file.name
+
+                        # filenames may embed the lang code (e.g. strings_en.xml -> strings_fr.xml)
+                        lang_filename = en_file.name.replace("_en.", f"_{lang_code}.")
+                        xml_path = lang_dir / lang_filename
 
                         # relative path stored on the entry so export_entries can write it
-                        rel_path = xml_path.relative_to(Path("../DreamWorld_data"))
+                        rel_path = xml_path.relative_to(Path("../dreamworld_assets"))
 
                         str_data = self._parse_strings_xml(xml_path) if xml_path.exists() else {}
                         row = str_data.get(string_id, {})
@@ -353,8 +356,9 @@ class MainWindow(QMainWindow):
                             path=str(rel_path)
                         )
 
-                        # apply formatting from the companion _format file
-                        fmt_path = lang_dir / (format_stem + en_file.suffix)
+                        # apply per-language format file (formatting can vary by language)
+                        fmt_filename = lang_filename.replace("strings", "format")
+                        fmt_path = lang_dir / fmt_filename
                         if fmt_path.exists():
                             fmt_data = self._parse_format_xml(fmt_path)
                             for field, value in fmt_data.get(string_id, {}).items():
@@ -413,7 +417,7 @@ class MainWindow(QMainWindow):
                 item.widget().deleteLater()
 
     def export_entries(self) -> None:
-        BASE_PATH = Path("../DreamWorld_data")
+        BASE_PATH = Path("../dreamworld_assets")
 
         # group entries by their *_strings.xml path
         entries_by_strings_path: dict[str, list[StringEntry]] = {}
@@ -439,7 +443,8 @@ class MainWindow(QMainWindow):
                 strings_output_path.name.replace("strings.xml", "format.xml")
             )
 
-            lang_code = Path(rel_strings_path).parts[-3]
+            # domain is like "en.pokemon-gl.com", take the subdomain as the lang code
+            lang_code = Path(rel_strings_path).parts[0].split(".")[0]
             locale = lang_code
 
             # -----------
@@ -455,7 +460,7 @@ class MainWindow(QMainWindow):
                     el.set("unofficial", "true")
 
                 # fall back to string_id if text is empty
-                el.text = (entry.text_string or entry.string_id).replace("\n", "\r")
+                el.text = (entry.text_string or entry.string_id).replace(os.linesep, "&#xD;")
 
             ET.indent(strings_root, space="\t")
 

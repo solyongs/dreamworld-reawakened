@@ -4,6 +4,8 @@ from pathlib import Path
 from datetime import datetime
 
 from utils import text
+from utils import save_data
+from game_sync_server.entralinked.utility.db_manager import db
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 
@@ -20,11 +22,9 @@ class ChestManager:
         data: A dictionary containing the loaded chest inventory data.
     """
 
-    def __init__(self, data_path):
-        self._path = data_path
+    def __init__(self):
         self._redundant_fields = {"pokeitem", "bunrui_no", "b_hozon_sentou", "field_line1", "field_line2", "field_line3"}
-        with open(self._path, encoding="UTF-8") as f:
-            self.data = json.load(f)
+        self.data = db.read(save_data.gscd, "chest_data")
 
     def update_json(self):
         for item in self.data["list"]:
@@ -44,7 +44,7 @@ class ChestManager:
             item["field_line3"] = item_desc[2]
 
     def save(self):
-        save_data = {
+        chest_data = {
             "cnt": len(self.data["list"]),
             "list": [
                 {k: v for k, v in item.items() if k not in self._redundant_fields}
@@ -52,8 +52,7 @@ class ChestManager:
             ]
         }
 
-        with open(self._path, "w", encoding="UTF-8") as f:
-            json.dump(save_data, f, indent=2, ensure_ascii=False)
+        db.write(save_data.gscd, "chest_data", chest_data)
 
     def fetch_item_by_id(self, item_id):
         return next((item for item in self.data["list"] if item["pokeitem_id"] == item_id), None)
@@ -109,11 +108,20 @@ class CropManager:
         data: A dictionary containing the loaded Berry plot data.
     """
 
-    def __init__(self, data_path):
-        self._path = data_path
+    EXPANSION_THRESHOLDS = {
+        3: 900,
+        4: 2_100,
+        5: 3_500,
+        6: 10_000,
+        7: 20_000,
+        8: 30_000,
+        9: 50_000,
+        10: 100_000,
+    }
+
+    def __init__(self):
         self._redundant_fields = {"kinomi", "kinomi_id", "desc1", "desc2", "desc3"}
-        with open(self._path, encoding="UTF-8") as f:
-            self.data = json.load(f)
+        self.data = db.read(save_data.gscd, "crop_data")
 
     def update_json(self):
         for crop in self.data["croft_list"]:
@@ -130,7 +138,7 @@ class CropManager:
             crop["desc3"] = berry_desc[2]
 
     def save(self):
-        save_data = {
+        crop_data = {
             "croft_list": [
                 {k: v for k, v in crop.items() if k not in self._redundant_fields}
                 for crop in self.data["croft_list"]
@@ -138,8 +146,7 @@ class CropManager:
             "diglett_flag": 0
         }
 
-        with open(self._path, "w", encoding="UTF-8") as f:
-            json.dump(save_data, f, indent=2, ensure_ascii=False)
+        db.write(save_data.gscd, "crop_data", crop_data)
 
     def fetch_plot_by_id(self, my_croft_id: int):
         return next((p for p in self.data["croft_list"] if p["my_croft_id"] == my_croft_id), None)
@@ -193,6 +200,16 @@ class CropManager:
 
         return harvest_data
 
+
+    def do_garden_expansion(self):
+        dream_points = save_data.read_player_data()["member"]["experiment_point"]
+        num_crop_rows = len(self.data["croft_list"]) // 3
+
+        threshold = self.EXPANSION_THRESHOLDS.get(num_crop_rows)
+        if threshold is not None and dream_points >= threshold:
+            db.write(save_data.gscd, "crop_data", {"diglett_flag": 1})
+
+
     def process_berry_growth(self):
         current_time = round(time.time())
 
@@ -225,6 +242,5 @@ class CropManager:
 
         self.save()
 
-chest = ChestManager(ROOT_DIR / "save_data" / "chest_data.json")
-
-crops = CropManager(ROOT_DIR / "save_data" / "crop_data.json")
+chest = ChestManager()
+crops = CropManager()

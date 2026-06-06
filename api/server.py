@@ -1,176 +1,193 @@
-from http.server import BaseHTTPRequestHandler, HTTPServer
-from urllib.parse import urlsplit, parse_qs, urlencode
-from html import escape
-from enum import StrEnum
-
-import logging
+import re
+import atexit
+import mimetypes
 from pathlib import Path
-
-from api.routes import (
-    GET_RESPONSES,
-    POST_RESPONSES
-)
+from urllib.parse import parse_qs
+from flask import Flask, request, redirect, Response
 
 from utils import language
-from utils.swf import build_swf_params
+from game_sync_server.entralinked.utility.db_manager import db
+from api.routes import GET_RESPONSES, POST_RESPONSES
 
 # ---------------
-# Request handler
+# Config
 # ---------------
 
-ROOT_DIR = Path(__file__).resolve().parent.parent
+atexit.register(db.close)
 
-class ANSIColor(StrEnum):
-    RED = "\033[31m"
-    RESET = "\033[0m"
+LANG = language.player_language
 
-class ColoredFormatter(logging.Formatter):
-    def format(self, record):
-        message = super().format(record)
+ROOT_DIR   = Path(__file__).resolve().parent.parent
+SITE_DIR   = ROOT_DIR / "dreamworld_assets" / f"{LANG}.pokemon-gl.com"
+SHARED_DIR = ROOT_DIR / "dreamworld_assets" / "shared.pokemon-gl.com"
 
-        if "404" in message:
-            return f"{ANSIColor.RED}{message}{ANSIColor.RESET}"
+# file extensions that should be patched before serving
+# binary assets (images, fonts, etc.) are served as-is
+PATCHABLE_EXTENSIONS = {".js", ".html", ".htm", ".css"}
 
-        return message
+# incoming paths that need to be redirected to an equivalent local path
+# rules are mutually exclusive, only the first match is applied
+PATH_REWRITES = [
+    (re.compile(rf"^/gus\.pokemon\.com/{LANG}/"), f"/pgl-363/{LANG}/"),
+    (re.compile(r"^/cdn2\.pokemon-gl\.com"),       ""),
+    (re.compile(rf"^/{LANG}\.pokemon-gl\.com"),    ""),
+    (re.compile(r"^/www\.pokemon-gl\.com"),        ""),
+]
 
-class S(BaseHTTPRequestHandler):
+NO_CACHE_HEADERS = {
+    "Cache-Control": "no-cache, no-store, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+}
 
-    def log_message(self, format, *args):
-        logging.info("%s - - %s", self.address_string(), format % args)
+# ---------------
+# App
+# ---------------
 
-    def _dispatch_api(self, api_name, query, api_map):
-        """Look up api_name in the dispatch tables and write the response."""
+app = Flask(__name__)
 
-        if api_name in api_map:
-            body = api_map[api_name](query)
-        else:
-            logging.warning("Unknown API: %s", api_name)
-            self.send_response(501)
-            self.end_headers()
-            self.wfile.write(b"{}")
-            return
+# ---------------
+# Helpers
+# ---------------
 
-        self.send_response(200)
-        #disable caching
-        self.send_header("Content-Type", "application/json")
-        self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
-        self.send_header("Pragma", "no-cache")
-        self.send_header("Expires", "0")
-        self.end_headers()
-        self.wfile.write(body)
+def rewrite_path(path: str) -> str:
+    """Apply the first matching rewrite rule and return the result."""
+    for pattern, replacement in PATH_REWRITES:
+        rewritten = pattern.sub(replacement, path, count=1)
+        if rewritten != path:
+            return rewritten
+    return path
 
-    def _log_referrer(self, file_path):
-        """In debug mode, log the Referer header."""
-        if self.server.app_config["debug"]:
-            referrer = self.headers.get("Referer", "<no referrer>")
-            logging.debug("[DEBUG] File requested: %s  |  Referer: %s", file_path, referrer)
 
-    def do_GET(self):
-        logging.info("GET %s", self.path)
-        parsed = urlsplit(self.path)
-        path = escape(parsed.path)
+def apply_replacements(data: bytes, filename: str) -> bytes:
+    """Patch text assets: fix language detection, remove interaction blockers."""
+    subs = [
+        (
+            b"(location.href.match(/\\W(ja|en|fr|it|de|es|ko)\\./) || [null, 'ja'])[1];",
+            f"'{LANG}';".encode(),
+        ),
+        (b'oncontextmenu="return false"', b""),
+        (b'ondragstart="return false"',   b""),
+        (b'onselectstart="return false"', b""),
+    ]
 
-        if path.endswith("main.swf") and not parsed.query:
-            url_params = build_swf_params()
-            query_string = urlencode(url_params)
-            redirect_url = f"{path}?{query_string}"
+    if filename == "swfembed2.js":
+        # point the SWF embed at the local language host instead of window.location.
+        lang_url = f"lang:'http://{LANG}.pokemon-gl.com/'"
+        subs.append((b"lang:window.location", lang_url.encode()))
 
-            self.send_response(302)
-            self.send_header("Location", redirect_url)
-            self.end_headers()
-            return
+    for old, new in subs:
+        data = data.replace(old, new)
 
-        if path == "/api/":
-            query = {k: v[0] for k, v in parse_qs(parsed.query, strict_parsing=True).items()}
-            api_name = query["p"]
-            logging.info("API GET: %s", api_name)
-            self._dispatch_api(api_name, query, GET_RESPONSES)
-            return
+    return data
 
-        if path == "/":
-            with open(ROOT_DIR / "DreamWorld_data" / "Dream_Park.htm", "rb") as f:
-                data = f.read()
-                data = data.replace(b"%%LANG%%", language.player_language.encode())
 
-            self.send_response(200)
-            self.send_header("Content-Length", str(len(data)))
-            self.end_headers()
-            self.wfile.write(data)
-            return
+def read_and_patch(file_path: Path) -> bytes:
+    data = file_path.read_bytes()
+    if file_path.suffix.lower() in PATCHABLE_EXTENSIONS:
+        data = apply_replacements(data, file_path.name)
+    return data
 
-        if not path.startswith("/DreamWorld_data/"):
-            file_path = ROOT_DIR / "DreamWorld_data" / path.lstrip("/")
-        else:
-            file_path = ROOT_DIR / path.lstrip("/")
 
-        if file_path.is_file():
-            self._log_referrer(file_path)
+def send_file(file_path: Path) -> Response:
+    data = read_and_patch(file_path)
+    content_type, _ = mimetypes.guess_type(file_path)
+    return Response(data, content_type=content_type or "application/octet-stream")
 
-            with open(file_path, "rb") as f:
-                data = f.read()
 
-            if file_path.name == "swfembed2.js":
-                data = data.replace(
-                    b"lang:window.location",
-                    f"lang:'http://{language.player_language}.pokemon-gl.com/'".encode()
-                )
+def resolve_static(path: str) -> Path | None:
+    """Return the filesystem path for a static asset, checking site dir, then shared dir as a fallback."""
+    relative = path.lstrip("/")
 
-            data = data.replace(b"cdn2.pokemon-gl.com", b"DreamWorld_data")
+    # site-specific first
+    site_path = SITE_DIR / relative
+    if site_path.is_file():
+        return site_path
 
-            self.send_response(200)
-            self.send_header("Content-Length", str(len(data)))
-            self.end_headers()
-            self.wfile.write(data)
-            return
+    # shared fallback, strip language prefix (e.g. /en/ → /).
+    shared_relative = re.sub(r"/(ja|en|fr|it|de|es|ko)/", "/", relative)
+    shared_path = SHARED_DIR / shared_relative
+    if shared_path.is_file():
+        return shared_path
 
-        self.send_response(404)
-        self.send_header("Content-type", "text/html")
-        self.end_headers()
-        self.wfile.write(b"Error: Not found")
+    return None
 
-    def do_POST(self):
-        logging.info("POST %s", self.path)
 
-        content_length = int(self.headers["Content-Length"])
-        post_data = self.rfile.read(content_length)
-        query = {k: v[0] for k, v in parse_qs(post_data.decode(encoding="UTF-8"), strict_parsing=True).items()}
-        api_name = query["p"]
+def not_found(path: str) -> Response:
+    app.logger.info("404 %s", path)
+    return Response("Error: Not found", status=404, content_type="text/html")
 
-        logging.info("API POST: %s", api_name)
+# ---------------
+# Routes
+# ---------------
 
-        self._log_referrer(f"POST:{api_name}")
-        self._dispatch_api(api_name, query, POST_RESPONSES)
+@app.before_request
+def rewrite_incoming_path():
+    """Apply path rewrites and enforce trailing slash on directory paths."""
+    path = request.path
+    rewritten = rewrite_path(path)
 
-# ------------
-# Server start
-# ------------
+    if rewritten != path:
+        qs = f"?{request.query_string.decode()}" if request.query_string else ""
+        return redirect(rewritten + qs, 302)
 
-def run(server_class=HTTPServer, handler_class=S, port=8080, debug=False):
+    # enforce trailing slash for paths that map to a site directory
+    if not path.endswith("/") and (SITE_DIR / path.lstrip("/")).is_dir():
+        return redirect(f"{path}/", 301)
 
-    server_address = ("127.0.0.1", port)
-    httpd = server_class(server_address, handler_class)
 
-    httpd.app_config = {
-        "debug": debug
-    }
+@app.route("/api/", methods=["GET"])
+def api_get():
+    query    = {k: v[0] for k, v in parse_qs(request.query_string.decode(), strict_parsing=True).items()}
+    api_name = query.get("p")
+    app.logger.info("API GET: %s", api_name)
 
-    log_level = logging.DEBUG if httpd.app_config["debug"] else logging.INFO
+    if api_name not in GET_RESPONSES:
+        app.logger.warning("Unknown API: %s", api_name)
+        return Response("{}", status=501, content_type="application/json")
 
-    console_handler = logging.StreamHandler()
-    log_format = "%(asctime)s - %(levelname)s - %(message)s" if debug else "%(message)s"
-    console_handler.setFormatter(ColoredFormatter(log_format))
+    return Response(GET_RESPONSES[api_name](query), content_type="application/json", headers=NO_CACHE_HEADERS)
 
-    logger = logging.getLogger()
-    logger.setLevel(log_level)
-    logger.addHandler(console_handler)
 
-    logging.info("Server started!%s\n", " (debug mode)" if debug else "")
+@app.route("/api/", methods=["POST"])
+def api_post():
+    qs_params   = {k: v[0] for k, v in parse_qs(request.query_string.decode(), strict_parsing=True).items()}
+    body_params = {k: v[0] for k, v in parse_qs(request.get_data(as_text=True), strict_parsing=True).items()}
+    query       = {**qs_params, **body_params}
+    api_name    = query.get("p")
+    app.logger.info("API POST: %s", api_name)
 
-    try:
-        httpd.serve_forever()
-    except KeyboardInterrupt:
-        pass
+    if api_name not in POST_RESPONSES:
+        app.logger.warning("Unknown API: %s", api_name)
+        return Response("{}", status=501, content_type="application/json")
 
-    httpd.server_close()
+    return Response(POST_RESPONSES[api_name](query), content_type="application/json", headers=NO_CACHE_HEADERS)
 
-    logging.info("Stopping server...\n")
+
+@app.route("/", defaults={"path": ""})
+@app.route("/<path:path>")
+def catch_all(path: str):
+    full_path = f"/{path}"
+
+    #find first HTML file inside given directory
+    dir_path = SITE_DIR / path
+    if dir_path.is_dir():
+        index = next(iter(sorted(dir_path.glob("*.html"))), None)
+        if index is None:
+            return not_found(full_path)
+        return send_file(index)
+
+    # satic asset
+    file_path = resolve_static(full_path)
+    if file_path is None:
+        return not_found(full_path)
+
+    return send_file(file_path)
+
+# ---------------
+# Entry point
+# ---------------
+
+def run(port: int = 8080, debug: bool = False):
+    app.logger.info("Server started!%s\n", " (debug mode)" if debug else "")
+    app.run(host="127.0.0.1", port=port, debug=debug, use_reloader=False)

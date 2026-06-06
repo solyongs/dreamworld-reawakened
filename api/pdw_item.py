@@ -44,14 +44,10 @@ def GET_item_list(_query):
     status       = int(_query.get("status", 0))
 
     if status == 2:
-        if args.game_sync:
-            item_list = save_data.read_entralink_data("items")
-            for item in item_list:
-                item["pokeitem"] = text.lookup_str("item", item["pokeitem_id"])
-            return json.dumps({"cnt": len(item_list), "list": item_list}).encode()
-
-        else:
-            return b'{}'
+        item_list = save_data.read_entralink_data()["items"]
+        for item in item_list:
+            item["pokeitem"] = text.lookup_str("item", item["pokeitem_id"])
+        return json.dumps({"cnt": len(item_list), "list": item_list}).encode()
 
     if item_kind_id == 0:
         item_list = managers.chest.data["list"]
@@ -80,6 +76,7 @@ def GET_item_list(_query):
 # ---------------------
 
 def POST_item_delivery_update(_query):
+    print(json.dumps(_query, indent=2))
 
     item_list = []
     for k, item_pair in _query.items():

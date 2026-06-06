@@ -1,6 +1,22 @@
+from datetime import datetime
+
 from utils import save_data
 
-language_index = {
+def localize_last_up_time(timestamp: int) -> str:
+    dt = datetime.fromtimestamp(timestamp)
+    return dt.strftime(lang_formats[player_language])
+
+lang_formats = {
+    'ja': '%y/%m/%d %H:%M',
+    'en': '%m/%d/%y %H:%M',
+    'fr': '%d/%m/%y %H:%M',
+    'it': '%d/%m/%y %H:%M',
+    'de': '%d.%m.%y %H:%M',
+    'es': '%d-%m-%y %H:%M',
+    'ko': '%y.%m.%d %H:%M'
+}
+
+lang_index = {
     1: "ja",
     2: "en",
     3: "fr",
@@ -10,4 +26,4 @@ language_index = {
     8: "ko"
 }
 
-player_language = language_index[save_data.read_player_data()["member"]["langcode"]]
+player_language = lang_index[save_data.read_player_data()["member"]["langcode"]]

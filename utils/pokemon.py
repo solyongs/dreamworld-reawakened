@@ -1,6 +1,8 @@
 import json
+from utils import save_data
 from pathlib import Path
 from random import choice
+from game_sync_server.entralinked.utility.db_manager import db
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 
@@ -10,8 +12,7 @@ with open(ROOT_DIR / "json_data" / "pokemon.json", encoding="UTF-8") as f:
 with open(ROOT_DIR / "json_data" / "dream_islands.json", encoding="UTF-8") as f:
     area_info = json.load(f)
 
-with open(ROOT_DIR / "save_data" / "sleeping_pokemon.json", encoding="UTF-8") as f:
-    sleeping_pokemon = json.load(f)
+sleeper = db.read(save_data.gscd, "sleeping_pokemon")
 
 def get_random_pokemon(restriction_list: list[int] | None = None) -> dict[str: str|None]:
     """Retrieves a random Pokémon's data from `pokemon.json`.

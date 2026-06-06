@@ -8,6 +8,7 @@ from random import choice, randint
 from utils import text
 from utils import pokemon
 from utils import save_data
+from game_sync_server.entralinked.utility.db_manager import db
 
 # ---------------------
 # GET API calls
@@ -22,6 +23,7 @@ def GET_board_pokemon_list(_query):
 def GET_footprint_list(_query):
     footprint_list = {"list":[]}
 
+    # This is an arbitrary subset of "interesting" (non-empty) footprints
     valid_footprints = [598,25,85,623,2,32,183,428,648,636,616,609,594,593,574,564,558,547,543,520,518,491,474,421,420,406,121,120,13,10,647]
 
     for _ in range(10):
@@ -56,7 +58,7 @@ def GET_my_bridge(_query):
 
 
 def GET_my_island(_query):
-    pkmn = pokemon.sleeping_pokemon
+    pkmn = pokemon.sleeper
 
     response = {
         "pokemon":                 {**pkmn},
@@ -97,10 +99,6 @@ def GET_my_island_area(_query):
 def GET_pdw_end(_query):
     save_data.update_gamesync_status(save_data.PlayerStatus.WAKE_READY)
 
-    for proc in psutil.process_iter():
-        if "flashplayer" in proc.name():
-            threading.Timer(2.5, proc.kill).start()
-
     return b'{}'
 
 # ---------------------
@@ -122,7 +120,7 @@ def POST_pdw_start(_query):
 
     save_data.write_player_data(data)
 
-    pkmn = pokemon.sleeping_pokemon
+    pkmn = db.read(save_data.gscd, "sleeping_pokemon")
 
     species_name = text.lookup_str("pokemon", pkmn["pokemon_no"])
 
@@ -132,7 +130,7 @@ def POST_pdw_start(_query):
         "form_no":          pkmn["form_no"],
         "type1":            text.lookup_str("type", pkmn["type1"]),
         "type2":            text.lookup_str("type", pkmn["type2"]),
-        "pokemon_nickname": pkmn["pokemon_nickname"] if pkmn["pokemon_nickname"] != species_name else None,
+        "pokemon_nickname": pkmn["pokemon_nickname"],
         "oyaname":          pkmn["oyaname"],
         "level":            pkmn["level"],
         "sex":              pkmn["sex"],
@@ -140,7 +138,7 @@ def POST_pdw_start(_query):
         "ball_name":        text.lookup_str("ball", pkmn["ball_name"]),
     }
 
-    pokemon.sleeping_pokemon = pkmn_data
+    pokemon.sleeper = pkmn_data
 
     response = {"started_at":int(now_local.timestamp())}
     return json.dumps(response).encode()
