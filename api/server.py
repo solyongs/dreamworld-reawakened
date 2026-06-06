@@ -69,12 +69,13 @@ def apply_replacements(data: bytes, filename: str) -> bytes:
         (b'oncontextmenu="return false"', b""),
         (b'ondragstart="return false"',   b""),
         (b'onselectstart="return false"', b""),
+        (b"en.pokemon-gl.com", f"{LANG}.pokemon-gl.com".encode())
     ]
 
     if filename == "swfembed2.js":
         # point the SWF embed at the local language host instead of window.location.
         lang_url = f"lang:'http://{LANG}.pokemon-gl.com/'"
-        subs.append((b"lang:window.location", lang_url.encode()))
+        subs.append( (b"lang:window.location", lang_url.encode()) )
 
     for old, new in subs:
         data = data.replace(old, new)

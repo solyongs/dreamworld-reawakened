@@ -43,7 +43,7 @@ def GET_top(_query):
     eligible_areas = []
     area_weights   = []
     for area_id, area in pokemon.area_info.items():
-        if area_id == 50: #we don't have the file for Pokémon Café Forest
+        if area_id == "50": #we don't have the file for Pokémon Café Forest
             continue
 
         if player_points < area["req_points"][game_key]:
