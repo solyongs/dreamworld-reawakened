@@ -29,7 +29,7 @@ def calculate_pid(friend_code: str) -> int:
     ]
     
     checksum = num_fc >> 32 & 0xFFFFFFFF
-    computed_checksum = hashlib.md5(bytearray(buffer)).digest()[0] >> 1 & 0x7FFFFFFF
+    computed_checksum = hashlib.md5(bytearray(buffer)).digest()[0] >> 1 & 0x7F
     
     if not computed_checksum == checksum:
         raise ValueError("Friend Code is invalid. Please double-check your Pal Pad.")
