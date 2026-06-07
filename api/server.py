@@ -6,7 +6,7 @@ from urllib.parse import parse_qs
 from flask import Flask, request, redirect, Response
 
 from utils import language
-from utils.patch_swf import get_cached, SWF_PATHS
+from utils.patch_file import apply_substitutions, get_cached, SWF_PATHS
 from game_sync_server.entralinked.utility.db_manager import db
 from api.routes import GET_RESPONSES, POST_RESPONSES
 
@@ -61,36 +61,10 @@ def rewrite_path(path: str) -> str:
     return path
 
 
-def apply_replacements(data: bytes, filename: str) -> bytes:
-    """Patch text assets: fix language detection, remove interaction blockers."""
-    subs = [
-        (
-            b"(location.href.match(/\\W(ja|en|fr|it|de|es|ko)\\./) || [null, 'ja'])[1];",
-            f"'{LANG}';".encode(),
-        ),
-        (b'http://cdn2.pokemon-gl.com',   b''),
-        (b'/cdn2.pokemon-gl.com',         b''),
-        (b'oncontextmenu="return false"', b""),
-        (b'ondragstart="return false"',   b""),
-        (b'onselectstart="return false"', b""),
-        (b"en.pokemon-gl.com", f"{LANG}.pokemon-gl.com".encode())
-    ]
-
-    if filename == "swfembed2.js":
-        # point the SWF embed at the local language host instead of window.location.
-        lang_url = f"lang:'http://{LANG}.pokemon-gl.com/'"
-        subs.append( (b"lang:window.location", lang_url.encode()) )
-
-    for old, new in subs:
-        data = data.replace(old, new)
-
-    return data
-
-
 def read_and_patch(file_path: Path) -> bytes:
     data = file_path.read_bytes()
     if file_path.suffix.lower() in PATCHABLE_EXTENSIONS:
-        data = apply_replacements(data, file_path.name)
+        data = apply_substitutions(data, file_path.name)
     return data
 
 
@@ -112,7 +86,7 @@ def resolve_static(path: str) -> Path | None:
     if site_path.is_file():
         return site_path
 
-    # shared fallback, strip language prefix (e.g. /en/ → /).
+    # shared fallback, strip language prefix (e.g. /en/ → /)
     shared_relative = re.sub(r"/(ja|en|fr|it|de|es|ko)/", "/", relative)
     shared_path = SHARED_DIR / shared_relative
     if shared_path.is_file():
