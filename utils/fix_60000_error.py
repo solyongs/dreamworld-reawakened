@@ -1,4 +1,5 @@
 import json
+import hashlib
 from pathlib import Path
 
 MASK = 2147483647  # 0x7FFFFFFF
@@ -6,11 +7,34 @@ MASK = 2147483647  # 0x7FFFFFFF
 
 def calculate_pid(friend_code: str) -> int:
     friend_code = friend_code.replace("-", "").replace(" ", "")
-
+    
+    if not len(friend_code) == 12:
+        raise ValueError("Friend Code must contain 12 digits.")
+    
     if not friend_code.isdigit():
         raise ValueError("Friend Code must contain only digits.")
-
-    return int(friend_code) & MASK
+    
+    num_fc = int(friend_code)
+    
+    # Validate checksum
+    buffer = [
+        num_fc & 0xFF,
+        num_fc >> 8 & 0xFF,
+        num_fc >> 16 & 0xFF,
+        num_fc >> 24 & 0xFF,
+        0x4A, # J
+        0x41, # A
+        0x52, # R
+        0x49  # I
+    ]
+    
+    checksum = num_fc >> 32 & 0xFFFFFFFF
+    computed_checksum = hashlib.md5(bytearray(buffer)).digest()[0] >> 1 & 0x7FFFFFFF
+    
+    if not computed_checksum == checksum:
+        raise ValueError("Friend Code is invalid. Please double-check your Pal Pad.")
+    
+    return num_fc & MASK
 
 
 def main():
