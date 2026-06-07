@@ -4,12 +4,16 @@
 
 ### Windows
 
-For the Game Sync server (for connecting your DS to the Dream World server, must be done first):
 - Install the newest version of Python
-- Download `dreamworld-reawakened-main.zip` from [this link here](https://github.com/minibug1021/dreamworld-reawakened/releases)
-- Extract the folder into any directory
-- Navigate into the extracted `dreamworld-reawakened/game_sync_server` folder
+- If you are on Windows 10, install the git command from the official download [here](https://github.com/git-for-windows/git/releases/download/v2.54.0.windows.1/Git-2.54.0-64-bit.exe)
+- If you are on Windows 11, press the Windows key and type "PowerShell", and open a PowerShell window. Run the command `winget install --id Git.Git -e --source winget`
+- Navigate to the folder you want to install the server to
 - Hold down shift and right-click in the folder (the empty space, not on a file/folder) and select "open PowerShell window here"
+- Run the command `git clone --recursive https://github.com/minibug1021/dreamworld-reawakened.git`
+
+For the Game Sync server (for connecting your DS to the Dream World server, must be done first):
+- Navigate into the extracted `dreamworld-reawakened/game_sync_server` folder
+- Open a new PowerShell window here
 - In the PowerShell window, run the command `python -m pip install -r requirements.txt`
 - Run `python server.py` to start the server
 - The server will give you a DNS, which you can change from the "Nintendo WFC Settings" menu located on the save file select screen of the Gen5 game.
