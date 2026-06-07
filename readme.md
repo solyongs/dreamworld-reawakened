@@ -10,7 +10,7 @@ For the Game Sync server (for connecting your DS to the Dream World server, must
 - Extract the folder into any directory
 - Navigate into the extracted `dreamworld-reawakened/game_sync_server` folder
 - Hold down shift and right-click in the folder (the empty space, not on a file/folder) and select "open PowerShell window here"
-- In the PowerShell window, run the command `pip install -r requirements.txt`
+- In the PowerShell window, run the command `python -m pip install -r requirements.txt`
 - Run `python server.py` to start the server
 - The server will give you a DNS, which you can change from the "Nintendo WFC Settings" menu located on the save file select screen of the Gen5 game.
 - Connect to the Game Sync in-game and tuck in a Pokémon.
@@ -18,7 +18,7 @@ For the Game Sync server (for connecting your DS to the Dream World server, must
 For the Dream World server (the Pokémon Global Link site):
 - Navigate into the `dreamworld-reawakened` folder
 - Open a new PowerShell window here
-- In the PowerShell window, run the command `pip install -r requirements.txt`
+- In the PowerShell window, run the command `python -m pip install -r requirements.txt`
 - Run `python main.py` to start the server
 
 ### Linux

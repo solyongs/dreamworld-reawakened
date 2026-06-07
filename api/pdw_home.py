@@ -1,6 +1,4 @@
 import json
-import psutil
-import threading
 from zoneinfo import ZoneInfo
 from datetime import datetime
 from random import choice, randint

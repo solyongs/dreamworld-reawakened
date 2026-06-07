@@ -14,9 +14,9 @@ class Insertion:
     replacement: str
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
-TOOLS_DIR = ROOT_DIR / "tools"
+PATCHES_DIR = ROOT_DIR / "patches"
 
-FFDEC_JAR = str(Path(TOOLS_DIR / "ffdec-cli.jar"))
+FFDEC_JAR = str(Path(PATCHES_DIR / "ffdec.jar"))
 JAVA = "java"
 
 # this patch is only needed to support the Standalone
@@ -94,10 +94,39 @@ INSERTIONS = {
 
 _PATCHED_CACHE: dict[str, bytes] = {}
 
+def _patched_path(swf_name: str) -> Path:
+    return PATCHES_DIR / f"{swf_name[:-4]}.patched.swf"
+
 def _prewarm():
+    if not PATCHES_DIR.exists():
+        PATCHES_DIR.mkdir(exist_ok=True)
+
+    all_cached = all(_patched_path(swf_name).exists() for swf_name in SWF_PATHS)
+    if all_cached:
+        print("Loading patched SWFs from disk")
+        for swf_name in SWF_PATHS:
+            _PATCHED_CACHE[swf_name] = _patched_path(swf_name).read_bytes()
+        return
+
+    download_ffdec()
+
     for swf_name in SWF_PATHS:
         print(f"Patching {swf_name}")
         get_cached(swf_name)
+
+    # remove all non-.swf files and directories left behind by ffdec
+    for item in PATCHES_DIR.iterdir():
+        if item.is_dir():
+            shutil.rmtree(item)
+        elif item.suffix != ".swf":
+            item.unlink()
+
+def download_ffdec():
+    print("Need to download ffdec for swf patching")
+    urlretrieve("https://github.com/jindrapetrik/jpexs-decompiler/releases/download/version26.2.1/ffdec_26.2.1.zip", PATCHES_DIR / "ffdec.zip")
+
+    with ZipFile(PATCHES_DIR / "ffdec.zip") as z:
+        z.extractall(PATCHES_DIR)
 
 def get_cached(swf_name: str) -> bytes:
     if swf_name not in _PATCHED_CACHE:
@@ -106,18 +135,18 @@ def get_cached(swf_name: str) -> bytes:
 
 def to_path(class_path: str) -> Path:
     *module_parts, class_name = class_path.split(".")
-    return TOOLS_DIR / "scripts" / Path(*module_parts) / f"{class_name}.as"
+    return PATCHES_DIR / "scripts" / Path(*module_parts) / f"{class_name}.as"
 
 def get_patched_bytes(swf_name: str):
     src_path = SWF_PATHS[swf_name]
-    out_path = TOOLS_DIR / f"{swf_name[:-4]}.patched.swf"
+    out_path = _patched_path(swf_name)
 
     # copy target .swf to working directory
     shutil.copy(src_path, out_path)
 
     # export only the scripts which have a patch
     export_list = ",".join([i.class_path for i in INSERTIONS[swf_name]])
-    command = [JAVA, "-jar", FFDEC_JAR, "-selectclass", export_list, "-export", "script", TOOLS_DIR, out_path]
+    command = [JAVA, "-jar", FFDEC_JAR, "-selectclass", export_list, "-export", "script", PATCHES_DIR, out_path]
     subprocess.run(command, stdout=subprocess.DEVNULL)
 
     # apply patches to exported .as files
@@ -134,24 +163,13 @@ def get_patched_bytes(swf_name: str):
         file_path.write_text("".join(lines))
 
     # reimport .as files into .swf
-    command = [JAVA, "-jar", FFDEC_JAR, "-importScript", out_path, out_path, TOOLS_DIR / "scripts"]
+    command = [JAVA, "-jar", FFDEC_JAR, "-importScript", out_path, out_path, PATCHES_DIR / "scripts"]
     subprocess.run(command, stdout=subprocess.DEVNULL)
 
     out_bytes = out_path.read_bytes()
 
-    os.remove(out_path)
-    shutil.rmtree(TOOLS_DIR / "scripts")
+    shutil.rmtree(PATCHES_DIR / "scripts")
 
     return out_bytes
-
-if not TOOLS_DIR.exists():
-    TOOLS_DIR.mkdir(exist_ok=True)
-    print("First run - need to download ffdec for swf patching")
-    urlretrieve("https://github.com/jindrapetrik/jpexs-decompiler/releases/download/version26.2.1/ffdec_26.2.1.zip", ROOT_DIR / "tools" / "ffdec.zip")
-
-    with ZipFile(TOOLS_DIR/ "ffdec.zip") as z:
-        z.extractall(TOOLS_DIR)
-
-    os.remove(TOOLS_DIR / "ffdec.zip")
 
 _prewarm()
