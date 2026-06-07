@@ -26,4 +26,7 @@ lang_index = {
     8: "ko"
 }
 
-player_language = lang_index[save_data.read_player_data()["member"]["langcode"]]
+try:
+    player_language = lang_index[save_data.read_player_data()["member"]["langcode"]]
+except KeyError:
+    raise KeyError("No member data found - you must tuck in a Pokémon first!")
