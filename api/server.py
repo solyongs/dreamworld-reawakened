@@ -27,15 +27,6 @@ SHARED_DIR = ROOT_DIR / "dreamworld_assets" / "shared.pokemon-gl.com"
 # binary assets (images, fonts, etc.) are served as-is
 PATCHABLE_EXTENSIONS = {".js", ".html", ".css"}
 
-# incoming paths that need to be redirected to an equivalent local path
-# rules are mutually exclusive, only the first match is applied
-PATH_REWRITES = [
-    (re.compile(rf"^/gus\.pokemon\.com/{LANG}/"), f"/pgl-363/{LANG}/"),
-    (re.compile(r"^/cdn2\.pokemon-gl\.com"),       ""),
-    (re.compile(rf"^/{LANG}\.pokemon-gl\.com"),    ""),
-    (re.compile(r"^/www\.pokemon-gl\.com"),        ""),
-]
-
 NO_CACHE_HEADERS = {
     "Cache-Control": "no-cache, no-store, must-revalidate",
     "Pragma": "no-cache",
@@ -52,21 +43,11 @@ app = Flask(__name__)
 # Helpers
 # ---------------
 
-def rewrite_path(path: str) -> str:
-    """Apply the first matching rewrite rule and return the result."""
-    for pattern, replacement in PATH_REWRITES:
-        rewritten = pattern.sub(replacement, path, count=1)
-        if rewritten != path:
-            return rewritten
-    return path
-
-
 def read_and_patch(file_path: Path) -> bytes:
     data = file_path.read_bytes()
     if file_path.suffix.lower() in PATCHABLE_EXTENSIONS:
         data = apply_substitutions(data, file_path.name)
     return data
-
 
 def send_file(file_path: Path) -> Response:
     data = read_and_patch(file_path)
@@ -107,11 +88,6 @@ def not_found(path: str) -> Response:
 def rewrite_incoming_path():
     """Apply path rewrites and enforce trailing slash on directory paths."""
     path = request.path
-    rewritten = rewrite_path(path)
-
-    if rewritten != path:
-        qs = f"?{request.query_string.decode()}" if request.query_string else ""
-        return redirect(rewritten + qs, 302)
 
     # enforce trailing slash for paths that map to a site directory
     if not path.endswith("/") and (SITE_DIR / path.lstrip("/")).is_dir():
