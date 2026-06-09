@@ -47,9 +47,6 @@ JS_PATCHES: dict[str, tuple[Substitution]] = {
             b"(location.href.match(/\\W(ja|en|fr|it|de|es|ko)\\./) || [null, 'ja'])[1];",
             f"'{LANG}';".encode(),
         ),
-        Substitution(b"http://cdn2.pokemon-gl.com", b""),
-        Substitution(b"/cdn2.pokemon-gl.com",       b""),
-        Substitution(b"en.pokemon-gl.com", f"{LANG}.pokemon-gl.com".encode()),
     ),
     "swfembed2.js": (
         # point the SWF embed at the local language host instead of window.location
@@ -74,6 +71,9 @@ JS_PATCHES: dict[str, tuple[Substitution]] = {
 
 # substitutions applied to every patchable file
 _GLOBAL_SUBS: tuple[Substitution] = (
+    Substitution(b"http://cdn2.pokemon-gl.com", b""),
+    Substitution(b"src:gus_src", f"src:'/pgl-363/{LANG}'".encode()),
+    Substitution(b"en.pokemon-gl.com", f"{LANG}.pokemon-gl.com".encode()),
     Substitution(b'oncontextmenu="return false"', b""),
     Substitution(b'ondragstart="return false"',   b""),
     Substitution(b'onselectstart="return false"', b""),
@@ -132,13 +132,43 @@ _Home_patch = dedent("""\
     }
 """)
 
+# the original code checks to see if we are connecting from localhost
+# and tries to load it from a different path if we are.
+_Garden_patch = "this._exteriorLoader.load(new URLRequest(path + \"../../theme/assets/global/parts/interior/\" + islandId + \".swf\" + cacheBuster + version));"
+
+_PDW_patch_2 = "PDWBridge.isLocal = false;"
+
+# ---------------
+# Ruffle compatability patches
+# ---------------
+
+# according to Blupee:
+# Ruffle probably needs to assign a default value to root.transform.perspectiveProjection in order to fix this properly
+_PDW_patch = dedent("""\
+    if(!root.transform.perspectiveProjection)
+    {
+        root.transform.perspectiveProjection = new flash.geom.PerspectiveProjection();
+    }
+    root.transform.perspectiveProjection.projectionCenter = new Point(int(stage.stageWidth / 2),int(stage.stageHeight / 2));
+""")
+
+_Alert_patch = dedent("""\
+    if(!this.root.transform.perspectiveProjection)
+    {
+        this.root.transform.perspectiveProjection = new flash.geom.PerspectiveProjection();
+    }
+    this.root.transform.perspectiveProjection.projectionCenter = new Point(int(1003 / 2),int(528 / 2));
+""")
+
 # ---------------
 # SWF paths / insertions
 # ---------------
 
 SWF_PATHS = {
-    "main.swf":     ROOT_DIR / "dreamworld_assets" / "shared.pokemon-gl.com" / "src" / "swf" / "theme" / "assets" / "common" / "main.swf",
-    "pdw_home.swf": ROOT_DIR / "dreamworld_assets" / "shared.pokemon-gl.com" / "src" / "swf" / "pdw" / "assets" / "pdw_home.swf",
+    "main.swf":       ROOT_DIR / "dreamworld_assets" / "shared.pokemon-gl.com" / "src" / "swf" / "theme" / "assets" / "common" / "main.swf",
+    "pdw_home.swf":   ROOT_DIR / "dreamworld_assets" / "shared.pokemon-gl.com" / "src" / "swf" / "pdw" / "assets" / "pdw_home.swf",
+    "pdw.swf":        ROOT_DIR / "dreamworld_assets" / "shared.pokemon-gl.com" / "src" / "swf" / "pdw" / "assets" / "pdw.swf",
+    "pdw_garden.swf": ROOT_DIR / "dreamworld_assets" / "shared.pokemon-gl.com" / "src" / "swf" / "pdw" / "assets" / "pdw_garden.swf"
 }
 
 INSERTIONS = {
@@ -150,6 +180,14 @@ INSERTIONS = {
     "pdw_home.swf": (
         Insertion("bfp.tpc.pdw.home.Home", (628, 629), _Home_patch),
     ),
+    "pdw.swf": (
+        Insertion("bfp.tpc.pdw.pdw.PDW",      (729, 730), _PDW_patch),
+        Insertion("bfp.tpc.pdw.pdw.PDW",      (582, 583), _PDW_patch_2),
+        Insertion("bfp.tpc.pdw.dialog.Alert", (141, 142), _Alert_patch),
+    ),
+    "pdw_garden.swf": (
+        Insertion("bfp.tpc.pdw.garden.Garden", (367, 375), _Garden_patch),
+    )
 }
 
 # ---------------
